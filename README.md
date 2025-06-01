@@ -3,14 +3,6 @@
 
 ### <div align="center">Hello, there! <br/> I'm JIUK KIM.</div>
 
-<p  align="center">
-  <a href='https://www.linkedin.com/in/ziweek' target="_blank">
-    @Daangn (Karrot)
-  </a>
-  <br/>
-  Software Engineer Intern, Backend
-</p>
-
 <div align="center"> 
   <a href='https://docs.google.com/document/d/1IumpK4YwJCBT_nG1GYwQUlPHa5-jmaPV/view' target="_blank">
     <picture>
@@ -38,7 +30,15 @@
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
   <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
 </div>
-
-
 <br/>
+
+<p  align="center">
+  <a href='https://www.linkedin.com/in/ziweek' target="_blank">
+    @Daangn (Karrot)
+  </a>
+  <br/>
+  <i>Software Engineer Intern, Backend</i>
+  <br/>
+  2025.01.02 ~ Present
+</p>
 
