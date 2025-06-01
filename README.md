@@ -35,7 +35,7 @@
 
 <p  align="center">
   <a href='https://about.daangn.com/' target="_blank">
-    @Daangn (Karrot, キャロット)
+    @daangn (Karrot, キャロット)
   </a>
   <br/>
   <i>Software Engineer Intern, Backend</i>
