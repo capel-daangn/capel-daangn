@@ -40,7 +40,18 @@
   <br/>
   <i>Software Engineer Intern, Backend</i>
   <br/>
-  2025.01.02 ~ Present
+  2025.04.07 ~ Present
+</p>
+<br/>
+
+<p  align="center">
+  <a href='https://about.daangn.com/' target="_blank">
+    @daangn (Karrot, キャロット)
+  </a>
+  <br/>
+  <i>Software Engineer Intern, Backend</i>
+  <br/>
+  2025.01.06 ~ 2025.04.05
 </p>
 <br/>
 
