@@ -38,9 +38,9 @@
     @daangn (Karrot, キャロット)
   </a>
   <br/>
-  <i>Software Engineer Intern, Backend</i>
+  <i>Software Engineer, Backend</i>
   <br/>
-  2025.01.06 ~ 2025.04.07 ~ Present
+  2025.01.06 ~ 2025.07.04 ~ Present
 </p>
 <br/>
 
