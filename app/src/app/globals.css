@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Dark mode override */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:block {
+    display: block !important;
+  }
+
+  .print\:text-xs {
+    font-size: 10px !important;
+  }
+
+  .print\:text-sm {
+    font-size: 11px !important;
+  }
+
+  .print\:text-base {
+    font-size: 12px !important;
+  }
+
+  .print\:text-lg {
+    font-size: 14px !important;
+  }
+
+  .print\:p-2 {
+    padding: 8px !important;
+  }
+
+  .print\:p-4 {
+    padding: 16px !important;
+  }
+
+  .print\:px-1 {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  .print\:px-2 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .print\:py-0\.5 {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+
+  .print\:mb-4 {
+    margin-bottom: 16px !important;
+  }
+
+  .print\:mb-6 {
+    margin-bottom: 24px !important;
+  }
+
+  .print\:mt-8 {
+    margin-top: 32px !important;
+  }
+
+  .print\:pt-4 {
+    padding-top: 16px !important;
+  }
+
+  .print\:pl-3 {
+    padding-left: 12px !important;
+  }
+
+  .print\:space-y-2 > * + * {
+    margin-top: 8px !important;
+  }
+
+  .print\:space-y-3 > * + * {
+    margin-top: 12px !important;
+  }
+
+  .print\:space-y-4 > * + * {
+    margin-top: 16px !important;
+  }
+
+  .print\:space-y-6 > * + * {
+    margin-top: 24px !important;
+  }
+
+  .print\:gap-2 {
+    gap: 8px !important;
+  }
+
+  .print\:gap-6 {
+    gap: 24px !important;
+  }
+
+  .print\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .print\:col-span-2 {
+    grid-column: span 2 / span 2 !important;
+  }
+
+  .print\:border {
+    border-width: 1px !important;
+  }
+
+  .print\:border-l {
+    border-left-width: 1px !important;
+  }
+
+  .print\:border-gray-200 {
+    border-color: #e5e7eb !important;
+  }
+
+  .print\:bg-white {
+    background-color: #fff !important;
+  }
+
+  .print\:bg-gray-100 {
+    background-color: #f3f4f6 !important;
+  }
+
+  .print\:bg-gray-600 {
+    background-color: #4b5563 !important;
+  }
+
+  .print\:text-gray-700 {
+    color: #374151 !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  /* Page break rules */
+  .print\:break-inside-avoid {
+    break-inside: avoid !important;
+  }
+
+  /* Ensure proper page margins */
+  @page {
+    margin: 0.5in;
+    size: A4;
+  }
+
+  /* Avoid breaking inside cards and sections */
+  section, .card, .border {
+    break-inside: avoid;
+  }
+
+  /* Ensure links work in print but don't show blue */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Custom responsive breakpoints */
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Smooth transitions for better UX */
+.transition-colors {
+  transition: color 0.2s ease-in-out;
+}
+
+/* Custom hover effects */
+a:hover {
+  opacity: 0.8;
+}
+
+/* Better focus outlines for accessibility */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Skills tag animations */
+.skill-tag {
+  transition: all 0.2s ease-in-out;
+}
+
+.skill-tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

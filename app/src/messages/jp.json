@@ -1,0 +1,153 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "about": "紹介",
+    "experience": "経歴",
+    "projects": "プロジェクト",
+    "education": "学歴",
+    "awards": "受賞歴",
+    "contact": "連絡先"
+  },
+  "hero": {
+    "name": "キム・ジウク",
+    "title": "ソフトウェアエンジニア",
+    "description": "人と人との繋がりから生まれるシナジーに深い関心を持ち、より多くの幸せな瞬間を作りたいという熱意でエンジニアの道を選びました。粘り強く挑戦し、継続的な成長を重要視し、バックエンドを中心として機械学習及びクラウド技術を活用してデータを実際のビジネス価値に転換する応用型エンジニアを目標としています。",
+    "phone": "010-9590-2997",
+    "email": "alex.jiuk.kim@gmail.com",
+    "linkedin": "LinkedIn",
+    "github": "Github"
+  },
+  "skills": {
+    "title": "保有スキル要約",
+    "ml": {
+      "title": "機械学習エンジニアリング",
+      "items": [
+        "MLflowなどで機械学習のライフサイクル（データ加工、学習、モニタリング、高度化）の経験",
+        "LangChain、LangGraphを活用したマルチエージェントネットワークRAG実装経験",
+        "外部API連携のためのMCPサーバー、軽量化されたRAGシステムのためのMCPサーバー実装経験",
+        "リアルタイム処理負荷が大きい環境でベクターDBを活用した軽量ベクター検索システム実装経験",
+        "QLoRA技法でLLMファインチューニング及びvLLM、TritonなどでLLMモデルサービング経験"
+      ]
+    },
+    "dev": {
+      "title": "ソフトウェア開発",
+      "items": [
+        "個人または協業プロジェクトの開発主導及び多数の大会受賞経験",
+        "React.js、Next.js基盤で簡単なフロントエンド自体開発可能",
+        "FastAPI、Spring基盤でバックエンドサーバー開発可能",
+        "MySQL、MongoDB、Redis、GraphQL基盤でスキーマ設計及びDB活用経験",
+        "Dockerを通じたイメージ管理及びAWSなどでサービス配布経験（EC2、S3など）"
+      ]
+    }
+  },
+  "experience": {
+    "title": "経歴",
+    "jobs": [
+      {
+        "company": "株式会社ダングンマーケット",
+        "team": "ダングンチャットチーム",
+        "position": "ソフトウェアエンジニアインターン、バックエンド",
+        "period": "インターンシップ（延長）、2025年04月 - 2025年06月",
+        "description": "業務領域：Go章、domain-driven及びgRPC経験、Admin改善作業",
+        "achievements": [
+          "プロジェクト1. 年間LLM呼び出しコスト20%以上削減、インターンが挑戦したセマンティックキャッシング導入記録（草案、6月中ダングンテックブログ掲載予定）",
+          "プロジェクト2. プロンプト性能評価エージェント、「世界に悪いプロンプトはない」"
+        ]
+      },
+      {
+        "company": "株式会社ダングンマーケット",
+        "team": "ダングンアルバチーム",
+        "position": "ソフトウェアエンジニアインターン、バックエンド",
+        "period": "インターンシップ、2025年01月 - 2025年03月",
+        "description": "業務領域：Node.js章、event-driven及びGraphQL API経験、Admin改善作業",
+        "achievements": [
+          "プロジェクト3. 法令及びCS政策を読むLLM：MCP基盤制裁自動化構築記",
+          "プロジェクト4. GCP BigQueryとGoを活用した財務仕訳帳作成自動化機能実装"
+        ]
+      },
+      {
+        "company": "在韓米第8軍司令部本部大隊",
+        "position": "大韓民国陸軍兵長カトゥサ満期除隊",
+        "period": "兵役義務、2023年07月 - 2024年12月",
+        "description": "主要業務：在韓米軍カトゥサ人力情報のデータベース設計及び可視化作業"
+      }
+    ]
+  },
+  "awards": {
+    "title": "受賞歴",
+    "items": [
+      {
+        "name": "2024第1回国防AIアイデアソン",
+        "award": "優秀賞（陸軍参謀総長賞）"
+      },
+      {
+        "name": "2024第11回陸軍創業競進大会",
+        "award": "優秀賞（大田雇用経済振興院長賞）"
+      },
+      {
+        "name": "2023済州衛星データ活用競進大会",
+        "award": "大賞（済州特別自治道知事賞）"
+      },
+      {
+        "name": "2023第10回陸軍創業競進大会",
+        "award": "創意賞（陸軍人事司令官賞）"
+      },
+      {
+        "name": "2022第3回高麗大学校スマートキャンパスデータソン",
+        "award": "奨励賞"
+      },
+      {
+        "name": "2022サムスン電子 x 高麗大学校未来環境家電アイデア公募展",
+        "award": "優秀賞"
+      }
+    ]
+  },
+  "education": {
+    "title": "学歴",
+    "institutions": [
+      {
+        "name": "米国ジョージア工科大学",
+        "degree": "コンピュータ工学科オンライン修士課程在学中",
+        "period": "2024年08月 - 2026年卒業予定",
+        "note": "機械学習特化分野進行中"
+      },
+      {
+        "name": "高麗大学校",
+        "degree": "経営学科学士卒業",
+        "period": "2017年03月 - 2024年02月",
+        "note": "ビジネスアナリティクス細部トラック認証制度修了"
+      }
+    ]
+  },
+  "languages": {
+    "title": "言語",
+    "items": [
+      {
+        "language": "韓国語",
+        "level": "母国語"
+      },
+      {
+        "language": "英語",
+        "level": "上級",
+        "scores": "TOEIC 915/990、TOEIC Speaking 150/200、TOEFL 92/120"
+      },
+      {
+        "language": "日本語",
+        "level": "初級"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "資格証",
+    "items": [
+      "情報処理技師筆記合格、2024.03",
+      "ビッグデータ分析技師、2024.06",
+      "財経管理士、2021.11"
+    ]
+  },
+  "technologies": {
+    "title": "技術",
+    "ml": "Python, FastAPI, LangChain, LangGraph, vllm, Triton",
+    "dev": "JavaScript, TypeScript, Go, React.js, Next.js, Node.js, Java, Kotlin, Spring, GraphQL, Docker, AWS"
+  }
+}

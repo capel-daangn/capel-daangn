@@ -1,0 +1,153 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "awards": "Awards",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Jiuk Kim",
+    "title": "Software Engineer",
+    "description": "I have a deep interest in the synergy born from connections between people and chose the path of engineering with a passion to create more happy moments. I value persistent challenges and continuous growth, aiming to be an applied engineer who converts data into actual business value using machine learning and cloud technologies centered around backend development.",
+    "phone": "010-9590-2997",
+    "email": "alex.jiuk.kim@gmail.com",
+    "linkedin": "LinkedIn",
+    "github": "Github"
+  },
+  "skills": {
+    "title": "Core Competencies",
+    "ml": {
+      "title": "Machine Learning Engineering",
+      "items": [
+        "Experience with machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow and other tools",
+        "Experience implementing multi-agent network RAG using LangChain and LangGraph",
+        "Experience implementing MCP servers for external API integration and lightweight RAG systems",
+        "Experience implementing lightweight vector search systems using vector DB in high real-time processing environments",
+        "Experience with LLM fine-tuning using QLoRA and LLM model serving using vLLM, Triton"
+      ]
+    },
+    "dev": {
+      "title": "Software Development",
+      "items": [
+        "Experience leading individual or collaborative project development and winning multiple competitions",
+        "Capable of independent frontend development using React.js and Next.js",
+        "Capable of backend server development using FastAPI and Spring",
+        "Experience with schema design and database utilization using MySQL, MongoDB, Redis, GraphQL",
+        "Experience with Docker image management and service deployment using AWS (EC2, S3, etc.)"
+      ]
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "company": "Daangn Market Inc.",
+        "team": "Daangn Chat Team",
+        "position": "Software Engineer Intern, Backend",
+        "period": "Internship (Extended), April 2025 - June 2025",
+        "description": "Work Areas: Go chapter, domain-driven and gRPC experience, Admin improvement tasks",
+        "achievements": [
+          "Project 1. Record of semantic caching implementation by intern that reduced annual LLM call costs by over 20% (draft, to be published on Daangn Tech Blog in June)",
+          "Project 2. Prompt performance evaluation agent, \"There are no bad prompts in the world\""
+        ]
+      },
+      {
+        "company": "Daangn Market Inc.",
+        "team": "Daangn Alba Team",
+        "position": "Software Engineer Intern, Backend",
+        "period": "Internship, January 2025 - March 2025",
+        "description": "Work Areas: Node.js chapter, event-driven and GraphQL API experience, Admin improvement tasks",
+        "achievements": [
+          "Project 3. LLM that reads laws and CS policies: Building MCP-based sanction automation",
+          "Project 4. Implementation of automated financial journal entry creation using GCP BigQuery and Go"
+        ]
+      },
+      {
+        "company": "8th Army Headquarters Battalion, US Forces Korea",
+        "position": "Sergeant, KATUSA (Honorable Discharge)",
+        "period": "Military Service, July 2023 - December 2024",
+        "description": "Main duties: Database design and visualization of KATUSA personnel information for US Forces Korea"
+      }
+    ]
+  },
+  "awards": {
+    "title": "Awards",
+    "items": [
+      {
+        "name": "2024 1st Defense AI Ideathon",
+        "award": "Excellence Award (Army Chief of Staff Award)"
+      },
+      {
+        "name": "2024 11th Army Startup Competition",
+        "award": "Excellence Award (Daejeon Jobs and Economy Promotion Agency Director's Award)"
+      },
+      {
+        "name": "2023 Jeju Satellite Data Utilization Competition",
+        "award": "Grand Prize (Jeju Special Self-Governing Province Governor's Award)"
+      },
+      {
+        "name": "2023 10th Army Startup Competition",
+        "award": "Creativity Award (Army Personnel Command Award)"
+      },
+      {
+        "name": "2022 3rd Korea University Smart Campus Datathon",
+        "award": "Encouragement Award"
+      },
+      {
+        "name": "2022 Samsung Electronics x Korea University Future Eco-Friendly Appliance Idea Contest",
+        "award": "Excellence Award"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "institutions": [
+      {
+        "name": "Georgia Institute of Technology",
+        "degree": "Master's in Computer Science (Online) - Currently Enrolled",
+        "period": "August 2024 - Expected graduation 2026",
+        "note": "Specializing in Machine Learning"
+      },
+      {
+        "name": "Korea University",
+        "degree": "Bachelor's in Business Administration - Graduated",
+        "period": "March 2017 - February 2024",
+        "note": "Completed Business Analytics specialized track certification program"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "items": [
+      {
+        "language": "Korean",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "Advanced",
+        "scores": "TOEIC 915/990, TOEIC Speaking 150/200, TOEFL 92/120"
+      },
+      {
+        "language": "Japanese",
+        "level": "Beginner"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": [
+      "Information Processing Engineer (Written), March 2024",
+      "Big Data Analyst, June 2024",
+      "Financial Management Specialist, November 2021"
+    ]
+  },
+  "technologies": {
+    "title": "Technologies",
+    "ml": "Python, FastAPI, LangChain, LangGraph, vllm, Triton",
+    "dev": "JavaScript, TypeScript, Go, React.js, Next.js, Node.js, Java, Kotlin, Spring, GraphQL, Docker, AWS"
+  }
+}
