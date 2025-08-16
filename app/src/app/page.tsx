@@ -17,9 +17,11 @@ import Title from "@/components/resume/Title";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { useTranslations } from "@/hooks/useTranslations";
+import { TranslationMessages } from "@/types/translations";
 
 function ResumeContent() {
-  const { t } = useTranslations();
+  const { messages } = useTranslations();
+  const resumeData = messages as TranslationMessages;
 
   return (
     <div className="min-h-screen transition-colors bg-white dark:bg-gray-900 print:bg-white">
@@ -54,30 +56,52 @@ function ResumeContent() {
         <div className="pt-6 mt-12 text-sm text-center text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400 print:mt-8 print:pt-4">
           {/* Social Icons */}
           <div className="flex justify-center gap-6 mb-4 print:hidden">
-            <a
-              href={`mailto:${t("profile.contact.email") as string}`}
-              className="text-gray-600 transition-colors dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400"
-            >
-              <MdEmail size={24} />
-            </a>
-            <a
-              href={t("profile.contact.linkedin") as string}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 transition-colors dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
-            >
-              <FaLinkedin size={24} />
-            </a>
-            <a
-              href={t("profile.contact.github") as string}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 transition-colors dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
-            >
-              <FaGithub size={24} />
-            </a>
+            {resumeData?.profile?.items?.map((item: { type: string; content: string }, index: number) => {
+              const isEmail = item.content.includes("@");
+              const isLinkedIn = item.content.includes("linkedin");
+              const isGitHub = item.content.includes("github");
+
+              if (isEmail) {
+                return (
+                  <a
+                    key={index}
+                    href={`mailto:${item.content}`}
+                    className="text-gray-600 transition-colors dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400"
+                  >
+                    <MdEmail size={24} />
+                  </a>
+                );
+              }
+              if (isLinkedIn) {
+                return (
+                  <a
+                    key={index}
+                    href={item.content}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 transition-colors dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+                  >
+                    <FaLinkedin size={24} />
+                  </a>
+                );
+              }
+              if (isGitHub) {
+                return (
+                  <a
+                    key={index}
+                    href={item.content}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 transition-colors dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                  >
+                    <FaGithub size={24} />
+                  </a>
+                );
+              }
+              return null;
+            })}
           </div>
-          <p>개발자 이력서 - 혁신적인 기술 솔루션을 통한 비즈니스 가치 창출</p>
+          <p>2025.08.17</p>
         </div>
       </div>
     </div>

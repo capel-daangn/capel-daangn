@@ -2,10 +2,11 @@
 
 import React from "react";
 import { useTranslations } from "@/hooks/useTranslations";
+import { TranslationMessages } from "@/types/translations";
 
 export default function Title() {
   const { messages } = useTranslations();
-  const resumeData = messages as any;
+  const resumeData = messages as TranslationMessages;
   const profile = resumeData?.profile;
 
   if (!profile) return null;

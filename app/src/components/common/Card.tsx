@@ -13,8 +13,8 @@ export default function Card({ card, variant = "simple" }: CardProps) {
   const variantClasses = {
     bordered:
       "p-3 border border-gray-200 dark:border-gray-700 rounded-lg dark:bg-gray-800/50 print:p-2 print:dark:bg-transparent",
-    timeline: "",
-    // "border-l-0 border-gray-200 dark:border-gray-700 pl-4 print:border-l print:pl-3",
+    timeline:
+      "border-l-2 border-gray-200 dark:border-gray-700 pl-4 print:border-l print:pl-3",
     simple: "p-2",
   };
 
@@ -37,7 +37,7 @@ export default function Card({ card, variant = "simple" }: CardProps) {
           )}
         </div>
         {card.subtitle && (
-          <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 print:text-xs">
+          <p className="mt-1 text-sm text-blue-400 dark:text-blue-300 print:text-xs">
             {card.subtitle}
           </p>
         )}

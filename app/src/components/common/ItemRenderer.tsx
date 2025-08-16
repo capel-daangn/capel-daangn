@@ -31,7 +31,8 @@ export default function ItemRenderer({
 
   if (item.type === "card") {
     const cardItem = item as CardItem;
-    return <Card card={cardItem} variant={variant} />;
+    // Use card's own variant if specified, otherwise use parent's variant
+    return <Card card={cardItem} variant={cardItem.variant || variant} />;
   }
 
   return null;

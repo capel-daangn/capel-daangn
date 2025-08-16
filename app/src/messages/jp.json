@@ -1,153 +1,214 @@
 {
-  "navigation": {
-    "home": "ホーム",
-    "about": "紹介",
-    "experience": "経歴",
-    "projects": "プロジェクト",
-    "education": "学歴",
-    "awards": "受賞歴",
-    "contact": "連絡先"
+  "profile": {
+    "title": "JIUK KIM",
+    "subtitle": "ソフトウェアエンジニア",
+    "description": "人と人とのつながりから生まれるシナジーに強い関心を持ち、より多くの幸せな瞬間を作りたいという思いでエンジニアの道を選びました。粘り強い挑戦と継続的な成長を大切にし、バックエンドを中心に機械学習およびクラウド技術を活用してデータを実際のビジネス価値へ転換する応用型エンジニアを目指しています。",
+    "items": [
+      { "type": "text", "content": "alex.jiuk.kim@gmail.com" },
+      { "type": "text", "content": "https://www.linkedin.com/in/TO-BE-FILLED" },
+      { "type": "text", "content": "https://github.com/TO-BE-FILLED" }
+    ]
   },
-  "hero": {
-    "name": "キム・ジウク",
-    "title": "ソフトウェアエンジニア",
-    "description": "人と人との繋がりから生まれるシナジーに深い関心を持ち、より多くの幸せな瞬間を作りたいという熱意でエンジニアの道を選びました。粘り強く挑戦し、継続的な成長を重要視し、バックエンドを中心として機械学習及びクラウド技術を活用してデータを実際のビジネス価値に転換する応用型エンジニアを目標としています。",
-    "phone": "010-9590-2997",
-    "email": "alex.jiuk.kim@gmail.com",
-    "linkedin": "LinkedIn",
-    "github": "Github"
-  },
-  "skills": {
-    "title": "保有スキル要約",
-    "ml": {
-      "title": "機械学習エンジニアリング",
-      "items": [
-        "MLflowなどで機械学習のライフサイクル（データ加工、学習、モニタリング、高度化）の経験",
-        "LangChain、LangGraphを活用したマルチエージェントネットワークRAG実装経験",
-        "外部API連携のためのMCPサーバー、軽量化されたRAGシステムのためのMCPサーバー実装経験",
-        "リアルタイム処理負荷が大きい環境でベクターDBを活用した軽量ベクター検索システム実装経験",
-        "QLoRA技法でLLMファインチューニング及びvLLM、TritonなどでLLMモデルサービング経験"
+  "sections": {
+    "skillsSummary": {
+      "title": "保有スキル概要",
+      "content": [
+        {
+          "type": "card",
+          "title": "機械学習エンジニアリング",
+          "content": [
+            {
+              "type": "text",
+              "content": "• MLflowなどを用いた機械学習ライフサイクル（データ加工、学習、モニタリング、高度化）の経験。"
+            },
+            {
+              "type": "text",
+              "content": "• LangChain、LangGraphを活用したマルチエージェントネットワークRAGの実装経験。"
+            },
+            {
+              "type": "text",
+              "content": "• 外部API連携用MCPサーバー、軽量化RAGシステム向けMCPサーバーの実装経験。"
+            },
+            {
+              "type": "text",
+              "content": "• リアルタイム処理負荷が大きい環境でのベクトルDBを活用した軽量ベクトル検索システム実装経験。"
+            },
+            {
+              "type": "text",
+              "content": "• QLoRA手法によるLLMファインチューニング、vLLM・Tritonなどを用いたLLMモデルサービングの経験。"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "ソフトウェア開発",
+          "content": [
+            {
+              "type": "text",
+              "content": "• 個人または共同プロジェクトの開発主導および多数のコンテスト受賞経験。"
+            },
+            {
+              "type": "text",
+              "content": "• React.js、Next.jsを基盤にした簡単なフロントエンド開発が可能。"
+            },
+            {
+              "type": "text",
+              "content": "• FastAPI、Springを基盤にしたバックエンドサーバー開発が可能。"
+            },
+            {
+              "type": "text",
+              "content": "• MySQL、MongoDB、Redis、GraphQLを基盤としたスキーマ設計およびDB活用経験。"
+            },
+            {
+              "type": "text",
+              "content": "• Dockerによるイメージ管理およびAWSでのサービスデプロイ経験（EC2、S3など）。"
+            }
+          ]
+        }
       ]
     },
-    "dev": {
-      "title": "ソフトウェア開発",
-      "items": [
-        "個人または協業プロジェクトの開発主導及び多数の大会受賞経験",
-        "React.js、Next.js基盤で簡単なフロントエンド自体開発可能",
-        "FastAPI、Spring基盤でバックエンドサーバー開発可能",
-        "MySQL、MongoDB、Redis、GraphQL基盤でスキーマ設計及びDB活用経験",
-        "Dockerを通じたイメージ管理及びAWSなどでサービス配布経験（EC2、S3など）"
+    "experience": {
+      "title": "職務経歴",
+      "content": [
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "株式会社ダングンマーケット",
+          "subtitle": "2025年01月 ～ 現在在職中",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "正社員 · ソフトウェアエンジニア（バックエンド） · ダングンチャットチーム",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• 担当領域 : Goチャプター、ドメイン駆動設計およびgRPC経験、管理画面改善業務"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "variant": "timeline",
+              "subtitle": "インターンシップ（延長） · ソフトウェアエンジニア インターン（バックエンド） · ダングンチャットチーム",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• 担当領域 : Goチャプター、ドメイン駆動設計およびgRPC経験、管理画面改善業務"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ プロジェクト1. 年間LLM呼び出しコスト20%以上削減、インターンとして挑戦したセマンティックキャッシング導入記録"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ プロジェクト2. プロンプト性能評価エージェント「悪いプロンプトは存在しない」"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "variant": "timeline",
+              "subtitle": "インターンシップ · ソフトウェアエンジニア インターン（バックエンド） · ダングンアルバチーム",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• 担当領域 : Node.jsチャプター、イベント駆動およびGraphQL API経験、管理画面改善業務"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ プロジェクト3. 法令およびCSポリシーを読むLLM：MCP基盤の制裁自動化構築"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ プロジェクト4. GCP BigQueryとGoを活用した会計仕訳帳自動作成機能の実装"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "在韓米第8軍 司令部大隊",
+          "subtitle": "2023年07月 - 2024年12月",
+          "content": [
+            {
+              "type": "card",
+              "variant": "timeline",
+              "subtitle": "兵役義務 · 大韓民国陸軍 兵長 カトゥサ 満期除隊",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• 担当領域 : 在韓米軍カトゥサ人事情報のデータベース設計および可視化作業"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ 在韓米軍祝日情報を提供するWebアプリを開発・運営（MAU700人以上）。"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ 2024 Google 機械学習ブートキャンプ 第5期修了、Naver Connect財団 コーチングスタディ第13期修了。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "プロジェクト",
+      "content": [
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "年間LLM呼び出しコスト20%以上削減、インターンによるセマンティックキャッシング導入記録",
+          "subtitle": "ダングンチャットチーム · 2025年05月 - 2025年06月",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why（なぜ）",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· 中古取引チャットにおける文章推薦機能で頻繁に発生するLLM呼び出しにより、年間約9億ウォンのコストが予想される状況で、インターンでありながら主体的にセマンティックキャッシングを提案・実装し、コスト削減を模索。"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "How（どのように）",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· 実際のチャットデータを埋め込み、PCAとHDBSCANにより意味ベースの会話パターンをクラスタリング。"
+                },
+                {
+                  "type": "text",
+                  "content": "· メインサーバーと分離されたアドオン構造を設計、内蔵型ベクトルDBを活用し外部トラフィック転移を防止。"
+                },
+                {
+                  "type": "text",
+                  "content": "· 負荷テストでネットワークI/Oボトルネックを確認、軽量リソースのマルチレプリカ構成（TPS100/インスタンス、P50 400ms、P95 1秒以内）で同時処理に対応。"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "What（結果）",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· 年間LLM呼び出しコスト20%以上削減、約2.3億ウォン以上のコスト削減効果を見込む。"
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
-  },
-  "experience": {
-    "title": "経歴",
-    "jobs": [
-      {
-        "company": "株式会社ダングンマーケット",
-        "team": "ダングンチャットチーム",
-        "position": "ソフトウェアエンジニアインターン、バックエンド",
-        "period": "インターンシップ（延長）、2025年04月 - 2025年06月",
-        "description": "業務領域：Go章、domain-driven及びgRPC経験、Admin改善作業",
-        "achievements": [
-          "プロジェクト1. 年間LLM呼び出しコスト20%以上削減、インターンが挑戦したセマンティックキャッシング導入記録（草案、6月中ダングンテックブログ掲載予定）",
-          "プロジェクト2. プロンプト性能評価エージェント、「世界に悪いプロンプトはない」"
-        ]
-      },
-      {
-        "company": "株式会社ダングンマーケット",
-        "team": "ダングンアルバチーム",
-        "position": "ソフトウェアエンジニアインターン、バックエンド",
-        "period": "インターンシップ、2025年01月 - 2025年03月",
-        "description": "業務領域：Node.js章、event-driven及びGraphQL API経験、Admin改善作業",
-        "achievements": [
-          "プロジェクト3. 法令及びCS政策を読むLLM：MCP基盤制裁自動化構築記",
-          "プロジェクト4. GCP BigQueryとGoを活用した財務仕訳帳作成自動化機能実装"
-        ]
-      },
-      {
-        "company": "在韓米第8軍司令部本部大隊",
-        "position": "大韓民国陸軍兵長カトゥサ満期除隊",
-        "period": "兵役義務、2023年07月 - 2024年12月",
-        "description": "主要業務：在韓米軍カトゥサ人力情報のデータベース設計及び可視化作業"
-      }
-    ]
-  },
-  "awards": {
-    "title": "受賞歴",
-    "items": [
-      {
-        "name": "2024第1回国防AIアイデアソン",
-        "award": "優秀賞（陸軍参謀総長賞）"
-      },
-      {
-        "name": "2024第11回陸軍創業競進大会",
-        "award": "優秀賞（大田雇用経済振興院長賞）"
-      },
-      {
-        "name": "2023済州衛星データ活用競進大会",
-        "award": "大賞（済州特別自治道知事賞）"
-      },
-      {
-        "name": "2023第10回陸軍創業競進大会",
-        "award": "創意賞（陸軍人事司令官賞）"
-      },
-      {
-        "name": "2022第3回高麗大学校スマートキャンパスデータソン",
-        "award": "奨励賞"
-      },
-      {
-        "name": "2022サムスン電子 x 高麗大学校未来環境家電アイデア公募展",
-        "award": "優秀賞"
-      }
-    ]
-  },
-  "education": {
-    "title": "学歴",
-    "institutions": [
-      {
-        "name": "米国ジョージア工科大学",
-        "degree": "コンピュータ工学科オンライン修士課程在学中",
-        "period": "2024年08月 - 2026年卒業予定",
-        "note": "機械学習特化分野進行中"
-      },
-      {
-        "name": "高麗大学校",
-        "degree": "経営学科学士卒業",
-        "period": "2017年03月 - 2024年02月",
-        "note": "ビジネスアナリティクス細部トラック認証制度修了"
-      }
-    ]
-  },
-  "languages": {
-    "title": "言語",
-    "items": [
-      {
-        "language": "韓国語",
-        "level": "母国語"
-      },
-      {
-        "language": "英語",
-        "level": "上級",
-        "scores": "TOEIC 915/990、TOEIC Speaking 150/200、TOEFL 92/120"
-      },
-      {
-        "language": "日本語",
-        "level": "初級"
-      }
-    ]
-  },
-  "certifications": {
-    "title": "資格証",
-    "items": [
-      "情報処理技師筆記合格、2024.03",
-      "ビッグデータ分析技師、2024.06",
-      "財経管理士、2021.11"
-    ]
-  },
-  "technologies": {
-    "title": "技術",
-    "ml": "Python, FastAPI, LangChain, LangGraph, vllm, Triton",
-    "dev": "JavaScript, TypeScript, Go, React.js, Next.js, Node.js, Java, Kotlin, Spring, GraphQL, Docker, AWS"
   }
 }

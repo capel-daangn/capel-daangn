@@ -1,153 +1,522 @@
 {
-  "navigation": {
-    "home": "Home",
-    "about": "About",
-    "experience": "Experience",
-    "projects": "Projects",
-    "education": "Education",
-    "awards": "Awards",
-    "contact": "Contact"
+  "profile": {
+    "title": "JIUK KIM",
+    "subtitle": "Software Engineer",
+    "description": "I have a deep interest in the synergy created through connections between people and chose the path of an engineer with the aspiration to create more happy moments. I value perseverance in challenges and steady growth, and aim to become an applied engineer who transforms data into real business value by leveraging machine learning and cloud technologies, with a focus on backend development.",
+    "items": [
+      { "type": "text", "content": "alex.jiuk.kim@gmail.com" },
+      { "type": "text", "content": "https://www.linkedin.com/in/TO-BE-FILLED" },
+      { "type": "text", "content": "https://github.com/TO-BE-FILLED" }
+    ]
   },
-  "hero": {
-    "name": "Jiuk Kim",
-    "title": "Software Engineer",
-    "description": "I have a deep interest in the synergy born from connections between people and chose the path of engineering with a passion to create more happy moments. I value persistent challenges and continuous growth, aiming to be an applied engineer who converts data into actual business value using machine learning and cloud technologies centered around backend development.",
-    "phone": "010-9590-2997",
-    "email": "alex.jiuk.kim@gmail.com",
-    "linkedin": "LinkedIn",
-    "github": "Github"
-  },
-  "skills": {
-    "title": "Core Competencies",
-    "ml": {
-      "title": "Machine Learning Engineering",
-      "items": [
-        "Experience with machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow and other tools",
-        "Experience implementing multi-agent network RAG using LangChain and LangGraph",
-        "Experience implementing MCP servers for external API integration and lightweight RAG systems",
-        "Experience implementing lightweight vector search systems using vector DB in high real-time processing environments",
-        "Experience with LLM fine-tuning using QLoRA and LLM model serving using vLLM, Triton"
+  "sections": {
+    "skillsSummary": {
+      "title": "Skills Summary",
+      "content": [
+        {
+          "type": "card",
+          "title": "Machine Learning Engineering",
+          "content": [
+            {
+              "type": "text",
+              "content": "• Experience in the machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow and others."
+            },
+            {
+              "type": "text",
+              "content": "• Experience implementing multi-agent network RAG using LangChain and LangGraph."
+            },
+            {
+              "type": "text",
+              "content": "• Experience implementing MCP servers for external API integration and lightweight RAG systems."
+            },
+            {
+              "type": "text",
+              "content": "• Experience implementing lightweight vector search systems using vector DBs in high real-time load environments."
+            },
+            {
+              "type": "text",
+              "content": "• Experience with LLM fine-tuning using QLoRA and LLM model serving with vLLM, Triton, etc."
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Software Development",
+          "content": [
+            {
+              "type": "text",
+              "content": "• Experience leading development of individual and team projects, with multiple competition awards."
+            },
+            {
+              "type": "text",
+              "content": "• Capable of developing simple frontend applications with React.js and Next.js."
+            },
+            {
+              "type": "text",
+              "content": "• Able to develop backend servers with FastAPI and Spring."
+            },
+            {
+              "type": "text",
+              "content": "• Experience designing schemas and working with MySQL, MongoDB, Redis, and GraphQL."
+            },
+            {
+              "type": "text",
+              "content": "• Experience managing images with Docker and deploying services to AWS (EC2, S3, etc.)."
+            }
+          ]
+        }
       ]
     },
-    "dev": {
-      "title": "Software Development",
-      "items": [
-        "Experience leading individual or collaborative project development and winning multiple competitions",
-        "Capable of independent frontend development using React.js and Next.js",
-        "Capable of backend server development using FastAPI and Spring",
-        "Experience with schema design and database utilization using MySQL, MongoDB, Redis, GraphQL",
-        "Experience with Docker image management and service deployment using AWS (EC2, S3, etc.)"
+    "experience": {
+      "title": "Experience",
+      "content": [
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "Karrot (Danggeun Market)",
+          "subtitle": "Jan 2025 – Present",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Full-time · Software Engineer, Backend · Karrot Chat Team",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Responsibilities: Go chapter, domain-driven and gRPC experience, Admin system improvements"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "variant": "timeline",
+              "subtitle": "Extended Internship · Software Engineer Intern, Backend · Karrot Chat Team",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Responsibilities: Go chapter, domain-driven and gRPC experience, Admin system improvements"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ Project 1. Introduced semantic caching, reducing annual LLM call costs by over 20%."
+                },
+                {
+                  "type": "text",
+                  "content": "✓ Project 2. Prompt performance evaluation agent, \"There Is No Such Thing As a Bad Prompt.\""
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "variant": "timeline",
+              "subtitle": "Internship · Software Engineer Intern, Backend · Karrot Alba Team",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Responsibilities: Node.js chapter, event-driven and GraphQL API experience, Admin system improvements"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ Project 3. MCP-based sanction automation: LLM that reads labor laws and CS policies."
+                },
+                {
+                  "type": "text",
+                  "content": "✓ Project 4. Automated ledger generation using GCP BigQuery and Go."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "U.S. 8th Army Headquarters Battalion",
+          "subtitle": "Jul 2023 – Dec 2024",
+          "content": [
+            {
+              "type": "card",
+              "variant": "timeline",
+              "subtitle": "Military Service · Discharged as Sergeant, KATUSA, Republic of Korea Army",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Responsibilities: Designed and visualized databases for KATUSA personnel information."
+                },
+                {
+                  "type": "text",
+                  "content": "✓ Developed and operated a web app providing U.S. Army holiday information (MAU 700+)."
+                },
+                {
+                  "type": "text",
+                  "content": "✓ Completed Google Machine Learning Bootcamp 2024 (5th cohort) and Naver Connect Foundation Coaching Study 13th cohort."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "content": [
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "Semantic Caching Adoption: Cutting Annual LLM Call Costs by 20%+",
+          "subtitle": "Karrot Chat Team · May 2025 – Jun 2025",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Frequent LLM calls for sentence recommendation in secondhand trading chat were projected to cost ~₩900M annually. Despite being an intern, I proactively proposed and implemented semantic caching to explore cost-saving measures."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "How",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Embedded real chat data and identified semantic conversation clusters using PCA and HDBSCAN."
+                },
+                {
+                  "type": "text",
+                  "content": "· Built an add-on structure separated from the main server, using an embedded vector DB to prevent external traffic shifts."
+                },
+                {
+                  "type": "text",
+                  "content": "· Load tests revealed network I/O bottlenecks; resolved with lightweight multi-replica setup (TPS 100/instance, P50 400ms, P95 under 1s) for concurrency handling."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "What",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Achieved projected annual savings of over ₩230M (20%+ reduction in LLM call costs)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "Prompt Performance Evaluation Agent: \"There Is No Such Thing As a Bad Prompt\"",
+          "subtitle": "Karrot Chat Team · Mar 2025 – Mar 2025",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Prompt execution was possible, but lack of evaluation and improvement methods required repetitive manual validation."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "How",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Designed an automated evaluation–improvement loop with three LangGraph components: Planner, Actor, Reflector."
+                },
+                {
+                  "type": "text",
+                  "content": "· Planner: Extracts evaluation criteria and generates test personas/scenarios."
+                },
+                {
+                  "type": "text",
+                  "content": "· Actor: Generates virtual requests and responses based on criteria, then scores and provides feedback."
+                },
+                {
+                  "type": "text",
+                  "content": "· Reflector: Determines need for revisions, rewrites prompts, and incorporates user feedback."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "MCP-based Sanction Automation: LLM That Reads Laws and CS Policies",
+          "subtitle": "Karrot Alba Team · Mar 2025 – Mar 2025",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Needed automation of judgments based on labor laws and internal policies."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "How",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Developed separate MCP servers: one for law search via external APIs, another for internal policy embedding/search."
+                },
+                {
+                  "type": "text",
+                  "content": "· Deployed via Docker Compose, integrated with in-house LLM infrastructure, contributing to abusive user detection pipeline."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": "Automated Ledger Generation Using Go and GCP BigQuery",
+          "subtitle": "Karrot Alba Team · Jan 2025 – Mar 2025",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Needed to improve efficiency and accuracy of manually processing 80,000 monthly transaction entries."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "How",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Designed ledger processing logic in Go, aggregated and processed large-scale data with BigQuery."
+                },
+                {
+                  "type": "text",
+                  "content": "· Automated entire pipeline from ledger generation to reporting output using cron scheduling."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "content": [
+        {
+          "type": "card",
+          "title": "Georgia Institute of Technology",
+          "level": "secondary",
+          "tag": "Aug 2024 – 2026",
+          "subtitle": "M.S. in Computer Science (OMSCS), In Progress",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "Specializing in Machine Learning"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "Korea University",
+          "subtitle": "B.A. in Business Administration, Graduated",
+          "tag": "Mar 2017 – Feb 2024",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "Completed Business Analytics track certification program."
+            },
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "Executive member of KU Software Startup Club NEXT (LikeLion) 10th & 11th terms."
+            }
+          ]
+        }
+      ]
+    },
+    "awards": {
+      "title": "Awards",
+      "content": [
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "1st Defense AI Ideathon",
+          "tag": "2024",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· Excellence Award (Army Chief of Staff Award)"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "11th Army Startup Competition",
+          "tag": "2024",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· Excellence Award (Daejeon Employment and Economy Promotion Agency Award)"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "Jeju Satellite Data Utilization Contest",
+          "tag": "2023",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· Grand Prize (Jeju Special Self-Governing Province Governor’s Award)"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "10th Army Startup Competition",
+          "tag": "2023",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· Creativity Award (Army Personnel Command Award)"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "3rd Korea University Smart Campus Datathon",
+          "tag": "2022",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· Encouragement Award"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "Samsung Electronics x Korea University Eco-Friendly Home Appliance Idea Contest",
+          "tag": "2022",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· Excellence Award"
+            }
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "content": [
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "Korean",
+          "tag": "Native"
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "English",
+          "tag": "Advanced",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· TOEIC: 915/990"
+            },
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· TOEIC Speaking: 150/200"
+            },
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· TOEFL: 92/120"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "Japanese",
+          "tag": "Beginner"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "content": [
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "Information Processing Engineer (Written Exam Passed)",
+          "tag": "Mar 2024"
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "Big Data Analysis Engineer",
+          "tag": "Jun 2024"
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": "Certified Management Accountant (Korea)",
+          "tag": "Nov 2021"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "content": [
+        {
+          "type": "list",
+          "content": [
+            { "type": "text", "content": "Python" },
+            { "type": "text", "content": "Go" },
+            { "type": "text", "content": "TypeScript" },
+            { "type": "text", "content": "Kotlin" }
+          ]
+        }
       ]
     }
-  },
-  "experience": {
-    "title": "Experience",
-    "jobs": [
-      {
-        "company": "Daangn Market Inc.",
-        "team": "Daangn Chat Team",
-        "position": "Software Engineer Intern, Backend",
-        "period": "Internship (Extended), April 2025 - June 2025",
-        "description": "Work Areas: Go chapter, domain-driven and gRPC experience, Admin improvement tasks",
-        "achievements": [
-          "Project 1. Record of semantic caching implementation by intern that reduced annual LLM call costs by over 20% (draft, to be published on Daangn Tech Blog in June)",
-          "Project 2. Prompt performance evaluation agent, \"There are no bad prompts in the world\""
-        ]
-      },
-      {
-        "company": "Daangn Market Inc.",
-        "team": "Daangn Alba Team",
-        "position": "Software Engineer Intern, Backend",
-        "period": "Internship, January 2025 - March 2025",
-        "description": "Work Areas: Node.js chapter, event-driven and GraphQL API experience, Admin improvement tasks",
-        "achievements": [
-          "Project 3. LLM that reads laws and CS policies: Building MCP-based sanction automation",
-          "Project 4. Implementation of automated financial journal entry creation using GCP BigQuery and Go"
-        ]
-      },
-      {
-        "company": "8th Army Headquarters Battalion, US Forces Korea",
-        "position": "Sergeant, KATUSA (Honorable Discharge)",
-        "period": "Military Service, July 2023 - December 2024",
-        "description": "Main duties: Database design and visualization of KATUSA personnel information for US Forces Korea"
-      }
-    ]
-  },
-  "awards": {
-    "title": "Awards",
-    "items": [
-      {
-        "name": "2024 1st Defense AI Ideathon",
-        "award": "Excellence Award (Army Chief of Staff Award)"
-      },
-      {
-        "name": "2024 11th Army Startup Competition",
-        "award": "Excellence Award (Daejeon Jobs and Economy Promotion Agency Director's Award)"
-      },
-      {
-        "name": "2023 Jeju Satellite Data Utilization Competition",
-        "award": "Grand Prize (Jeju Special Self-Governing Province Governor's Award)"
-      },
-      {
-        "name": "2023 10th Army Startup Competition",
-        "award": "Creativity Award (Army Personnel Command Award)"
-      },
-      {
-        "name": "2022 3rd Korea University Smart Campus Datathon",
-        "award": "Encouragement Award"
-      },
-      {
-        "name": "2022 Samsung Electronics x Korea University Future Eco-Friendly Appliance Idea Contest",
-        "award": "Excellence Award"
-      }
-    ]
-  },
-  "education": {
-    "title": "Education",
-    "institutions": [
-      {
-        "name": "Georgia Institute of Technology",
-        "degree": "Master's in Computer Science (Online) - Currently Enrolled",
-        "period": "August 2024 - Expected graduation 2026",
-        "note": "Specializing in Machine Learning"
-      },
-      {
-        "name": "Korea University",
-        "degree": "Bachelor's in Business Administration - Graduated",
-        "period": "March 2017 - February 2024",
-        "note": "Completed Business Analytics specialized track certification program"
-      }
-    ]
-  },
-  "languages": {
-    "title": "Languages",
-    "items": [
-      {
-        "language": "Korean",
-        "level": "Native"
-      },
-      {
-        "language": "English",
-        "level": "Advanced",
-        "scores": "TOEIC 915/990, TOEIC Speaking 150/200, TOEFL 92/120"
-      },
-      {
-        "language": "Japanese",
-        "level": "Beginner"
-      }
-    ]
-  },
-  "certifications": {
-    "title": "Certifications",
-    "items": [
-      "Information Processing Engineer (Written), March 2024",
-      "Big Data Analyst, June 2024",
-      "Financial Management Specialist, November 2021"
-    ]
-  },
-  "technologies": {
-    "title": "Technologies",
-    "ml": "Python, FastAPI, LangChain, LangGraph, vllm, Triton",
-    "dev": "JavaScript, TypeScript, Go, React.js, Next.js, Node.js, Java, Kotlin, Spring, GraphQL, Docker, AWS"
   }
 }

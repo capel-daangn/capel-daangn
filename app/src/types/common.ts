@@ -7,6 +7,7 @@ export interface TextItem {
 
 export interface CardItem {
   type: "card";
+  variant?: "bordered" | "timeline" | "simple";
   title: string;
   border?: boolean;
   tag?: string;

@@ -183,7 +183,9 @@ body {
   }
 
   /* Avoid breaking inside cards and sections */
-  section, .card, .border {
+  section,
+  .card,
+  .border {
     break-inside: avoid;
   }
 

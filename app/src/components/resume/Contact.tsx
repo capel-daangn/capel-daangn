@@ -2,10 +2,11 @@
 
 import React from "react";
 import { useTranslations } from "@/hooks/useTranslations";
+import { TranslationMessages } from "@/types/translations";
 
 export default function Contact() {
   const { messages } = useTranslations();
-  const resumeData = messages as any;
+  const resumeData = messages as TranslationMessages;
   const profile = resumeData?.profile;
 
   if (!profile || !profile.items) return null;
@@ -13,7 +14,7 @@ export default function Contact() {
   return (
     <div className="text-sm text-right print:text-xs">
       <div className="space-y-2">
-        {profile.items.map((item: any, index: number) => {
+        {profile.items.map((item: { type: string; content: string }, index: number) => {
           const isEmail = item.content.includes("@");
           const isUrl = item.content.startsWith("http");
 

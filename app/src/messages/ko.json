@@ -72,12 +72,14 @@
       "content": [
         {
           "type": "card",
+          "variant": "simple",
           "title": "주식회사 당근마켓",
-          "subtitle": "2025년 01월 ~ 현재 재직 중",
+          "description": "2025년 01월 ~ 현재 재직 중",
           "content": [
             {
               "type": "card",
               "subtitle": "정규직 · Software Engineer, Backend · 당근채팅 팀",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -87,6 +89,7 @@
             },
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "인턴쉽 (연장) · Software Engineer Intern, Backend · 당근채팅 팀",
               "content": [
                 {
@@ -105,6 +108,7 @@
             },
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "인턴쉽 · Software Engineer Intern, Backend · 당근알바 팀",
               "content": [
                 {
@@ -125,11 +129,13 @@
         },
         {
           "type": "card",
+          "variant": "simple",
           "title": "주한 미8군 사령부 본부대대",
-          "subtitle": "2023년 07월 - 2024년 12월",
+          "description": "2023년 07월 - 2024년 12월",
           "content": [
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "병역 의무 · 대한민국 육군 병장 카투사 만기 전역",
               "content": [
                 {
@@ -155,12 +161,14 @@
       "content": [
         {
           "type": "card",
-          "title": "연간 LLM 호출 비용 20% 이상 절감, 인턴이 도전한 시맨틱 캐싱 도입 기록",
-          "subtitle": "당근채팅 팀 · 2025년 05월 - 2025년 06월",
+          "variant": "simple",
+          "title": "연간 LLM 호출 비용 25% 이상 절감, 인턴이 도전한 시맨틱 캐싱 도입 기록",
+          "description": "당근채팅 팀 · 2025년 05월 - 2025년 06월",
           "content": [
             {
               "type": "card",
               "subtitle": "Why",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -170,6 +178,7 @@
             },
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "How",
               "content": [
                 {
@@ -189,6 +198,7 @@
             {
               "type": "card",
               "subtitle": "What",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -200,12 +210,14 @@
         },
         {
           "type": "card",
+          "variant": "simple",
           "title": "프롬프트 성능 평가 에이전트, \"세상에 나쁜 프롬프트는 없다\"",
-          "subtitle": "당근채팅 팀 · 2025년 03월 - 2025년 03월",
+          "description": "당근채팅 팀 · 2025년 03월 - 2025년 03월",
           "content": [
             {
               "type": "card",
               "subtitle": "Why",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -216,6 +228,7 @@
             {
               "type": "card",
               "subtitle": "How",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -239,12 +252,14 @@
         },
         {
           "type": "card",
+          "variant": "simple",
           "title": "법령 및 CS 정책를 읽는 LLM: MCP 기반 제재 자동화 구축기",
-          "subtitle": "당근알바 팀 · 2025년 03월 - 2025년 03월",
+          "description": "당근알바 팀 · 2025년 03월 - 2025년 03월",
           "content": [
             {
               "type": "card",
               "subtitle": "Why",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -255,6 +270,7 @@
             {
               "type": "card",
               "subtitle": "How",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -270,12 +286,14 @@
         },
         {
           "type": "card",
+          "variant": "simple",
           "title": "Go, GCP BigQuery를 활용한 분개장 작성 자동화 기능 구현",
-          "subtitle": "당근알바 팀 · 2025년 01월 - 2025년 03월",
+          "description": "당근알바 팀 · 2025년 01월 - 2025년 03월",
           "content": [
             {
               "type": "card",
               "subtitle": "Why",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -286,6 +304,7 @@
             {
               "type": "card",
               "subtitle": "How",
+              "variant": "timeline",
               "content": [
                 {
                   "type": "text",
@@ -309,7 +328,7 @@
           "title": "미국 조지아공과대학교",
           "level": "secondary",
           "tag": "2024.08 ~ 2026",
-          "subtitle": "컴퓨터공학 온라인 석사, 재학 중 (OMSCS)",
+          "subtitle": "재학 중, 컴퓨터공학 온라인 석사",
           "content": [
             {
               "type": "text",
@@ -322,7 +341,7 @@
           "type": "card",
           "level": "secondary",
           "title": "고려대학교",
-          "subtitle": "경영학과 학사, 졸업",
+          "subtitle": "졸업, 경영학 학사",
           "tag": "2017.03 ~ 2024.02",
           "content": [
             {
@@ -489,10 +508,15 @@
     "skills": {
       "title": "보유 기술",
       "content": [
-        { "type": "text", "content": "Python" },
-        { "type": "text", "content": "Go" },
-        { "type": "text", "content": "TypeScript" },
-        { "type": "text", "content": "Kotlin" }
+        {
+          "type": "list",
+          "content": [
+            { "type": "text", "content": "Python" },
+            { "type": "text", "content": "Go" },
+            { "type": "text", "content": "TypeScript" },
+            { "type": "text", "content": "Kotlin" }
+          ]
+        }
       ]
     }
   }
