@@ -3,6 +3,7 @@
 import React from "react";
 import { CardItem } from "@/types/common";
 import ItemRenderer from "./ItemRenderer";
+import { HiExternalLink } from "react-icons/hi";
 
 interface CardProps {
   card: CardItem;
@@ -14,7 +15,7 @@ export default function Card({ card, variant = "simple" }: CardProps) {
     bordered:
       "p-3 border border-gray-200 dark:border-gray-700 rounded-lg dark:bg-gray-800/50 print:p-2 print:dark:bg-transparent",
     timeline:
-      "border-l-2 border-gray-200 dark:border-gray-700 pl-4 print:border-l print:pl-3",
+      "ml-1 border-l-2 border-gray-200 dark:border-gray-700 pl-3 print:border-l print:pl-2",
     simple: "p-2",
   };
 
@@ -23,13 +24,33 @@ export default function Card({ card, variant = "simple" }: CardProps) {
       {/* Card Header */}
       <div>
         <div className="flex items-center justify-between space-x-1">
-          <h3
-            className={`font-semibold text-gray-900 dark:text-white print:text-xs ${
-              card.level === "secondary" ? "text-sm" : "text-lg"
-            }`}
-          >
-            {card.title}
-          </h3>
+          {card.title && (
+            <h3
+              className={`font-semibold print:text-xs ${
+                card.level === "secondary" ? "text-sm" : "text-lg"
+              }`}
+            >
+              {card.title.url ? (
+                <a
+                  href={card.title.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 transition-colors dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
+                >
+                  {card.title.content}{' '}
+                  <HiExternalLink
+                    className={`inline opacity-70 ${
+                      card.level === "secondary" ? "w-3 h-3" : "w-4 h-4"
+                    }`}
+                  />
+                </a>
+              ) : (
+                <span className="text-gray-900 dark:text-white">
+                  {card.title.content}
+                </span>
+              )}
+            </h3>
+          )}
           {card.tag && (
             <span className="text-xs text-right text-gray-500 dark:text-gray-400 print:text-xs">
               {card.tag}

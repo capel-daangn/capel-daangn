@@ -3,6 +3,7 @@
 import React from "react";
 import { Item, CardItem, TextItem } from "@/types/common";
 import Card from "./Card";
+import { HiExternalLink } from "react-icons/hi";
 
 interface ItemRendererProps {
   item: Item;
@@ -24,7 +25,21 @@ export default function ItemRenderer({
             : "text-gray-700 dark:text-gray-300 print:text-xs leading-relaxed text-sm ml-2"
         }
       >
-        {textItem.content}
+        {textItem.url ? (
+          <a
+            href={textItem.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 transition-colors dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
+          >
+            {textItem.content}{' '}
+            <HiExternalLink className={`inline opacity-70 ${
+              item.level === "secondary" ? "w-3 h-3" : "w-3 h-3"
+            }`} />
+          </a>
+        ) : (
+          textItem.content
+        )}
       </div>
     );
   }

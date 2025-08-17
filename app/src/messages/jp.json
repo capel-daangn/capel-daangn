@@ -1,21 +1,21 @@
 {
   "profile": {
-    "title": "JIUK KIM",
+    "title": { "type": "text", "content": "JIUK KIM" },
     "subtitle": "ソフトウェアエンジニア",
     "description": "人と人とのつながりから生まれるシナジーに強い関心を持ち、より多くの幸せな瞬間を作りたいという思いでエンジニアの道を選びました。粘り強い挑戦と継続的な成長を大切にし、バックエンドを中心に機械学習およびクラウド技術を活用してデータを実際のビジネス価値へ転換する応用型エンジニアを目指しています。",
     "items": [
-      { "type": "text", "content": "alex.jiuk.kim@gmail.com" },
-      { "type": "text", "content": "https://www.linkedin.com/in/TO-BE-FILLED" },
-      { "type": "text", "content": "https://github.com/TO-BE-FILLED" }
+      { "type": "text", "content": "{{personal.contact.email}}" },
+      { "type": "text", "content": "{{personal.contact.linkedin}}" },
+      { "type": "text", "content": "{{personal.contact.github}}" }
     ]
   },
   "sections": {
     "skillsSummary": {
-      "title": "保有スキル概要",
+      "title": { "type": "text", "content": "保有スキル概要" },
       "content": [
         {
           "type": "card",
-          "title": "機械学習エンジニアリング",
+          "title": { "type": "text", "content": "機械学習エンジニアリング" },
           "content": [
             {
               "type": "text",
@@ -41,7 +41,7 @@
         },
         {
           "type": "card",
-          "title": "ソフトウェア開発",
+          "title": { "type": "text", "content": "ソフトウェア開発" },
           "content": [
             {
               "type": "text",
@@ -68,12 +68,12 @@
       ]
     },
     "experience": {
-      "title": "職務経歴",
+      "title": { "type": "text", "content": "職務経歴" },
       "content": [
         {
           "type": "card",
           "variant": "simple",
-          "title": "株式会社ダングンマーケット",
+          "title": { "type": "text", "content": "株式会社ダングンマーケット" },
           "subtitle": "2025年01月 ～ 現在在職中",
           "content": [
             {
@@ -130,7 +130,7 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "在韓米第8軍 司令部大隊",
+          "title": { "type": "text", "content": "在韓米第8軍 司令部大隊" },
           "subtitle": "2023年07月 - 2024年12月",
           "content": [
             {
@@ -157,55 +157,391 @@
       ]
     },
     "projects": {
-      "title": "プロジェクト",
+      "title": { "type": "text", "content": "プロジェクト" },
       "content": [
         {
           "type": "card",
           "variant": "simple",
-          "title": "年間LLM呼び出しコスト20%以上削減、インターンによるセマンティックキャッシング導入記録",
-          "subtitle": "ダングンチャットチーム · 2025年05月 - 2025年06月",
+          "title": {
+            "type": "text",
+            "content": "年間 LLM 呼び出しコスト25%以上削減、インターンが挑戦したセマンティックキャッシング導入記録",
+            "url": "https://medium.com/p/af3de9a74d0c"
+          },
+          "description": "ダングンチャットチーム · 2025年05月 - 2025年06月",
           "content": [
             {
               "type": "card",
-              "subtitle": "Why（なぜ）",
+              "subtitle": "Why",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "· 中古取引チャットにおける文章推薦機能で頻繁に発生するLLM呼び出しにより、年間約9億ウォンのコストが予想される状況で、インターンでありながら主体的にセマンティックキャッシングを提案・実装し、コスト削減を模索。"
+                  "content": "· 中古取引チャットにおける文推薦機能で発生する LLM の頻繁な呼び出しにより、年間約9億ウォンのコストが予想される状況で、インターンでありながらも主導的にセマンティックキャッシング手法を提案・実装し、コスト削減策を模索。"
                 }
               ]
             },
             {
               "type": "card",
-              "subtitle": "How（どのように）",
               "variant": "timeline",
+              "subtitle": "How",
               "content": [
                 {
                   "type": "text",
-                  "content": "· 実際のチャットデータを埋め込み、PCAとHDBSCANにより意味ベースの会話パターンをクラスタリング。"
+                  "content": "· 実際のチャットデータを埋め込み後、PCA と HDBSCAN で意味ベースの会話パターンをクラスタリング。"
                 },
                 {
                   "type": "text",
-                  "content": "· メインサーバーと分離されたアドオン構造を設計、内蔵型ベクトルDBを活用し外部トラフィック転移を防止。"
+                  "content": "· メインサーバーと分離したアドオン構造、組み込み型ベクタDBを活用し、トラフィックの外部転移を防止。"
                 },
                 {
                   "type": "text",
-                  "content": "· 負荷テストでネットワークI/Oボトルネックを確認、軽量リソースのマルチレプリカ構成（TPS100/インスタンス、P50 400ms、P95 1秒以内）で同時処理に対応。"
+                  "content": "· 負荷テストによりネットワーク I/O ボトルネックを確認、軽量リソースの複数レプリカ構成（TPS 100/インスタンス、P50 400ms、P95 1秒以内）で同時性に対応。"
                 }
               ]
             },
             {
               "type": "card",
-              "subtitle": "What（結果）",
+              "subtitle": "What",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "· 年間LLM呼び出しコスト20%以上削減、約2.3億ウォン以上のコスト削減効果を見込む。"
+                  "content": "· 年間 LLM 呼び出しコスト20%以上削減、約2.3億ウォン以上のコスト削減効果を期待。"
                 }
               ]
             }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": {
+            "type": "text",
+            "content": "プロンプト性能評価エージェント「世の中に悪いプロンプトはない」"
+          },
+          "description": "ダングンチャットチーム · 2025年03月 - 2025年03月",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "プロンプト実行は可能だったが、プロンプト自体を評価・改善する手段がなく、繰り返しの手作業検証が発生。"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "How",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· LangGraph で Planner/Actor/Reflector の3グラフを構成し、自動化された評価-改善ループを設計。"
+                },
+                {
+                  "type": "text",
+                  "content": "· Planner: 評価基準抽出および検証用ペルソナ・シナリオ生成。"
+                },
+                {
+                  "type": "text",
+                  "content": "· Actor: 生成基準に従って仮想リクエストを構成し、応答を生成後、スコア化・フィードバック。"
+                },
+                {
+                  "type": "text",
+                  "content": "· Reflector: 結果に基づき改善要否を判断し、自動リライト、ユーザーフィードバックを反映。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": {
+            "type": "text",
+            "content": "法令および CS ポリシーを読む LLM: MCP 基盤制裁自動化構築"
+          },
+          "description": "ダングンアルバチーム · 2025年03月 - 2025年03月",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· 労働基準法および内部ポリシーに基づく判断自動化が必要。"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "How",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· 外部 API による法令検索 MCP サーバー、内部ポリシー埋め込み/検索 MCP サーバーをそれぞれ開発。"
+                },
+                {
+                  "type": "text",
+                  "content": "· Docker Compose によって配布、社内 LLM インフラと連携し、不正ユーザー識別パイプラインに貢献。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": {
+            "type": "text",
+            "content": "Go、GCP BigQuery を活用した仕訳帳作成自動化機能の実装"
+          },
+          "description": "ダングンアルバチーム · 2025年01月 - 2025年03月",
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· 月間8万件の取引データ仕訳帳を手作業処理していたため、効率性と正確性の改善が必要。"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "How",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "· Go で仕訳処理ロジックを設計し、BigQuery で大規模データの集計・処理を実行。"
+                },
+                {
+                  "type": "text",
+                  "content": "· cron スケジューリングにより、仕訳帳生成から報告用データ出力まで全過程を自動化。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": { "type": "text", "content": "学歴" },
+      "content": [
+        {
+          "type": "card",
+          "title": { "type": "text", "content": "米国 ジョージア工科大学" },
+          "level": "secondary",
+          "tag": "2024.08 ~ 2026",
+          "subtitle": "在学中、コンピュータ工学 オンライン修士課程",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "機械学習 専門分野進行中"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": { "type": "text", "content": "高麗大学校" },
+          "subtitle": "卒業、経営学 学士",
+          "tag": "2017.03 ~ 2024.02",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "ビジネスアナリティクス 専門トラック認定修了"
+            },
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "高麗大学 ソフトウェア起業学会 NEXT（LikeLion）第10期、第11期 運営陣"
+            }
+          ]
+        }
+      ]
+    },
+    "awards": {
+      "title": { "type": "text", "content": "受賞歴" },
+      "content": [
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": { "type": "text", "content": "第1回 国防AIアイデアソン" },
+          "tag": "2024",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· 優秀賞（陸軍参謀総長賞）"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": {
+            "type": "text",
+            "content": "第11回 陸軍起業コンペティション"
+          },
+          "tag": "2024",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· 優秀賞（大田雇用経済振興院長賞）"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": {
+            "type": "text",
+            "content": "済州 衛星データ活用コンペティション"
+          },
+          "tag": "2023",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· 大賞（済州特別自治道知事賞）"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": {
+            "type": "text",
+            "content": "第10回 陸軍起業コンペティション"
+          },
+          "tag": "2023",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· 創意賞（陸軍人事司令官賞）"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": {
+            "type": "text",
+            "content": "第3回 高麗大学 スマートキャンパス データトン"
+          },
+          "tag": "2022",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· 奨励賞"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": {
+            "type": "text",
+            "content": "サムスン電子 x 高麗大学 未来エコ家電 アイデアコンテスト"
+          },
+          "tag": "2022",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· 優秀賞"
+            }
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": { "type": "text", "content": "言語" },
+      "content": [
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": { "type": "text", "content": "韓国語" },
+          "tag": "母国語"
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": { "type": "text", "content": "英語" },
+          "tag": "上級",
+          "content": [
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· TOEIC: 915/990"
+            },
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· TOEIC Speaking: 150/200"
+            },
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "· TOEFL: 92/120"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": { "type": "text", "content": "日本語" },
+          "tag": "初級"
+        }
+      ]
+    },
+    "certifications": {
+      "title": { "type": "text", "content": "資格" },
+      "content": [
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": { "type": "text", "content": "情報処理技師（筆記合格）" },
+          "tag": "2024.03"
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": { "type": "text", "content": "ビッグデータ分析技師" },
+          "tag": "2024.06"
+        },
+        {
+          "type": "card",
+          "level": "secondary",
+          "title": { "type": "text", "content": "財経管理士" },
+          "tag": "2021.11"
+        }
+      ]
+    },
+    "skills": {
+      "title": { "type": "text", "content": "保有技術" },
+      "content": [
+        {
+          "type": "list",
+          "content": [
+            { "type": "text", "content": "Python" },
+            { "type": "text", "content": "Go" },
+            { "type": "text", "content": "TypeScript" },
+            { "type": "text", "content": "Kotlin" }
           ]
         }
       ]

@@ -1,21 +1,24 @@
 {
   "profile": {
-    "title": "JIUK KIM",
+    "title": { "type": "text", "content": "JIUK KIM" },
     "subtitle": "Software Engineer",
     "description": "사람과 사람 사이의 연결에서 탄생하는 시너지에 깊은 관심을 가지고 있으며, 더 많은 행복한 순간을 만들고 싶다는 열망으로 엔지니어의 길을 선택했습니다. 끈기 있게 도전하고 꾸준한 성장을 중요하게 생각하며, 백엔드를 중심으로 머신러닝 및 클라우드 기술을 활용하여 데이터를 실제 비즈니스 가치로 전환하는 응용형 엔지니어를 목표로 합니다.",
     "items": [
-      { "type": "text", "content": "alex.jiuk.kim@gmail.com" },
-      { "type": "text", "content": "https://www.linkedin.com/in/TO-BE-FILLED" },
-      { "type": "text", "content": "https://github.com/TO-BE-FILLED" }
+      { "type": "text", "content": "{{personal.contact.email}}" },
+      { "type": "text", "content": "{{personal.contact.linkedin}}" },
+      { "type": "text", "content": "{{personal.contact.github}}" }
     ]
   },
   "sections": {
     "skillsSummary": {
-      "title": "보유 역량 요약",
+      "title": { "type": "text", "content": "보유 역량 요약" },
       "content": [
         {
           "type": "card",
-          "title": "Machine Learning Engineering",
+          "title": {
+            "type": "text",
+            "content": "Machine Learning Engineering"
+          },
           "content": [
             {
               "type": "text",
@@ -41,7 +44,7 @@
         },
         {
           "type": "card",
-          "title": "Software Development",
+          "title": { "type": "text", "content": "Software Development" },
           "content": [
             {
               "type": "text",
@@ -68,12 +71,12 @@
       ]
     },
     "experience": {
-      "title": "경력",
+      "title": { "type": "text", "content": "경력" },
       "content": [
         {
           "type": "card",
           "variant": "simple",
-          "title": "주식회사 당근마켓",
+          "title": { "type": "text", "content": "주식회사 당근마켓" },
           "description": "2025년 01월 ~ 현재 재직 중",
           "content": [
             {
@@ -130,7 +133,7 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "주한 미8군 사령부 본부대대",
+          "title": { "type": "text", "content": "주한 미8군 사령부 본부대대" },
           "description": "2023년 07월 - 2024년 12월",
           "content": [
             {
@@ -157,12 +160,16 @@
       ]
     },
     "projects": {
-      "title": "프로젝트",
+      "title": { "type": "text", "content": "프로젝트" },
       "content": [
         {
           "type": "card",
           "variant": "simple",
-          "title": "연간 LLM 호출 비용 25% 이상 절감, 인턴이 도전한 시맨틱 캐싱 도입 기록",
+          "title": {
+            "type": "text",
+            "content": "연간 LLM 호출 비용 25% 이상 절감, 인턴이 도전한 시맨틱 캐싱 도입 기록",
+            "url": "https://medium.com/p/af3de9a74d0c"
+          },
           "description": "당근채팅 팀 · 2025년 05월 - 2025년 06월",
           "content": [
             {
@@ -211,7 +218,11 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "프롬프트 성능 평가 에이전트, \"세상에 나쁜 프롬프트는 없다\"",
+          "title": {
+            "type": "text",
+            "url": "https://medium.com/p/7630ca814b0c",
+            "content": "프롬프트 성능 평가 에이전트, \"세상에 나쁜 프롬프트는 없다\""
+          },
           "description": "당근채팅 팀 · 2025년 03월 - 2025년 03월",
           "content": [
             {
@@ -253,7 +264,10 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "법령 및 CS 정책를 읽는 LLM: MCP 기반 제재 자동화 구축기",
+          "title": {
+            "type": "text",
+            "content": "법령 및 CS 정책를 읽는 LLM: MCP 기반 제재 자동화 구축기"
+          },
           "description": "당근알바 팀 · 2025년 03월 - 2025년 03월",
           "content": [
             {
@@ -287,7 +301,10 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "Go, GCP BigQuery를 활용한 분개장 작성 자동화 기능 구현",
+          "title": {
+            "type": "text",
+            "content": "Go, GCP BigQuery를 활용한 분개장 작성 자동화 기능 구현"
+          },
           "description": "당근알바 팀 · 2025년 01월 - 2025년 03월",
           "content": [
             {
@@ -321,11 +338,11 @@
       ]
     },
     "education": {
-      "title": "학력",
+      "title": { "type": "text", "content": "학력" },
       "content": [
         {
           "type": "card",
-          "title": "미국 조지아공과대학교",
+          "title": { "type": "text", "content": "미국 조지아공과대학교" },
           "level": "secondary",
           "tag": "2024.08 ~ 2026",
           "subtitle": "재학 중, 컴퓨터공학 온라인 석사",
@@ -333,38 +350,43 @@
             {
               "type": "text",
               "level": "secondary",
-              "content": "머신러닝 특화 분야 진행 중"
+              "content": "• 머신러닝 특화 분야 진행 중"
             }
           ]
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": "고려대학교",
+          "title": { "type": "text", "content": "고려대학교" },
           "subtitle": "졸업, 경영학 학사",
           "tag": "2017.03 ~ 2024.02",
           "content": [
             {
               "type": "text",
               "level": "secondary",
-              "content": "비즈니스 애널리틱스 세부 트랙 인증 제도 이수"
+              "content": "• 비즈니스 애널리틱스 세부 트랙 제도 이수"
             },
             {
               "type": "text",
               "level": "secondary",
-              "content": "고려대학교 소프트웨어창업학회 NEXT (멋쟁이사자처럼) 10기, 11기 운영진"
+              "content": "• 고려대학교 비즈니스 애널리틱스 학부생 학회, 설립 및 초대 학회장"
+            },
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "• 고려대학교 소프트웨어창업학회 NEXT (멋쟁이사자처럼) 10기, 11기 운영진"
             }
           ]
         }
       ]
     },
     "awards": {
-      "title": "수상 내역",
+      "title": { "type": "text", "content": "수상 내역" },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": "제1회 국방 AI 아이디어톤",
+          "title": { "type": "text", "content": "제1회 국방 AI 아이디어톤" },
           "tag": "2024",
           "content": [
             {
@@ -377,7 +399,7 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "제11회 육군창업경진대회",
+          "title": { "type": "text", "content": "제11회 육군창업경진대회" },
           "tag": "2024",
           "content": [
             {
@@ -390,7 +412,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "제주 위성데이터 활용 경진대회",
+          "title": {
+            "type": "text",
+            "content": "제주 위성데이터 활용 경진대회"
+          },
           "tag": "2023",
           "content": [
             {
@@ -403,7 +428,7 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "제10회 육군창업경진대회",
+          "title": { "type": "text", "content": "제10회 육군창업경진대회" },
           "tag": "2023",
           "content": [
             {
@@ -416,7 +441,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "제3회 고려대학교 스마트 캠퍼스 데이터톤",
+          "title": {
+            "type": "text",
+            "content": "제3회 고려대학교 스마트 캠퍼스 데이터톤"
+          },
           "tag": "2022",
           "content": [
             {
@@ -429,7 +457,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "삼성전자 x 고려대학교 미래친환경가전 아이디어 공모전",
+          "title": {
+            "type": "text",
+            "content": "삼성전자 x 고려대학교 미래친환경가전 아이디어 공모전"
+          },
           "tag": "2022",
           "content": [
             {
@@ -442,18 +473,18 @@
       ]
     },
     "languages": {
-      "title": "언어",
+      "title": { "type": "text", "content": "언어" },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": "한국어",
+          "title": { "type": "text", "content": "한국어" },
           "tag": "모국어"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": "영어",
+          "title": { "type": "text", "content": "영어" },
           "tag": "상급",
           "content": [
             {
@@ -477,36 +508,36 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "일본어",
+          "title": { "type": "text", "content": "일본어" },
           "tag": "초급"
         }
       ]
     },
     "certifications": {
-      "title": "자격증",
+      "title": { "type": "text", "content": "자격증" },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": "정보처리기사 필기합",
+          "title": { "type": "text", "content": "정보처리기사 필기합" },
           "tag": "2024.03"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": "빅데이터분석기사",
+          "title": { "type": "text", "content": "빅데이터분석기사" },
           "tag": "2024.06"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": "재경관리사",
+          "title": { "type": "text", "content": "재경관리사" },
           "tag": "2021.11"
         }
       ]
     },
     "skills": {
-      "title": "보유 기술",
+      "title": { "type": "text", "content": "보유 기술" },
       "content": [
         {
           "type": "list",

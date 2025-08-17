@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import type { TranslationMessages } from "@/types/translations";
 import koMessages from "@/messages/ko.json";
+import personalConfig from "@/config/personal.json";
 
 type Language = "ko" | "en" | "jp";
 
@@ -37,14 +38,44 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     const loadMessages = async () => {
       try {
         const messageModule = await import(`../messages/${language}.json`);
-        setMessages(messageModule.default);
+        const rawMessages = messageModule.default;
+        
+        // Replace template variables with personal config values
+        const processedMessages = JSON.parse(
+          JSON.stringify(rawMessages).replace(
+            /\{\{personal\.([^}]+)\}\}/g,
+            (match, path) => {
+              const keys = path.split('.');
+              let value: any = personalConfig;
+              for (const key of keys) {
+                value = value?.[key];
+              }
+              return value || match;
+            }
+          )
+        );
+        
+        setMessages(processedMessages);
       } catch (error) {
         console.error(
           `Failed to load messages for language: ${language}`,
           error
         );
         // Fallback to Korean
-        setMessages(koMessages as TranslationMessages);
+        const processedKoMessages = JSON.parse(
+          JSON.stringify(koMessages).replace(
+            /\{\{personal\.([^}]+)\}\}/g,
+            (match, path) => {
+              const keys = path.split('.');
+              let value: any = personalConfig;
+              for (const key of keys) {
+                value = value?.[key];
+              }
+              return value || match;
+            }
+          )
+        );
+        setMessages(processedKoMessages as TranslationMessages);
       }
     };
 

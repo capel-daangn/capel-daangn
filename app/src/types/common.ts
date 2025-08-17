@@ -3,12 +3,13 @@ export interface TextItem {
   type: "text";
   level?: string;
   content: string;
+  url?: string;
 }
 
 export interface CardItem {
   type: "card";
   variant?: "bordered" | "timeline" | "simple";
-  title: string;
+  title: TextItem;
   border?: boolean;
   tag?: string;
   level?: string;
@@ -22,13 +23,13 @@ export type Item = TextItem | CardItem;
 
 // Section interface
 export interface Section {
-  title: string;
+  title: TextItem;
   content: Item[];
 }
 
 // Profile interface
 export interface Profile {
-  title: string;
+  title: TextItem;
   subtitle: string;
   description: string;
   items: Array<{

@@ -1,21 +1,24 @@
 {
   "profile": {
-    "title": "JIUK KIM",
+    "title": { "type": "text", "content": "JIUK KIM" },
     "subtitle": "Software Engineer",
     "description": "I have a deep interest in the synergy created through connections between people and chose the path of an engineer with the aspiration to create more happy moments. I value perseverance in challenges and steady growth, and aim to become an applied engineer who transforms data into real business value by leveraging machine learning and cloud technologies, with a focus on backend development.",
     "items": [
-      { "type": "text", "content": "alex.jiuk.kim@gmail.com" },
-      { "type": "text", "content": "https://www.linkedin.com/in/TO-BE-FILLED" },
-      { "type": "text", "content": "https://github.com/TO-BE-FILLED" }
+      { "type": "text", "content": "{{personal.contact.email}}" },
+      { "type": "text", "content": "{{personal.contact.linkedin}}" },
+      { "type": "text", "content": "{{personal.contact.github}}" }
     ]
   },
   "sections": {
     "skillsSummary": {
-      "title": "Skills Summary",
+      "title": { "type": "text", "content": "Skills Summary" },
       "content": [
         {
           "type": "card",
-          "title": "Machine Learning Engineering",
+          "title": {
+            "type": "text",
+            "content": "Machine Learning Engineering"
+          },
           "content": [
             {
               "type": "text",
@@ -41,7 +44,7 @@
         },
         {
           "type": "card",
-          "title": "Software Development",
+          "title": { "type": "text", "content": "Software Development" },
           "content": [
             {
               "type": "text",
@@ -68,17 +71,17 @@
       ]
     },
     "experience": {
-      "title": "Experience",
+      "title": { "type": "text", "content": "Experience" },
       "content": [
         {
           "type": "card",
           "variant": "simple",
-          "title": "Karrot (Danggeun Market)",
-          "subtitle": "Jan 2025 – Present",
+          "title": { "type": "text", "content": "Karrot (Danggeun Market)" },
+          "description": "Jan 2025 – Present",
           "content": [
             {
               "type": "card",
-              "subtitle": "Full-time · Software Engineer, Backend · Karrot Chat Team",
+              "subtitle": "Full-time · Software Engineer, Backend · Karrot Chatting Team",
               "variant": "timeline",
               "content": [
                 {
@@ -90,7 +93,7 @@
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "Extended Internship · Software Engineer Intern, Backend · Karrot Chat Team",
+              "subtitle": "Extended Internship · Software Engineer Intern, Backend · Karrot Chatting Team",
               "content": [
                 {
                   "type": "text",
@@ -109,7 +112,7 @@
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "Internship · Software Engineer Intern, Backend · Karrot Alba Team",
+              "subtitle": "Internship · Software Engineer Intern, Backend · Karrot Local Jobs Team",
               "content": [
                 {
                   "type": "text",
@@ -130,8 +133,11 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "U.S. 8th Army Headquarters Battalion",
-          "subtitle": "Jul 2023 – Dec 2024",
+          "title": {
+            "type": "text",
+            "content": "U.S. 8th Army Headquarters Battalion"
+          },
+          "description": "Jul 2023 – Dec 2024",
           "content": [
             {
               "type": "card",
@@ -157,13 +163,17 @@
       ]
     },
     "projects": {
-      "title": "Projects",
+      "title": { "type": "text", "content": "Projects" },
       "content": [
         {
           "type": "card",
           "variant": "simple",
-          "title": "Semantic Caching Adoption: Cutting Annual LLM Call Costs by 20%+",
-          "subtitle": "Karrot Chat Team · May 2025 – Jun 2025",
+          "title": {
+            "type": "text",
+            "content": "Semantic Caching Adoption: Cutting Annual LLM Call Costs by 20%+",
+            "url": "https://medium.com/p/af3de9a74d0c"
+          },
+          "description": "Karrot Chatting Team · May 2025 – Jun 2025",
           "content": [
             {
               "type": "card",
@@ -211,8 +221,11 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "Prompt Performance Evaluation Agent: \"There Is No Such Thing As a Bad Prompt\"",
-          "subtitle": "Karrot Chat Team · Mar 2025 – Mar 2025",
+          "title": {
+            "type": "text",
+            "content": "Prompt Performance Evaluation Agent: \"There Is No Such Thing As a Bad Prompt\""
+          },
+          "description": "Karrot Chatting Team · Mar 2025 – Mar 2025",
           "content": [
             {
               "type": "card",
@@ -253,8 +266,11 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "MCP-based Sanction Automation: LLM That Reads Laws and CS Policies",
-          "subtitle": "Karrot Alba Team · Mar 2025 – Mar 2025",
+          "title": {
+            "type": "text",
+            "content": "MCP-based Sanction Automation: LLM That Reads Laws and CS Policies"
+          },
+          "description": "Karrot Local Jobs Team · Mar 2025 – Mar 2025",
           "content": [
             {
               "type": "card",
@@ -287,8 +303,11 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": "Automated Ledger Generation Using Go and GCP BigQuery",
-          "subtitle": "Karrot Alba Team · Jan 2025 – Mar 2025",
+          "title": {
+            "type": "text",
+            "content": "Automated Ledger Generation Using Go and GCP BigQuery"
+          },
+          "description": "Karrot Local Jobs Team · Jan 2025 – Mar 2025",
           "content": [
             {
               "type": "card",
@@ -321,11 +340,14 @@
       ]
     },
     "education": {
-      "title": "Education",
+      "title": { "type": "text", "content": "Education" },
       "content": [
         {
           "type": "card",
-          "title": "Georgia Institute of Technology",
+          "title": {
+            "type": "text",
+            "content": "Georgia Institute of Technology"
+          },
           "level": "secondary",
           "tag": "Aug 2024 – 2026",
           "subtitle": "M.S. in Computer Science (OMSCS), In Progress",
@@ -340,7 +362,7 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "Korea University",
+          "title": { "type": "text", "content": "Korea University" },
           "subtitle": "B.A. in Business Administration, Graduated",
           "tag": "Mar 2017 – Feb 2024",
           "content": [
@@ -359,12 +381,12 @@
       ]
     },
     "awards": {
-      "title": "Awards",
+      "title": { "type": "text", "content": "Awards" },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": "1st Defense AI Ideathon",
+          "title": { "type": "text", "content": "1st Defense AI Ideathon" },
           "tag": "2024",
           "content": [
             {
@@ -377,7 +399,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "11th Army Startup Competition",
+          "title": {
+            "type": "text",
+            "content": "11th Army Startup Competition"
+          },
           "tag": "2024",
           "content": [
             {
@@ -390,7 +415,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "Jeju Satellite Data Utilization Contest",
+          "title": {
+            "type": "text",
+            "content": "Jeju Satellite Data Utilization Contest"
+          },
           "tag": "2023",
           "content": [
             {
@@ -403,7 +431,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "10th Army Startup Competition",
+          "title": {
+            "type": "text",
+            "content": "10th Army Startup Competition"
+          },
           "tag": "2023",
           "content": [
             {
@@ -416,7 +447,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "3rd Korea University Smart Campus Datathon",
+          "title": {
+            "type": "text",
+            "content": "3rd Korea University Smart Campus Datathon"
+          },
           "tag": "2022",
           "content": [
             {
@@ -429,7 +463,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "Samsung Electronics x Korea University Eco-Friendly Home Appliance Idea Contest",
+          "title": {
+            "type": "text",
+            "content": "Samsung Electronics x Korea University Eco-Friendly Home Appliance Idea Contest"
+          },
           "tag": "2022",
           "content": [
             {
@@ -442,18 +479,18 @@
       ]
     },
     "languages": {
-      "title": "Languages",
+      "title": { "type": "text", "content": "Languages" },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": "Korean",
+          "title": { "type": "text", "content": "Korean" },
           "tag": "Native"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": "English",
+          "title": { "type": "text", "content": "English" },
           "tag": "Advanced",
           "content": [
             {
@@ -476,36 +513,42 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": "Japanese",
+          "title": { "type": "text", "content": "Japanese" },
           "tag": "Beginner"
         }
       ]
     },
     "certifications": {
-      "title": "Certifications",
+      "title": { "type": "text", "content": "Certifications" },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": "Information Processing Engineer (Written Exam Passed)",
+          "title": {
+            "type": "text",
+            "content": "Information Processing Engineer (Written Exam Passed)"
+          },
           "tag": "Mar 2024"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": "Big Data Analysis Engineer",
+          "title": { "type": "text", "content": "Big Data Analysis Engineer" },
           "tag": "Jun 2024"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": "Certified Management Accountant (Korea)",
+          "title": {
+            "type": "text",
+            "content": "Certified Management Accountant (Korea)"
+          },
           "tag": "Nov 2021"
         }
       ]
     },
     "skills": {
-      "title": "Technical Skills",
+      "title": { "type": "text", "content": "Technical Skills" },
       "content": [
         {
           "type": "list",
