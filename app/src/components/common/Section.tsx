@@ -18,6 +18,9 @@ export default function Section({
   titleColor = "text-blue-400 dark:text-blue-300",
   borderColor = "border-blue-400 dark:border-blue-300"
 }: SectionProps) {
+  // Don't render if inactive
+  if (section.inactive) return null;
+  
   return (
     <section className="mb-8 print:mb-6">
       {/* Section Title */}

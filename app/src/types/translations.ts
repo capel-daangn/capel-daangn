@@ -1,5 +1,5 @@
 export interface Profile {
-  title: string;
+  title: { type: "text"; content: string; url?: string; inactive?: boolean };
   subtitle: string;
   description: string;
   items: Array<{ type: string; content: string }>;
@@ -7,7 +7,7 @@ export interface Profile {
 
 export interface SectionContent {
   type: string;
-  title?: string;
+  title?: { type: "text"; content: string; url?: string; inactive?: boolean };
   subtitle?: string;
   variant?: string;
   level?: string;
@@ -16,7 +16,7 @@ export interface SectionContent {
 }
 
 export interface Section {
-  title: string;
+  title: { type: "text"; content: string; url?: string; inactive?: boolean };
   content: SectionContent[];
 }
 

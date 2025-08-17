@@ -11,6 +11,9 @@ interface CardProps {
 }
 
 export default function Card({ card, variant = "simple" }: CardProps) {
+  // Don't render if inactive
+  if (card.inactive) return null;
+  
   const variantClasses = {
     bordered:
       "p-3 border border-gray-200 dark:border-gray-700 rounded-lg dark:bg-gray-800/50 print:p-2 print:dark:bg-transparent",

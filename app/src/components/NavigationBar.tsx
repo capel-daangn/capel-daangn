@@ -37,14 +37,64 @@ export default function NavigationBar() {
           Resume
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="sm:hidden p-2 text-gray-700 transition-colors dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
-        </button>
+        {/* Mobile Controls */}
+        <div className="sm:hidden flex items-center gap-2">
+          {/* Mobile Language Selector */}
+          <div className="relative">
+            <button
+              onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+              className="flex items-center gap-2 px-2 py-2 text-sm font-medium text-gray-700 transition-colors dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            >
+              <span>{currentLanguage.flag}</span>
+              <svg
+                className={`w-4 h-4 transition-transform ${
+                  isLanguageDropdownOpen ? "rotate-180" : ""
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            {isLanguageDropdownOpen && (
+              <div className="absolute right-0 py-1 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg w-36 dark:bg-gray-800 dark:border-gray-600 z-50">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      setLanguage(lang.code);
+                      setIsLanguageDropdownOpen(false);
+                    }}
+                    className={`w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
+                      language === lang.code
+                        ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20"
+                        : "text-gray-700 dark:text-gray-300"
+                    }`}
+                  >
+                    <span>{lang.flag}</span>
+                    <span>{lang.label}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="p-2 text-gray-700 transition-colors dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
+          </button>
+        </div>
 
         {/* Desktop Controls */}
         <div className="hidden sm:flex items-center gap-4">
@@ -154,32 +204,6 @@ export default function NavigationBar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="sm:hidden mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
-          {/* Language Options */}
-          <div className="mb-3">
-            <p className="px-2 mb-2 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">
-              Language
-            </p>
-            <div className="space-y-1">
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => {
-                    setLanguage(lang.code);
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className={`w-full flex items-center gap-2 px-3 py-2 text-sm rounded-lg transition-colors ${
-                    language === lang.code
-                      ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20"
-                      : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  }`}
-                >
-                  <span>{lang.flag}</span>
-                  <span>{lang.label}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* Action Buttons */}
           <div className="space-y-1">
             <button

@@ -46,11 +46,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
             /\{\{personal\.([^}]+)\}\}/g,
             (match, path) => {
               const keys = path.split('.');
-              let value: any = personalConfig;
+              let value: unknown = personalConfig;
               for (const key of keys) {
-                value = value?.[key];
+                value = (value as Record<string, unknown>)?.[key];
               }
-              return value || match;
+              return (typeof value === 'string' ? value : match);
             }
           )
         );
@@ -67,11 +67,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
             /\{\{personal\.([^}]+)\}\}/g,
             (match, path) => {
               const keys = path.split('.');
-              let value: any = personalConfig;
+              let value: unknown = personalConfig;
               for (const key of keys) {
-                value = value?.[key];
+                value = (value as Record<string, unknown>)?.[key];
               }
-              return value || match;
+              return (typeof value === 'string' ? value : match);
             }
           )
         );

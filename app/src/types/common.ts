@@ -4,6 +4,7 @@ export interface TextItem {
   level?: string;
   content: string;
   url?: string;
+  inactive?: boolean;
 }
 
 export interface CardItem {
@@ -16,15 +17,23 @@ export interface CardItem {
   subtitle?: string;
   description?: string;
   content?: Item[];
+  inactive?: boolean;
+}
+
+export interface ListItem {
+  type: "list";
+  content: TextItem[];
+  inactive?: boolean;
 }
 
 // Union type for all possible item types
-export type Item = TextItem | CardItem;
+export type Item = TextItem | CardItem | ListItem;
 
 // Section interface
 export interface Section {
   title: TextItem;
   content: Item[];
+  inactive?: boolean;
 }
 
 // Profile interface

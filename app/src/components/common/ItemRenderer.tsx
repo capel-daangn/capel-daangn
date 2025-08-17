@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import { Item, CardItem, TextItem } from "@/types/common";
+import { Item, CardItem, TextItem, ListItem } from "@/types/common";
 import Card from "./Card";
+import List from "./List";
 import { HiExternalLink } from "react-icons/hi";
 
 interface ItemRendererProps {
@@ -17,6 +18,9 @@ export default function ItemRenderer({
   // Handle typed items
   if (item.type === "text") {
     const textItem = item as TextItem;
+    // Don't render if inactive
+    if (textItem.inactive) return null;
+    
     return (
       <div
         className={
@@ -46,8 +50,16 @@ export default function ItemRenderer({
 
   if (item.type === "card") {
     const cardItem = item as CardItem;
+    // Don't render if inactive
+    if (cardItem.inactive) return null;
+    
     // Use card's own variant if specified, otherwise use parent's variant
     return <Card card={cardItem} variant={cardItem.variant || variant} />;
+  }
+
+  if (item.type === "list") {
+    const listItem = item as ListItem;
+    return <List list={listItem} />;
   }
 
   return null;
