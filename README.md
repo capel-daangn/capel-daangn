@@ -4,7 +4,7 @@
 ### <div align="center">Hello, there! <br/> I'm JIUK KIM.</div>
 
 <div align="center"> 
-  <a href='https://drive.google.com/file/d/15f9IyDclazth9G_-ubjyRqOkPDigwao5/view?usp=sharing' target="_blank">
+  <a href='https://capel-daangn.vercel.app' target="_blank">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/%20My%20Résumé-0E1116?style=flat-square">
       <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/%20My%20Resume-ffffff?style=flat-square">
