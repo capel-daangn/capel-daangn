@@ -17,12 +17,12 @@
           "type": "card",
           "title": {
             "type": "text",
-            "content": "Machine Learning Engineering"
+            "content": "AI Engineering"
           },
           "content": [
             {
               "type": "text",
-              "content": "MLflow 등으로 머신러닝의 라이프사이클 (데이터 가공, 학습, 모니터링, 고도화) 경험."
+              "content": "실시간 트래픽 환경에서 LLM 또는 벡터 검색을 활용한 실제 서비스 구현 경험."
             },
             {
               "type": "text",
@@ -30,11 +30,11 @@
             },
             {
               "type": "text",
-              "content": "외부 API 연동을 위한 MCP 서버, 경량화된 RAG 시스템를 위한 MCP 서버 구현 경험."
+              "content": "외부 API 연동을 위한 MCP 또는, RAG 시스템을 위한 MCP 서버 구현 경험."
             },
             {
               "type": "text",
-              "content": "실시간 트래픽 환경에서 벡터 DB를 활용한 경량 벡터 검색 시스템 구현 경험."
+              "content": "MLflow 등으로 머신러닝의 라이프사이클 (데이터 가공, 학습, 모니터링, 고도화) 경험."
             },
             {
               "type": "text",
@@ -56,7 +56,7 @@
             },
             {
               "type": "text",
-              "content": "Go, Python, Kotlin 기반 서버 개발 및 트래픽 환경 대응 경험."
+              "content": "Go, Python, Kotlin 기반 Backend 개발 및 트래픽 환경 대응 경험."
             },
             {
               "type": "text",
@@ -64,7 +64,7 @@
             },
             {
               "type": "text",
-              "content": "Docker, Kubernetes, ArgoCD, AWS 환경에서의 서비스 배포 및 모니터링 경험."
+              "content": "Docker, AWS, ArgoCD, Datadog 환경에서 서비스 배포 및 모니터링 경험."
             }
           ]
         }
@@ -81,7 +81,7 @@
           "content": [
             {
               "type": "card",
-              "subtitle": "정규직(인턴쉽 전환) Software Engineer, Backend 당근채팅 팀",
+              "subtitle": "정규직(인턴쉽 전환) • Software Engineer, Backend • 당근채팅 팀",
               "variant": "timeline",
               "content": [
                 {
@@ -90,19 +90,23 @@
                 },
                 {
                   "type": "text",
-                  "content": "✓ 프로젝트 1. 채팅 자동 번역 기능 (LLM): 실시간 트래픽 처리 및 파이프라인 분리"
+                  "content": "✓ 프로젝트 1. 채팅 자동 번역 기능: 실시간 트래픽 처리 및 LLM 파이프라인 분리"
                 },
                 {
                   "type": "text",
-                  "content": "✓ 프로젝트 2. 시맨틱 캐싱 도입 (벡터 검색): 연간 LLM 호출 비용 25% 절감"
+                  "content": "✓ 프로젝트 2. 관리형 템플릿 메시지 기능 개선: 데이터 흐름 및 가시성 개선"
                 },
                 {
                   "type": "text",
-                  "content": "✓ 프로젝트 3. 프롬프트 평가 및 개선 자동화 에이전트 PoC (LangGraph)"
+                  "content": "✓ 프로젝트 3. 시맨틱 캐싱 도입: 벡터 검색을 활용하여 연간 LLM 호출 비용 25% 절감"
                 },
                 {
                   "type": "text",
-                  "content": "✓ 프로젝트 4. 채팅 이탈 확률 예측 모델링 PoC (SHAP 기반 설명력)"
+                  "content": "✓ 프로젝트 4. LangGraph를 활용한, 프롬프트 평가 및 개선 자동화 에이전트 PoC"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ 프로젝트 5. SHAP 기반 설명력을 활용한, 채팅 시점별 이탈 확률 예측 모델링 PoC"
                 }
               ]
             }
@@ -117,7 +121,7 @@
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "병역 의무 대한민국 육군 병장 카투사 만기 전역",
+              "subtitle": "병역 의무 • 대한민국 육군 병장 카투사 • 만기 전역",
               "content": [
                 {
                   "type": "text",
@@ -145,10 +149,65 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "시맨틱 캐싱 도입 (벡터 검색): 연간 LLM 호출 비용 25% 절감",
+            "content": "관리형 템플릿 메시지 시스템 개선: 메시지 데이터 파이프라인 가시성 강화"
+          },
+          "highlights": ["데이터 파이프라인 개선", "발송 로그 태깅 자동화", "Superset 대시보드 구축", "운영 가시성 향상"],
+          "content": [
+            {
+              "type": "card",
+              "subtitle": "Why",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "기존 관리형 메시지 시스템은 제네릭 메시지 타입을 지원하지 못하고, 팀별 발송 현황을 확인할 수 없어 운영 가시성이 부족한 상황이었음. 채팅 팀과 다른 팀 간 협업 효율과 서비스 운영 안정성 개선 필요."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "variant": "timeline",
+              "subtitle": "How",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "제네릭 메시지 타입 지원을 위해 내부 발송 로직과 어드민 페이지 기능 개선."
+                },
+                {
+                  "type": "text",
+                  "content": "메시지 발송 시 `x-forwarded-for` 헤더를 활용한 자동 태깅을 추가하여 발송 로그 수집 및 분석 가능하게 설계."
+                },
+                {
+                  "type": "text",
+                  "content": "Superset 대시보드를 구축해 팀별, 지역별, 메시지 타입별 발송 현황을 실시간 모니터링 가능하도록 구현."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "What",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "데이터 파이프라인 개선을 통해 운영 가시성 확보, 팀별 메시지 발송 현황 분석 가능. 내부 메시징 기능 고도화로 채팅 봇 플랫폼화 기반 마련 및 다른 팀에서의 재사용성 강화."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "variant": "simple",
+          "title": {
+            "type": "text",
+            "content": "시맨틱 캐싱 도입: 벡터 검색을 활용하여 연간 LLM 호출 비용 25% 절감"
+          },
+          "highlights": ["인턴 주도 제안", "내장 벡터 DB 사용", "비용 25% 이상 절감", "P95 <1s", "TPS 200/인스턴스"],
+          "link": {
+            "text": "포스트 보기",
             "url": "https://medium.com/p/af3de9a74d0c"
           },
-          "description": "당근채팅 팀 2025년 05월 - 2025년 06월",
           "content": [
             {
               "type": "card",
@@ -198,10 +257,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "url": "https://medium.com/p/7630ca814b0c",
-            "content": "프롬프트 평가 및 개선 자동화 에이전트 PoC (LangGraph)"
+            "content": "LangGraph를 활용한, 프롬프트 평가 및 개선 자동화 에이전트 PoC"
           },
-          "description": "당근채팅 팀 2025년 03월 - 2025년 03월",
+          "highlights": ["멀티 턴 에이전트", "페르소나 시나리오", "자동화된 평가-개선 루프", "운영 가능한 프롬프트 관리 시스템"],
+          "link": {
+            "text": "포스트 보기",
+            "url": "https://medium.com/p/7630ca814b0c"
+          },
           "content": [
             {
               "type": "card",
@@ -210,7 +272,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "프롬프트 실행은 가능했으나 프롬프트 자체를 평가·개선할 수단 부재로 반복 수작업 검증 발생."
+                  "content": "프롬프트 품질 평가는 자연어 특성상 예측·정량화가 어렵고, 반복적 수작업 비교에 의존해 시간과 비용이 큼. 일관된 기준으로 다양한 상황에서 객관적 점수화와 자동 개선이 가능한 체계가 필요."
                 }
               ]
             },
@@ -225,15 +287,26 @@
                 },
                 {
                   "type": "text",
-                  "content": "Planner: 평가 기준 추출 및 검증용 페르소나·시나리오 생성."
+                  "content": "PlannerGraph: 평가 기준을 시스템 프롬프트로부터 동적으로 추출하고, 페르소나·시나리오를 생성해 테스트 범위를 정의."
                 },
                 {
                   "type": "text",
-                  "content": "Actor: 생성 기준에 따라 가상 요청을 구성하여 응답 생성 후 점수화·피드백."
+                  "content": "ActorGraph: 페르소나 기반 요청을 시뮬레이션해 응답을 생성하고, 도출된 기준에 따라 점수와 피드백을 자동 산출."
                 },
                 {
                   "type": "text",
-                  "content": "Reflector: 결과 기반 개선 여부 판단 및 자동 재작성, 사용자 피드백 반영."
+                  "content": "ReflectorGraph: 평가 결과로 개선 필요 여부를 판단하고, 필요 시 프롬프트를 재작성. 사람 피드백을 수렴하는 루프를 포함해 운영 수준의 지속 개선을 구현."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "WHAT",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "프롬프트를 다수 시나리오에서 정량 평가하고 자동 개선하는 반복 가능한 루프 제공. 모델 간 교차 검증으로 개선 효과 확인, 품질 관리 인프라로 확장 가능."
                 }
               ]
             }
@@ -244,10 +317,9 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "url": "https://medium.com/p/7630ca814b0c",
-            "content": "채팅 이탈 확률 예측 모델링 PoC (SHAP 기반 설명력)"
+            "content": "SHAP 기반 설명력을 활용한, 채팅 시점별 이탈 확률 예측 모델링 PoC"
           },
-          "description": "당근채팅 팀 2025년 03월 - 2025년 03월",
+          "highlights": ["언어 + 행동 신호 통합 학습", "SHAP 기반 해석 가능성", "이탈 확률 기반 대응 전략 발굴"],
           "content": [
             {
               "type": "card",
@@ -256,30 +328,37 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "프롬프트 실행은 가능했으나 프롬프트 자체를 평가·개선할 수단 부재로 반복 수작업 검증 발생."
+                  "content": "채팅 데이터는 단순 텍스트가 아니라 시계열적 언어·행동 신호를 포함하며, 대화 이탈은 이러한 신호의 연속적 단절로 나타남. 따라서 기존 단순 이탈 예측 모델로는 언제, 어떤 상황에서 사용자가 이탈하는지 파악하기 어려움."
                 }
               ]
             },
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "How",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "BERT/DistilBERT를 이용해 메시지 임베딩을 추출하고, 감정·공손도·종료 의도 등의 언어 신호를 함께 계산."
+                },
+                {
+                  "type": "text",
+                  "content": "응답 시간, 메시지 길이, 반응 여부 등 메타데이터를 통합하여 시퀀스 인코더(Transformer 또는 LightGBM 시퀀스 확장형)에 입력."
+                },
+                {
+                  "type": "text",
+                  "content": "SHAP을 활용하여 각 피처가 이탈 확률에 미치는 기여도를 분석하고, 특정 메시지 시점에서 이탈 가능성을 해석 가능하도록 설계."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "What",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "LangGraph로 Planner/Actor/Reflector 3 그래프 구성, 자동화된 평가-개선 루프 설계."
-                },
-                {
-                  "type": "text",
-                  "content": "Planner: 평가 기준 추출 및 검증용 페르소나·시나리오 생성."
-                },
-                {
-                  "type": "text",
-                  "content": "Actor: 생성 기준에 따라 가상 요청을 구성하여 응답 생성 후 점수화·피드백."
-                },
-                {
-                  "type": "text",
-                  "content": "Reflector: 결과 기반 개선 여부 판단 및 자동 재작성, 사용자 피드백 반영."
+                  "content": "각 시점별 이탈 확률 예측과 해석 가능성 확보로, 선제적 개입 및 대응 전략 수립 가능."
                 }
               ]
             }

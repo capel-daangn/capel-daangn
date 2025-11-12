@@ -72,6 +72,46 @@ export default function Card({ card, variant = "simple" }: CardProps) {
             {card.description}
           </p>
         )}
+
+        {/* Tech Stack */}
+        {card.techStack && card.techStack.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {card.techStack.map((tech, index) => (
+              <span
+                key={index}
+                className="px-2 py-0.5 text-xs font-medium text-blue-700 bg-blue-100 rounded dark:bg-blue-900/30 dark:text-blue-300 print:text-xs print:px-1.5 print:py-0"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {/* Highlights */}
+        {card.highlights && card.highlights.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {card.highlights.map((highlight, index) => (
+              <span
+                key={index}
+                className="px-2 py-0.5 text-xs font-medium text-amber-700 bg-amber-100 rounded dark:bg-amber-900/30 dark:text-amber-300 print:text-xs print:px-1.5 print:py-0"
+              >
+                {highlight}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {card.link && (
+          <a
+            href={card.link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 mt-2 text-sm text-blue-600 transition-colors dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 print:text-xs"
+          >
+            {card.link.text}
+            <HiExternalLink className="w-3 h-3 opacity-70" />
+          </a>
+        )}
       </div>
       {/* Card Content */}
       {card.content && card.content.length > 0 && (
