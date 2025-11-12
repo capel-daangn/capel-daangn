@@ -18,7 +18,7 @@ export interface ProjectLinks {
   blog?: string;
 }
 
-export interface PortfolioProject extends CardItem {
+export interface PortfolioProject extends Omit<CardItem, 'techStack'> {
   category: PortfolioCategory[];
   thumbnail?: string;
   techStack?: TechStack[];

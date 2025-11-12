@@ -75,11 +75,12 @@ export default function Card({ card, variant = "simple" }: CardProps) {
 
         {/* Tech Stack */}
         {card.techStack && card.techStack.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-2">
+          <div className="flex flex-wrap gap-1.5 mt-2 print:gap-1">
             {card.techStack.map((tech, index) => (
               <span
                 key={index}
-                className="px-2 py-0.5 text-xs font-medium text-blue-700 bg-blue-100 rounded dark:bg-blue-900/30 dark:text-blue-300 print:text-xs print:px-1.5 print:py-0"
+                className="px-2 py-0.5 text-xs font-medium text-blue-700 bg-blue-100 rounded dark:bg-blue-900/30 dark:text-blue-300 print:text-xs print:px-1.5 print:py-0 print:bg-blue-100 print:text-blue-700"
+                style={{ printColorAdjust: 'exact', WebkitPrintColorAdjust: 'exact' }}
               >
                 {tech}
               </span>
@@ -89,11 +90,12 @@ export default function Card({ card, variant = "simple" }: CardProps) {
 
         {/* Highlights */}
         {card.highlights && card.highlights.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-2">
+          <div className="flex flex-wrap gap-1.5 mt-2 print:gap-1">
             {card.highlights.map((highlight, index) => (
               <span
                 key={index}
-                className="px-2 py-0.5 text-xs font-medium text-amber-700 bg-amber-100 rounded dark:bg-amber-900/30 dark:text-amber-300 print:text-xs print:px-1.5 print:py-0"
+                className="px-2 py-0.5 text-xs font-medium text-amber-700 bg-amber-100 rounded dark:bg-amber-900/30 dark:text-amber-300 print:text-xs print:px-1.5 print:py-0 print:bg-amber-100 print:text-amber-700"
+                style={{ printColorAdjust: 'exact', WebkitPrintColorAdjust: 'exact' }}
               >
                 {highlight}
               </span>
