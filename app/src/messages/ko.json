@@ -145,10 +145,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "시맨틱 캐싱 도입 (벡터 검색): 연간 LLM 호출 비용 25% 절감",
-            "url": "https://medium.com/p/af3de9a74d0c"
+            "content": "시맨틱 캐싱 도입 (벡터 검색): 연간 LLM 호출 비용 25% 절감"
           },
           "description": "당근채팅 팀 2025년 05월 - 2025년 06월",
+          "link": {
+            "text": "포스트 보기",
+            "url": "https://medium.com/p/af3de9a74d0c"
+          },
           "content": [
             {
               "type": "card",
@@ -198,10 +201,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "url": "https://medium.com/p/7630ca814b0c",
             "content": "프롬프트 평가 및 개선 자동화 에이전트 PoC (LangGraph)"
           },
           "description": "당근채팅 팀 2025년 03월 - 2025년 03월",
+          "link": {
+            "text": "포스트 보기",
+            "url": "https://medium.com/p/7630ca814b0c"
+          },
           "content": [
             {
               "type": "card",
@@ -244,10 +250,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "url": "https://medium.com/p/7630ca814b0c",
             "content": "채팅 이탈 확률 예측 모델링 PoC (SHAP 기반 설명력)"
           },
           "description": "당근채팅 팀 2025년 03월 - 2025년 03월",
+          "link": {
+            "text": "포스트 보기",
+            "url": "https://medium.com/p/7630ca814b0c"
+          },
           "content": [
             {
               "type": "card",

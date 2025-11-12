@@ -164,10 +164,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "年間 LLM 呼び出しコスト25%以上削減、インターンが挑戦したセマンティックキャッシング導入記録",
-            "url": "https://medium.com/p/af3de9a74d0c"
+            "content": "年間 LLM 呼び出しコスト25%以上削減、インターンが挑戦したセマンティックキャッシング導入記録"
           },
           "description": "ダングンチャットチーム · 2025年05月 - 2025年06月",
+          "link": {
+            "text": "詳しく見る",
+            "url": "https://medium.com/p/af3de9a74d0c"
+          },
           "content": [
             {
               "type": "card",

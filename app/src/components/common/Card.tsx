@@ -35,25 +35,9 @@ export default function Card({ card, variant = "simple" }: CardProps) {
                   : "text-lg print:text-base"
               }`}
             >
-              {card.title.url ? (
-                <a
-                  href={card.title.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 transition-colors dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
-                >
-                  {card.title.content}{' '}
-                  <HiExternalLink
-                    className={`inline opacity-70 ${
-                      card.level === "secondary" ? "w-3 h-3" : "w-4 h-4"
-                    }`}
-                  />
-                </a>
-              ) : (
-                <span className="text-gray-900 dark:text-white">
-                  {card.title.content}
-                </span>
-              )}
+              <span className="text-gray-900 dark:text-white">
+                {card.title.content}
+              </span>
             </h3>
           )}
           {card.tag && (
@@ -71,6 +55,17 @@ export default function Card({ card, variant = "simple" }: CardProps) {
           <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 print:text-xs">
             {card.description}
           </p>
+        )}
+        {card.link && (
+          <a
+            href={card.link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 mt-2 text-sm text-blue-600 transition-colors dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 print:text-xs"
+          >
+            {card.link.text}
+            <HiExternalLink className="w-3 h-3 opacity-70" />
+          </a>
         )}
       </div>
       {/* Card Content */}

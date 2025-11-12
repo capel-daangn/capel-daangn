@@ -170,10 +170,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "Semantic Caching Adoption: Cutting Annual LLM Call Costs by 20%+",
-            "url": "https://medium.com/p/af3de9a74d0c"
+            "content": "Semantic Caching Adoption: Cutting Annual LLM Call Costs by 20%+"
           },
           "description": "Karrot Chatting Team · May 2025 – Jun 2025",
+          "link": {
+            "text": "Read more",
+            "url": "https://medium.com/p/af3de9a74d0c"
+          },
           "content": [
             {
               "type": "card",
