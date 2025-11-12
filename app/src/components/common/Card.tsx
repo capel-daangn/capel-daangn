@@ -29,8 +29,10 @@ export default function Card({ card, variant = "simple" }: CardProps) {
         <div className="flex items-center justify-between space-x-1">
           {card.title && (
             <h3
-              className={`font-semibold print:text-xs ${
-                card.level === "secondary" ? "text-sm" : "text-lg"
+              className={`font-semibold ${
+                card.level === "secondary"
+                  ? "text-sm print:text-xs"
+                  : "text-lg print:text-base"
               }`}
             >
               {card.title.url ? (
@@ -75,7 +77,7 @@ export default function Card({ card, variant = "simple" }: CardProps) {
       {card.content && card.content.length > 0 && (
         <div className="mt-2 space-y-1">
           {card.content.map((item, index) => (
-            <ItemRenderer key={index} item={item} />
+            <ItemRenderer key={index} item={item} variant={variant} />
           ))}
         </div>
       )}

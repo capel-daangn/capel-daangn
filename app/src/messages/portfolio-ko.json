@@ -1,0 +1,220 @@
+{
+  "portfolio": {
+    "title": { "type": "text", "content": "포트폴리오" },
+    "content": [
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "시맨틱 캐싱: LLM 비용 20% 절감",
+          "url": "https://medium.com/p/af3de9a74d0c"
+        },
+        "description": "당근 · 2025년 05월 - 2025년 06월",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "FastAPI" },
+          { "name": "ChromaDB" },
+          { "name": "LangChain" },
+          { "name": "Docker" }
+        ],
+        "metrics": [
+          { "label": "비용 절감", "value": "20%+ (연간 2.3억원)" },
+          { "label": "성능", "value": "P50 400ms, P95 <1s" },
+          { "label": "처리량", "value": "인스턴스당 100 TPS" }
+        ],
+        "links": {
+          "blog": "https://medium.com/p/af3de9a74d0c"
+        },
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 중고거래 채팅에서의 문장 추천 기능에서 발생하는 LLM의 잦은 호출로 인해 연간 약 9억 원의 비용이 예상되는 상황에서, 인턴이지만 주도적으로 시맨틱 캐싱 기법을 먼저 제안하고 직접 구현하여 비용 절감 방안을 모색함."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "variant": "timeline",
+            "subtitle": "How",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 실제 채팅 데이터를 임베딩 후 PCA와 HDBSCAN으로 의미 기반 대화 패턴 군집 식별."
+              },
+              {
+                "type": "text",
+                "content": "· 메인 서버와 분리된 애드온 구조, 내장형 벡터 DB를 활용하여 트래픽 외부 전이를 방지."
+              },
+              {
+                "type": "text",
+                "content": "· 부하 테스트로 네트워크 I/O 병목 확인, 경량 리소스 다중 레플리카 구성(TPS 100/인스턴스, P50 400ms, P95 1초 이내)으로 동시성 대응."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "What",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 연간 LLM 호출 비용 20% 이상 절감, 약 2.3억 원 이상의 비용 절감 효과 예상."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "url": "https://medium.com/p/7630ca814b0c",
+          "content": "프롬프트 성능 평가 에이전트"
+        },
+        "description": "당근 · 2025년 03월",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "LangGraph" },
+          { "name": "LangChain" },
+          { "name": "OpenAI" }
+        ],
+        "links": {
+          "blog": "https://medium.com/p/7630ca814b0c"
+        },
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "프롬프트 실행은 가능했으나 프롬프트 자체를 평가·개선할 수단 부재로 반복 수작업 검증 발생."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· LangGraph로 Planner/Actor/Reflector 3 그래프 구성, 자동화된 평가-개선 루프 설계."
+              },
+              {
+                "type": "text",
+                "content": "· Planner: 평가 기준 추출 및 검증용 페르소나·시나리오 생성."
+              },
+              {
+                "type": "text",
+                "content": "· Actor: 생성 기준에 따라 가상 요청을 구성하여 응답 생성 후 점수화·피드백."
+              },
+              {
+                "type": "text",
+                "content": "· Reflector: 결과 기반 개선 여부 판단 및 자동 재작성, 사용자 피드백 반영."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "MCP 기반 제재 자동화"
+        },
+        "description": "당근 · 2025년 03월",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "MCP" },
+          { "name": "Docker" },
+          { "name": "ChromaDB" }
+        ],
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 근로기준법과 내부 정책 기반 판단 자동화 필요."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 외부 API로 법령 검색 MCP 서버, 내부 정책 임베딩/검색 MCP 서버 각각 개발."
+              },
+              {
+                "type": "text",
+                "content": "· Docker Compose로 배포, 사내 LLM 인프라 연계하여 부정 사용자 식별 파이프라인에 기여."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "분개장 작성 자동화"
+        },
+        "description": "당근 · 2025년 01월 - 2025년 03월",
+        "techStack": [
+          { "name": "Go" },
+          { "name": "BigQuery" },
+          { "name": "GCP" },
+          { "name": "Cron" }
+        ],
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 월간 8만 건 거래 데이터 분개장 수작업 처리의 효율·정확성 개선."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Go로 분개 처리 로직 설계, BigQuery로 대량 데이터 집계·처리."
+              },
+              {
+                "type": "text",
+                "content": "· cron 스케줄링으로 분개장 생성~보고용 데이터 출력까지 전 과정 자동화."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

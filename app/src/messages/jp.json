@@ -19,23 +19,23 @@
           "content": [
             {
               "type": "text",
-              "content": "• MLflowなどを用いた機械学習ライフサイクル（データ加工、学習、モニタリング、高度化）の経験。"
+              "content": "MLflowなどを用いた機械学習ライフサイクル（データ加工、学習、モニタリング、高度化）の経験。"
             },
             {
               "type": "text",
-              "content": "• LangChain、LangGraphを活用したマルチエージェントネットワークRAGの実装経験。"
+              "content": "LangChain、LangGraphを活用したマルチエージェントネットワークRAGの実装経験。"
             },
             {
               "type": "text",
-              "content": "• 外部API連携用MCPサーバー、軽量化RAGシステム向けMCPサーバーの実装経験。"
+              "content": "外部API連携用MCPサーバー、軽量化RAGシステム向けMCPサーバーの実装経験。"
             },
             {
               "type": "text",
-              "content": "• リアルタイム処理負荷が大きい環境でのベクトルDBを活用した軽量ベクトル検索システム実装経験。"
+              "content": "リアルタイム処理負荷が大きい環境でのベクトルDBを活用した軽量ベクトル検索システム実装経験。"
             },
             {
               "type": "text",
-              "content": "• QLoRA手法によるLLMファインチューニング、vLLM・Tritonなどを用いたLLMモデルサービングの経験。"
+              "content": "QLoRA手法によるLLMファインチューニング、vLLM・Tritonなどを用いたLLMモデルサービングの経験。"
             }
           ]
         },
@@ -45,23 +45,23 @@
           "content": [
             {
               "type": "text",
-              "content": "• 個人または共同プロジェクトの開発主導および多数のコンテスト受賞経験。"
+              "content": "個人または共同プロジェクトの開発主導および多数のコンテスト受賞経験。"
             },
             {
               "type": "text",
-              "content": "• React.js、Next.jsを基盤にした簡単なフロントエンド開発が可能。"
+              "content": "React.js、Next.jsを基盤にした簡単なフロントエンド開発が可能。"
             },
             {
               "type": "text",
-              "content": "• FastAPI、Springを基盤にしたバックエンドサーバー開発が可能。"
+              "content": "FastAPI、Springを基盤にしたバックエンドサーバー開発が可能。"
             },
             {
               "type": "text",
-              "content": "• MySQL、MongoDB、Redis、GraphQLを基盤としたスキーマ設計およびDB活用経験。"
+              "content": "MySQL、MongoDB、Redis、GraphQLを基盤としたスキーマ設計およびDB活用経験。"
             },
             {
               "type": "text",
-              "content": "• Dockerによるイメージ管理およびAWSでのサービスデプロイ経験（EC2、S3など）。"
+              "content": "Dockerによるイメージ管理およびAWSでのサービスデプロイ経験（EC2、S3など）。"
             }
           ]
         }
@@ -83,7 +83,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "• 担当領域 : Goチャプター、ドメイン駆動設計およびgRPC経験、管理画面改善業務"
+                  "content": "担当領域 : Goチャプター、ドメイン駆動設計およびgRPC経験、管理画面改善業務"
                 }
               ]
             },
@@ -94,7 +94,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "• 担当領域 : Goチャプター、ドメイン駆動設計およびgRPC経験、管理画面改善業務"
+                  "content": "担当領域 : Goチャプター、ドメイン駆動設計およびgRPC経験、管理画面改善業務"
                 },
                 {
                   "type": "text",
@@ -113,7 +113,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "• 担当領域 : Node.jsチャプター、イベント駆動およびGraphQL API経験、管理画面改善業務"
+                  "content": "担当領域 : Node.jsチャプター、イベント駆動およびGraphQL API経験、管理画面改善業務"
                 },
                 {
                   "type": "text",
@@ -140,7 +140,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "• 担当領域 : 在韓米軍カトゥサ人事情報のデータベース設計および可視化作業"
+                  "content": "担当領域 : 在韓米軍カトゥサ人事情報のデータベース設計および可視化作業"
                 },
                 {
                   "type": "text",

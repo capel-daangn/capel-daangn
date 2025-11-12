@@ -22,23 +22,23 @@
           "content": [
             {
               "type": "text",
-              "content": "• Experience in the machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow and others."
+              "content": "Experience in the machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow and others."
             },
             {
               "type": "text",
-              "content": "• Experience implementing multi-agent network RAG using LangChain and LangGraph."
+              "content": "Experience implementing multi-agent network RAG using LangChain and LangGraph."
             },
             {
               "type": "text",
-              "content": "• Experience implementing MCP servers for external API integration and lightweight RAG systems."
+              "content": "Experience implementing MCP servers for external API integration and lightweight RAG systems."
             },
             {
               "type": "text",
-              "content": "• Experience implementing lightweight vector search systems using vector DBs in high real-time load environments."
+              "content": "Experience implementing lightweight vector search systems using vector DBs in high real-time load environments."
             },
             {
               "type": "text",
-              "content": "• Experience with LLM fine-tuning using QLoRA and LLM model serving with vLLM, Triton, etc."
+              "content": "Experience with LLM fine-tuning using QLoRA and LLM model serving with vLLM, Triton, etc."
             }
           ]
         },
@@ -48,23 +48,23 @@
           "content": [
             {
               "type": "text",
-              "content": "• Experience leading development of individual and team projects, with multiple competition awards."
+              "content": "Experience leading development of individual and team projects, with multiple competition awards."
             },
             {
               "type": "text",
-              "content": "• Capable of developing simple frontend applications with React.js and Next.js."
+              "content": "Capable of developing simple frontend applications with React.js and Next.js."
             },
             {
               "type": "text",
-              "content": "• Able to develop backend servers with FastAPI and Spring."
+              "content": "Able to develop backend servers with FastAPI and Spring."
             },
             {
               "type": "text",
-              "content": "• Experience designing schemas and working with MySQL, MongoDB, Redis, and GraphQL."
+              "content": "Experience designing schemas and working with MySQL, MongoDB, Redis, and GraphQL."
             },
             {
               "type": "text",
-              "content": "• Experience managing images with Docker and deploying services to AWS (EC2, S3, etc.)."
+              "content": "Experience managing images with Docker and deploying services to AWS (EC2, S3, etc.)."
             }
           ]
         }
@@ -86,7 +86,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "• Responsibilities: Go chapter, domain-driven and gRPC experience, Admin system improvements"
+                  "content": "Responsibilities: Go chapter, domain-driven and gRPC experience, Admin system improvements"
                 }
               ]
             },
@@ -97,7 +97,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "• Responsibilities: Go chapter, domain-driven and gRPC experience, Admin system improvements"
+                  "content": "Responsibilities: Go chapter, domain-driven and gRPC experience, Admin system improvements"
                 },
                 {
                   "type": "text",
@@ -116,7 +116,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "• Responsibilities: Node.js chapter, event-driven and GraphQL API experience, Admin system improvements"
+                  "content": "Responsibilities: Node.js chapter, event-driven and GraphQL API experience, Admin system improvements"
                 },
                 {
                   "type": "text",
@@ -146,7 +146,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "• Responsibilities: Designed and visualized databases for KATUSA personnel information."
+                  "content": "Responsibilities: Designed and visualized databases for KATUSA personnel information."
                 },
                 {
                   "type": "text",

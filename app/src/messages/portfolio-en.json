@@ -1,0 +1,220 @@
+{
+  "portfolio": {
+    "title": { "type": "text", "content": "Portfolio" },
+    "content": [
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "Semantic Caching: Reducing LLM Costs by 20%+",
+          "url": "https://medium.com/p/af3de9a74d0c"
+        },
+        "description": "Karrot · May 2025 – Jun 2025",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "FastAPI" },
+          { "name": "ChromaDB" },
+          { "name": "LangChain" },
+          { "name": "Docker" }
+        ],
+        "metrics": [
+          { "label": "Cost Reduction", "value": "20%+ (₩230M/year)" },
+          { "label": "Performance", "value": "P50 400ms, P95 <1s" },
+          { "label": "Throughput", "value": "100 TPS/instance" }
+        ],
+        "links": {
+          "blog": "https://medium.com/p/af3de9a74d0c"
+        },
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Frequent LLM calls for sentence recommendation in secondhand trading chat were projected to cost ~₩900M annually. Despite being an intern, I proactively proposed and implemented semantic caching to explore cost-saving measures."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Embedded real chat data and identified semantic conversation clusters using PCA and HDBSCAN."
+              },
+              {
+                "type": "text",
+                "content": "· Built an add-on structure separated from the main server, using an embedded vector DB to prevent external traffic shifts."
+              },
+              {
+                "type": "text",
+                "content": "· Load tests revealed network I/O bottlenecks; resolved with lightweight multi-replica setup (TPS 100/instance, P50 400ms, P95 under 1s) for concurrency handling."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "What",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Achieved projected annual savings of over ₩230M (20%+ reduction in LLM call costs)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "Prompt Performance Evaluation Agent",
+          "url": "https://medium.com/p/7630ca814b0c"
+        },
+        "description": "Karrot · Mar 2025",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "LangGraph" },
+          { "name": "LangChain" },
+          { "name": "OpenAI" }
+        ],
+        "links": {
+          "blog": "https://medium.com/p/7630ca814b0c"
+        },
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "Prompt execution was possible, but lack of evaluation and improvement methods required repetitive manual validation."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Designed an automated evaluation–improvement loop with three LangGraph components: Planner, Actor, Reflector."
+              },
+              {
+                "type": "text",
+                "content": "· Planner: Extracts evaluation criteria and generates test personas/scenarios."
+              },
+              {
+                "type": "text",
+                "content": "· Actor: Generates virtual requests and responses based on criteria, then scores and provides feedback."
+              },
+              {
+                "type": "text",
+                "content": "· Reflector: Determines need for revisions, rewrites prompts, and incorporates user feedback."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "MCP-based Sanction Automation"
+        },
+        "description": "Karrot · Mar 2025",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "MCP" },
+          { "name": "Docker" },
+          { "name": "ChromaDB" }
+        ],
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Needed automation of judgments based on labor laws and internal policies."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Developed separate MCP servers: one for law search via external APIs, another for internal policy embedding/search."
+              },
+              {
+                "type": "text",
+                "content": "· Deployed via Docker Compose, integrated with in-house LLM infrastructure, contributing to abusive user detection pipeline."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "Automated Ledger Generation"
+        },
+        "description": "Karrot · Jan 2025 – Mar 2025",
+        "techStack": [
+          { "name": "Go" },
+          { "name": "BigQuery" },
+          { "name": "GCP" },
+          { "name": "Cron" }
+        ],
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Needed to improve efficiency and accuracy of manually processing 80,000 monthly transaction entries."
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Designed ledger processing logic in Go, aggregated and processed large-scale data with BigQuery."
+              },
+              {
+                "type": "text",
+                "content": "· Automated entire pipeline from ledger generation to reporting output using cron scheduling."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
