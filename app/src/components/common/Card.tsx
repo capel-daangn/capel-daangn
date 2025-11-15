@@ -50,25 +50,25 @@ export default function Card({ card, variant = "simple" }: CardProps) {
                   />
                 </a>
               ) : (
-                <span className="text-gray-900 dark:text-white">
+                <span className="text-gray-900 dark:text-white print:text-black">
                   {card.title.content}
                 </span>
               )}
             </h3>
           )}
           {card.tag && (
-            <span className="text-xs text-right text-gray-500 dark:text-gray-400 print:text-xs">
+            <span className="text-xs text-right text-gray-500 dark:text-gray-400 print:text-xs print:text-gray-800">
               {card.tag}
             </span>
           )}
         </div>
         {card.subtitle && (
-          <p className="mt-1 text-sm text-blue-400 dark:text-blue-300 print:text-xs">
+          <p className="mt-1 text-sm text-blue-400 dark:text-blue-300 print:text-xs print:text-blue-600">
             {card.subtitle}
           </p>
         )}
         {card.description && (
-          <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 print:text-xs">
+          <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 print:text-xs print:text-gray-800">
             {card.description}
           </p>
         )}

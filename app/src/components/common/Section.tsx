@@ -24,7 +24,7 @@ export default function Section({
   return (
     <section className="mb-8 print:mb-6">
       {/* Section Title */}
-      <h2 className={`text-sm font-semibold ${titleColor} mb-4 border-b ${borderColor} pb-2 print:text-sm`}>
+      <h2 className={`text-sm font-semibold ${titleColor} mb-4 border-b ${borderColor} pb-2 print:text-sm print:text-blue-600 print:border-blue-600`}>
         {section.title?.url ? (
           <a
             href={section.title.url}

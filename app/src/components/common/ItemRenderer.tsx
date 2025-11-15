@@ -32,8 +32,8 @@ export default function ItemRenderer({
       <div
         className={
           item.level === "secondary"
-            ? "text-xs text-gray-500 dark:text-gray-400 print:text-xs ml-2"
-            : "text-gray-700 dark:text-gray-300 print:text-xs leading-relaxed text-sm ml-2"
+            ? "text-xs text-gray-500 dark:text-gray-400 print:text-xs print:text-gray-800 ml-2"
+            : "text-gray-700 dark:text-gray-300 print:text-xs print:text-black leading-relaxed text-sm ml-2"
         }
       >
         {textItem.url ? (

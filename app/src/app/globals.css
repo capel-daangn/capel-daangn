@@ -189,10 +189,19 @@ body {
     break-inside: avoid;
   }
 
-  /* Ensure links work in print but don't show blue */
+  /* Ensure links are readable in print */
   a {
-    color: inherit !important;
-    text-decoration: none !important;
+    color: #1d4ed8 !important;
+    text-decoration: underline !important;
+  }
+
+  /* Print-specific text colors */
+  .print\:text-black {
+    color: #000 !important;
+  }
+
+  .print\:text-gray-800 {
+    color: #1f2937 !important;
   }
 }
 
