@@ -14,7 +14,7 @@ export default function Title() {
 
   return (
     <div className="lg:col-span-2 print:col-span-2">
-      <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 print:text-2xl">
+      <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 print:text-2xl print:text-black">
         {profile.title?.url ? (
           <a
             href={profile.title.url}

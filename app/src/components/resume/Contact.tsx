@@ -66,7 +66,7 @@ export default function Contact() {
 
             return (
               <div key={index}>
-                <span className="text-gray-700 dark:text-gray-300">
+                <span className="text-gray-700 dark:text-gray-300 print:text-black">
                   {item.content}
                 </span>
               </div>
