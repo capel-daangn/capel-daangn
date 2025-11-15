@@ -2,7 +2,7 @@
   "profile": {
     "title": { "type": "text", "content": "JIUK KIM" },
     "subtitle": "Software Engineer",
-    "description": "I have a deep interest in the synergy created through connections between people and chose the path of an engineer with the aspiration to create more happy moments. I value perseverance in challenges and steady growth, and aim to become an applied engineer who transforms data into real business value by leveraging machine learning and cloud technologies, with a focus on backend development.",
+    "description": "I aspire to be an engineer who creates tangible business impact by connecting data and AI. I focus on system design that balances both stability and performance in real-time traffic environments, and have experience improving operational efficiency by combining LLM-based services with data pipelines. Grounded in business administration domain knowledge, I am growing as an AI backend and data engineer who prioritizes data quality and reliability.",
     "items": [
       { "type": "text", "content": "{{personal.contact.email}}" },
       { "type": "text", "content": "{{personal.contact.linkedin}}" },
@@ -17,28 +17,28 @@
           "type": "card",
           "title": {
             "type": "text",
-            "content": "Machine Learning Engineering"
+            "content": "AI Engineering"
           },
           "content": [
             {
               "type": "text",
-              "content": "• Experience in the machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow and others."
+              "content": "Experience implementing real services using LLM or vector search in real-time traffic environments."
             },
             {
               "type": "text",
-              "content": "• Experience implementing multi-agent network RAG using LangChain and LangGraph."
+              "content": "Experience implementing agents and data-driven AI services using LangChain and LangGraph."
             },
             {
               "type": "text",
-              "content": "• Experience implementing MCP servers for external API integration and lightweight RAG systems."
+              "content": "Experience implementing MCP servers for external API integration or RAG systems."
             },
             {
               "type": "text",
-              "content": "• Experience implementing lightweight vector search systems using vector DBs in high real-time load environments."
+              "content": "Experience with machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow."
             },
             {
               "type": "text",
-              "content": "• Experience with LLM fine-tuning using QLoRA and LLM model serving with vLLM, Triton, etc."
+              "content": "Experience with LLM fine-tuning using QLoRA and LLM model serving with vLLM, Triton, etc."
             }
           ]
         },
@@ -48,23 +48,23 @@
           "content": [
             {
               "type": "text",
-              "content": "• Experience leading development of individual and team projects, with multiple competition awards."
+              "content": "Experience leading development of individual and collaborative projects, with multiple competition awards."
             },
             {
               "type": "text",
-              "content": "• Capable of developing simple frontend applications with React.js and Next.js."
+              "content": "Capable of developing simple frontend applications independently with React.js and Next.js."
             },
             {
               "type": "text",
-              "content": "• Able to develop backend servers with FastAPI and Spring."
+              "content": "Experience developing backend and handling traffic environments with Go, Python, and Kotlin."
             },
             {
               "type": "text",
-              "content": "• Experience designing schemas and working with MySQL, MongoDB, Redis, and GraphQL."
+              "content": "Experience with schema design and database usage based on SQL, NoSQL, Redis, and GraphQL."
             },
             {
               "type": "text",
-              "content": "• Experience managing images with Docker and deploying services to AWS (EC2, S3, etc.)."
+              "content": "Experience with service deployment and monitoring in Docker, AWS, ArgoCD, and Datadog environments."
             }
           ]
         }
@@ -76,55 +76,37 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": { "type": "text", "content": "Karrot (Danggeun Market)" },
+          "title": { "type": "text", "content": "Karrot Inc." },
           "description": "Jan 2025 – Present",
           "content": [
             {
               "type": "card",
-              "subtitle": "Full-time · Software Engineer, Backend · Karrot Chatting Team",
+              "subtitle": "Full-time (Converted from Internship) • Software Engineer, Backend • Karrot Chat Team",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "• Responsibilities: Go chapter, domain-driven and gRPC experience, Admin system improvements"
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "variant": "timeline",
-              "subtitle": "Extended Internship · Software Engineer Intern, Backend · Karrot Chatting Team",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "• Responsibilities: Go chapter, domain-driven and gRPC experience, Admin system improvements"
+                  "content": "Go chapter, domain-driven design and gRPC-based distributed systems experience"
                 },
                 {
                   "type": "text",
-                  "content": "✓ Project 1. Introduced semantic caching, reducing annual LLM call costs by over 20%."
+                  "content": "✓ Project 1. Chat Auto-translation: Real-time traffic handling and LLM pipeline separation"
                 },
                 {
                   "type": "text",
-                  "content": "✓ Project 2. Prompt performance evaluation agent, \"There Is No Such Thing As a Bad Prompt.\""
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "variant": "timeline",
-              "subtitle": "Internship · Software Engineer Intern, Backend · Karrot Local Jobs Team",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "• Responsibilities: Node.js chapter, event-driven and GraphQL API experience, Admin system improvements"
+                  "content": "✓ Project 2. Managed Template Messaging Improvement: Data flow and visibility enhancement"
                 },
                 {
                   "type": "text",
-                  "content": "✓ Project 3. MCP-based sanction automation: LLM that reads labor laws and CS policies."
+                  "content": "✓ Project 3. Semantic Caching Implementation: 25% annual LLM cost reduction via vector search"
                 },
                 {
                   "type": "text",
-                  "content": "✓ Project 4. Automated ledger generation using GCP BigQuery and Go."
+                  "content": "✓ Project 4. LangGraph-based Prompt Evaluation and Improvement Automation Agent PoC"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ Project 5. SHAP-based Churn Prediction Modeling PoC by Chat Session"
                 }
               ]
             }
@@ -133,28 +115,25 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": {
-            "type": "text",
-            "content": "U.S. 8th Army Headquarters Battalion"
-          },
+          "title": { "type": "text", "content": "U.S. 8th Army Headquarters Battalion" },
           "description": "Jul 2023 – Dec 2024",
           "content": [
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "Military Service · Discharged as Sergeant, KATUSA, Republic of Korea Army",
+              "subtitle": "Military Service • Discharged as Sergeant, KATUSA, Republic of Korea Army",
               "content": [
                 {
                   "type": "text",
-                  "content": "• Responsibilities: Designed and visualized databases for KATUSA personnel information."
+                  "content": "Database design and visualization of KATUSA personnel information for U.S. Forces Korea"
                 },
                 {
                   "type": "text",
-                  "content": "✓ Developed and operated a web app providing U.S. Army holiday information (MAU 700+)."
+                  "content": "✓ Completed Google Machine Learning Bootcamp 2024 (5th cohort), Naver Connect Foundation Coaching Study 13th cohort."
                 },
                 {
                   "type": "text",
-                  "content": "✓ Completed Google Machine Learning Bootcamp 2024 (5th cohort) and Naver Connect Foundation Coaching Study 13th cohort."
+                  "content": "✓ Developed and operated a web app providing U.S. Forces Korea holiday information (MAU 1,200+)."
                 }
               ]
             }
@@ -170,10 +149,9 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "Semantic Caching Adoption: Cutting Annual LLM Call Costs by 20%+",
-            "url": "https://medium.com/p/af3de9a74d0c"
+            "content": "Managed Template Messaging System Enhancement: Strengthening Message Data Pipeline Visibility"
           },
-          "description": "Karrot Chatting Team · May 2025 – Jun 2025",
+          "highlights": ["Data pipeline improvement", "Automated sending log tagging", "Superset dashboard construction", "Operational visibility enhancement"],
           "content": [
             {
               "type": "card",
@@ -182,26 +160,26 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· Frequent LLM calls for sentence recommendation in secondhand trading chat were projected to cost ~₩900M annually. Despite being an intern, I proactively proposed and implemented semantic caching to explore cost-saving measures."
+                  "content": "The existing managed messaging feature did not support certain message types and could not track sending status by team, making it difficult to understand overall operational status. This resulted in insufficient operational visibility, requiring improvements to ensure collaboration efficiency and operational stability."
                 }
               ]
             },
             {
               "type": "card",
-              "subtitle": "How",
               "variant": "timeline",
+              "subtitle": "How",
               "content": [
                 {
                   "type": "text",
-                  "content": "· Embedded real chat data and identified semantic conversation clusters using PCA and HDBSCAN."
+                  "content": "Improved template registration functionality and internal sending logic to support more message types."
                 },
                 {
                   "type": "text",
-                  "content": "· Built an add-on structure separated from the main server, using an embedded vector DB to prevent external traffic shifts."
+                  "content": "Designed automatic tagging during message sending using the `x-forwarded-for` header."
                 },
                 {
                   "type": "text",
-                  "content": "· Load tests revealed network I/O bottlenecks; resolved with lightweight multi-replica setup (TPS 100/instance, P50 400ms, P95 under 1s) for concurrency handling."
+                  "content": "Implemented monitoring of sending status by country, team, and message type via Superset dashboard."
                 }
               ]
             },
@@ -212,7 +190,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· Achieved projected annual savings of over ₩230M (20%+ reduction in LLM call costs)."
+                  "content": "Enhanced the completeness of the managed messaging feature and built a new data pipeline from header collection, tag storage, to visualization, securing operational visibility. As a result, improved data usability and operational efficiency for the chat team, as well as reusability for other teams."
                 }
               ]
             }
@@ -223,9 +201,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "Prompt Performance Evaluation Agent: \"There Is No Such Thing As a Bad Prompt\""
+            "content": "Semantic Caching Implementation: 25% Annual LLM Cost Reduction via Vector Search"
           },
-          "description": "Karrot Chatting Team · Mar 2025 – Mar 2025",
+          "highlights": ["Intern-led proposal", "Embedded vector DB usage", "25%+ cost reduction", "P95 <1s", "TPS 200/instance"],
+          "link": {
+            "text": "Read post",
+            "url": "https://medium.com/p/af3de9a74d0c"
+          },
           "content": [
             {
               "type": "card",
@@ -234,30 +216,37 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Prompt execution was possible, but lack of evaluation and improvement methods required repetitive manual validation."
+                  "content": "Frequent LLM calls for sentence recommendation in secondhand trading chat were projected to cost approximately ₩900M annually. Although an intern, I proactively proposed semantic caching techniques first and directly implemented them to explore cost-saving measures."
                 }
               ]
             },
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "How",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Embedded real chat data and identified semantic conversation pattern clusters using PCA and HDBSCAN."
+                },
+                {
+                  "type": "text",
+                  "content": "Used an add-on structure separated from the main server and embedded vector DB to prevent external traffic migration."
+                },
+                {
+                  "type": "text",
+                  "content": "Load testing identified network I/O bottlenecks, addressed with lightweight multi-replica configuration (TPS 100/instance, P50 400ms, P95 under 1s) for concurrency handling."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "What",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "· Designed an automated evaluation–improvement loop with three LangGraph components: Planner, Actor, Reflector."
-                },
-                {
-                  "type": "text",
-                  "content": "· Planner: Extracts evaluation criteria and generates test personas/scenarios."
-                },
-                {
-                  "type": "text",
-                  "content": "· Actor: Generates virtual requests and responses based on criteria, then scores and provides feedback."
-                },
-                {
-                  "type": "text",
-                  "content": "· Reflector: Determines need for revisions, rewrites prompts, and incorporates user feedback."
+                  "content": "Reduced annual LLM call costs by over 20%, with projected savings of over ₩230M."
                 }
               ]
             }
@@ -268,9 +257,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "MCP-based Sanction Automation: LLM That Reads Laws and CS Policies"
+            "content": "LangGraph-based Prompt Evaluation and Improvement Automation Agent PoC"
           },
-          "description": "Karrot Local Jobs Team · Mar 2025 – Mar 2025",
+          "highlights": ["Multi-turn agent", "Persona scenarios", "Automated evaluation-improvement loop", "Operational-ready prompt management system"],
+          "link": {
+            "text": "Read post",
+            "url": "https://medium.com/p/7630ca814b0c"
+          },
           "content": [
             {
               "type": "card",
@@ -279,7 +272,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· Needed automation of judgments based on labor laws and internal policies."
+                  "content": "Evaluating prompt quality is difficult to quantify with consistent criteria due to the natural language characteristics. This makes it time-consuming and costly, relying only on repetitive manual comparisons. A system is needed to objectively score and automatically improve across various situations with consistent criteria."
                 }
               ]
             },
@@ -290,11 +283,30 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· Developed separate MCP servers: one for law search via external APIs, another for internal policy embedding/search."
+                  "content": "Configured three sub-graphs with LangGraph and designed an automated evaluation-improvement loop."
                 },
                 {
                   "type": "text",
-                  "content": "· Deployed via Docker Compose, integrated with in-house LLM infrastructure, contributing to abusive user detection pipeline."
+                  "content": "PlannerGraph: Dynamically extracts evaluation criteria from system prompts and defines test scope by generating personas and scenarios."
+                },
+                {
+                  "type": "text",
+                  "content": "ActorGraph: Simulates persona-based requests to generate responses and automatically produces scores and feedback according to derived criteria."
+                },
+                {
+                  "type": "text",
+                  "content": "ReflectorGraph: Determines improvement necessity from evaluation results, rewrites prompts as needed, and implements operational-level continuous improvement by incorporating human feedback loops."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "WHAT",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Provided a repeatable loop for quantitatively evaluating and automatically improving prompts across multiple scenarios. Confirmed improvement effects through cross-validation between models and explored the possibility of expanding into quality management infrastructure for prompts themselves."
                 }
               ]
             }
@@ -305,9 +317,9 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "Automated Ledger Generation Using Go and GCP BigQuery"
+            "content": "SHAP-based Interpretable Churn Prediction Modeling PoC by Chat Session"
           },
-          "description": "Karrot Local Jobs Team · Jan 2025 – Mar 2025",
+          "highlights": ["Integrated language + behavioral signals", "SHAP-based interpretability", "Churn probability-based response strategy discovery"],
           "content": [
             {
               "type": "card",
@@ -316,22 +328,37 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· Needed to improve efficiency and accuracy of manually processing 80,000 monthly transaction entries."
+                  "content": "Chat data is not just text; it contains time-series language and behavioral signals. Conversation churn manifests as continuous disruption of these signals. Existing simple churn prediction models make it difficult to understand when and under what circumstances users churn."
                 }
               ]
             },
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "How",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Extracted message embeddings using BERT/DistilBERT and calculated language signals such as sentiment, politeness, and closing intent."
+                },
+                {
+                  "type": "text",
+                  "content": "Integrated metadata such as response time, message length, and reaction presence, inputting them into a sequence encoder (Transformer or LightGBM sequence-extended)."
+                },
+                {
+                  "type": "text",
+                  "content": "Used SHAP to analyze each feature's contribution to churn probability, designing the system to make churn likelihood at specific message points interpretable."
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "What",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "· Designed ledger processing logic in Go, aggregated and processed large-scale data with BigQuery."
-                },
-                {
-                  "type": "text",
-                  "content": "· Automated entire pipeline from ledger generation to reporting output using cron scheduling."
+                  "content": "Predicted churn probability at each point and secured interpretability, enabling proactive intervention and response strategy formulation."
                 }
               ]
             }
@@ -556,7 +583,8 @@
             { "type": "text", "content": "Python" },
             { "type": "text", "content": "Go" },
             { "type": "text", "content": "TypeScript" },
-            { "type": "text", "content": "Kotlin" }
+            { "type": "text", "content": "Kotlin" },
+            { "type": "text", "content": "Java" }
           ]
         }
       ]

@@ -20,7 +20,14 @@ export default function ItemRenderer({
     const textItem = item as TextItem;
     // Don't render if inactive
     if (textItem.inactive) return null;
-    
+
+    // Add bullet point if not already present
+    const shouldAddBullet =
+      !textItem.content.startsWith("•") &&
+      !textItem.content.startsWith("✓") &&
+      !textItem.content.startsWith("·");
+    const displayContent = shouldAddBullet ? `• ${textItem.content}` : textItem.content;
+
     return (
       <div
         className={
@@ -36,13 +43,13 @@ export default function ItemRenderer({
             rel="noopener noreferrer"
             className="text-blue-600 transition-colors dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
           >
-            {textItem.content}{' '}
+            {displayContent}{' '}
             <HiExternalLink className={`inline opacity-70 ${
               item.level === "secondary" ? "w-3 h-3" : "w-3 h-3"
             }`} />
           </a>
         ) : (
-          textItem.content
+          displayContent
         )}
       </div>
     );

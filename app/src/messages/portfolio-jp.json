@@ -1,0 +1,220 @@
+{
+  "portfolio": {
+    "title": { "type": "text", "content": "ポートフォリオ" },
+    "content": [
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "セマンティックキャッシング：LLMコスト20%削減",
+          "url": "https://medium.com/p/af3de9a74d0c"
+        },
+        "description": "Karrot · 2025年05月 – 2025年06月",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "FastAPI" },
+          { "name": "ChromaDB" },
+          { "name": "LangChain" },
+          { "name": "Docker" }
+        ],
+        "metrics": [
+          { "label": "コスト削減", "value": "20%+ (年間2.3億ウォン)" },
+          { "label": "パフォーマンス", "value": "P50 400ms, P95 <1s" },
+          { "label": "スループット", "value": "100 TPS/インスタンス" }
+        ],
+        "links": {
+          "blog": "https://medium.com/p/af3de9a74d0c"
+        },
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 中古取引チャットでの文章推薦機能におけるLLMの頻繁な呼び出しにより、年間約9億ウォンのコストが予想される状況で、インターンながら主体的にセマンティックキャッシング手法を提案し、直接実装してコスト削減策を模索。"
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 実際のチャットデータを埋め込み、PCAとHDBSCANを使用して意味的な会話パターンのクラスターを識別。"
+              },
+              {
+                "type": "text",
+                "content": "· メインサーバーから分離されたアドオン構造を構築し、組み込みベクトルDBを使用して外部トラフィックの移行を防止。"
+              },
+              {
+                "type": "text",
+                "content": "· 負荷テストでネットワークI/Oボトルネックを発見し、軽量マルチレプリカ構成（TPS 100/インスタンス、P50 400ms、P95 1秒以内）で並行性処理の問題を解決。"
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "What",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 年間2.3億ウォン以上（LLM呼び出しコストを20%以上削減）の節約効果を達成。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "プロンプト性能評価エージェント",
+          "url": "https://medium.com/p/7630ca814b0c"
+        },
+        "description": "Karrot · 2025年03月",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "LangGraph" },
+          { "name": "LangChain" },
+          { "name": "OpenAI" }
+        ],
+        "links": {
+          "blog": "https://medium.com/p/7630ca814b0c"
+        },
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "プロンプトの実行は可能だったが、評価・改善方法の不在により繰り返し手動検証が必要だった。"
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 3つのLangGraphコンポーネント（Planner、Actor、Reflector）による自動評価-改善ループを設計。"
+              },
+              {
+                "type": "text",
+                "content": "· Planner：評価基準の抽出とテストペルソナ/シナリオの生成。"
+              },
+              {
+                "type": "text",
+                "content": "· Actor：基準に基づいて仮想リクエストと応答を生成し、スコアリングとフィードバックを提供。"
+              },
+              {
+                "type": "text",
+                "content": "· Reflector：修正の必要性を判断し、プロンプトを書き直し、ユーザーフィードバックを統合。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "MCPベースの制裁自動化"
+        },
+        "description": "Karrot · 2025年03月",
+        "techStack": [
+          { "name": "Python" },
+          { "name": "MCP" },
+          { "name": "Docker" },
+          { "name": "ChromaDB" }
+        ],
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 労働関連法律と社内ポリシーに基づく判断の自動化が必要だった。"
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 外部API経由の法律検索用MCPサーバーと、社内ポリシーの埋め込み/検索用MCPサーバーを別々に開発。"
+              },
+              {
+                "type": "text",
+                "content": "· Docker Composeでデプロイし、社内LLMインフラと統合して不正ユーザー検出パイプラインに貢献。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "card",
+        "variant": "bordered",
+        "category": ["karrot"],
+        "title": {
+          "type": "text",
+          "content": "自動仕訳生成"
+        },
+        "description": "Karrot · 2025年01月 – 2025年03月",
+        "techStack": [
+          { "name": "Go" },
+          { "name": "BigQuery" },
+          { "name": "GCP" },
+          { "name": "Cron" }
+        ],
+        "content": [
+          {
+            "type": "card",
+            "subtitle": "Why",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· 月間8万件の取引データを手作業で処理する効率性と正確性の改善が必要だった。"
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "subtitle": "How",
+            "variant": "timeline",
+            "content": [
+              {
+                "type": "text",
+                "content": "· Goで仕訳処理ロジックを設計し、BigQueryで大規模データを集計・処理。"
+              },
+              {
+                "type": "text",
+                "content": "· cronスケジューリングで仕訳生成からレポート出力まで全プロセスを自動化。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

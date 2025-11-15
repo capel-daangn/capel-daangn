@@ -4,12 +4,15 @@ import React, { useState } from "react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FiDownload, FiPrinter, FiMenu, FiX } from "react-icons/fi";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function NavigationBar() {
   const { theme, toggleTheme } = useTheme();
   const { language, setLanguage } = useLanguage();
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const handlePrint = () => {
     window.print();
@@ -29,12 +32,39 @@ export default function NavigationBar() {
   const currentLanguage =
     languages.find((lang) => lang.code === language) || languages[0];
 
+  const isResumePage = pathname === "/";
+  const isPortfolioPage = pathname === "/portfolio";
+
   return (
-    <nav className="sticky top-0 z-50 px-6 py-3 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-      <div className="flex items-center justify-between max-w-4xl mx-auto">
-        {/* Logo/Title */}
-        <div className="font-semibold text-gray-900 dark:text-white">
-          Resume
+    <nav className="sticky top-0 z-50 px-6 py-3 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 print:hidden">
+      <div className="flex items-center justify-between max-w-6xl mx-auto">
+        {/* Logo/Title & Navigation Links */}
+        <div className="flex items-center gap-6">
+          <div className="font-semibold text-gray-900 dark:text-white">
+            JIUK KIM
+          </div>
+          <div className="hidden gap-4 sm:flex">
+            <Link
+              href="/"
+              className={`text-sm font-medium transition-colors ${
+                isResumePage
+                  ? "text-blue-600 dark:text-blue-400"
+                  : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+              }`}
+            >
+              Resume
+            </Link>
+            <Link
+              href="/portfolio"
+              className={`text-sm font-medium transition-colors ${
+                isPortfolioPage
+                  ? "text-blue-600 dark:text-blue-400"
+                  : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+              }`}
+            >
+              Portfolio
+            </Link>
+          </div>
         </div>
 
         {/* Mobile Controls */}
@@ -204,6 +234,32 @@ export default function NavigationBar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="sm:hidden mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
+          {/* Navigation Links */}
+          <div className="mb-3 space-y-1">
+            <Link
+              href="/"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`w-full flex items-center gap-3 px-3 py-2 text-sm rounded-lg transition-colors ${
+                isResumePage
+                  ? "bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+                  : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+              }`}
+            >
+              <span>Resume</span>
+            </Link>
+            <Link
+              href="/portfolio"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`w-full flex items-center gap-3 px-3 py-2 text-sm rounded-lg transition-colors ${
+                isPortfolioPage
+                  ? "bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+                  : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+              }`}
+            >
+              <span>Portfolio</span>
+            </Link>
+          </div>
+
           {/* Action Buttons */}
           <div className="space-y-1">
             <button

@@ -17,6 +17,12 @@ export interface CardItem {
   subtitle?: string;
   description?: string;
   content?: Item[];
+  link?: {
+    text: string;
+    url: string;
+  };
+  techStack?: string[];
+  highlights?: string[];
   inactive?: boolean;
 }
 
