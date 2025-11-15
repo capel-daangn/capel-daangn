@@ -2,7 +2,7 @@
   "profile": {
     "title": { "type": "text", "content": "JIUK KIM" },
     "subtitle": "ソフトウェアエンジニア",
-    "description": "人と人とのつながりから生まれるシナジーに強い関心を持ち、より多くの幸せな瞬間を作りたいという思いでエンジニアの道を選びました。粘り強い挑戦と継続的な成長を大切にし、バックエンドを中心に機械学習およびクラウド技術を活用してデータを実際のビジネス価値へ転換する応用型エンジニアを目指しています。",
+    "description": "データとAIを結びつけて実質的なビジネスインパクトを創出するエンジニアを志向しています。リアルタイムトラフィック環境で安定性とパフォーマンスの両方を考慮したシステム設計に注力しており、LLMベースのサービスとデータパイプラインを組み合わせて運用効率を向上させた経験があります。経営学のドメイン知識を基盤に、データ品質と信頼性を重視するAIバックエンド・データエンジニアとして成長しています。",
     "items": [
       { "type": "text", "content": "{{personal.contact.email}}" },
       { "type": "text", "content": "{{personal.contact.linkedin}}" },
@@ -15,33 +15,36 @@
       "content": [
         {
           "type": "card",
-          "title": { "type": "text", "content": "機械学習エンジニアリング" },
+          "title": {
+            "type": "text",
+            "content": "AI Engineering"
+          },
           "content": [
             {
               "type": "text",
-              "content": "MLflowなどを用いた機械学習ライフサイクル（データ加工、学習、モニタリング、高度化）の経験。"
+              "content": "リアルタイムトラフィック環境でLLMまたはベクトル検索を活用した実サービス実装経験。"
             },
             {
               "type": "text",
-              "content": "LangChain、LangGraphを活用したマルチエージェントネットワークRAGの実装経験。"
+              "content": "LangChain、LangGraphを活用したエージェントおよびデータ駆動型AIサービス実装経験。"
             },
             {
               "type": "text",
-              "content": "外部API連携用MCPサーバー、軽量化RAGシステム向けMCPサーバーの実装経験。"
+              "content": "外部API連携用MCP、またはRAGシステム用MCPサーバー実装経験。"
             },
             {
               "type": "text",
-              "content": "リアルタイム処理負荷が大きい環境でのベクトルDBを活用した軽量ベクトル検索システム実装経験。"
+              "content": "MLflowなどで機械学習ライフサイクル（データ加工、学習、モニタリング、高度化）経験。"
             },
             {
               "type": "text",
-              "content": "QLoRA手法によるLLMファインチューニング、vLLM・Tritonなどを用いたLLMモデルサービングの経験。"
+              "content": "QLoRA手法によるLLMファインチューニングおよびvLLM、Tritonなどを用いたLLMモデルサービング経験。"
             }
           ]
         },
         {
           "type": "card",
-          "title": { "type": "text", "content": "ソフトウェア開発" },
+          "title": { "type": "text", "content": "Software Development" },
           "content": [
             {
               "type": "text",
@@ -49,19 +52,19 @@
             },
             {
               "type": "text",
-              "content": "React.js、Next.jsを基盤にした簡単なフロントエンド開発が可能。"
+              "content": "React.js、Next.jsを基盤に簡単なフロントエンド自主開発が可能。"
             },
             {
               "type": "text",
-              "content": "FastAPI、Springを基盤にしたバックエンドサーバー開発が可能。"
+              "content": "Go、Python、Kotlinを基盤にバックエンド開発およびトラフィック環境対応経験。"
             },
             {
               "type": "text",
-              "content": "MySQL、MongoDB、Redis、GraphQLを基盤としたスキーマ設計およびDB活用経験。"
+              "content": "SQL、NoSQL、Redis、GraphQLを基盤にスキーマ設計およびDB活用経験。"
             },
             {
               "type": "text",
-              "content": "Dockerによるイメージ管理およびAWSでのサービスデプロイ経験（EC2、S3など）。"
+              "content": "Docker、AWS、ArgoCD、Datadog環境でのサービスデプロイおよびモニタリング経験。"
             }
           ]
         }
@@ -73,55 +76,37 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": { "type": "text", "content": "株式会社ダングンマーケット" },
-          "subtitle": "2025年01月 ～ 現在在職中",
+          "title": { "type": "text", "content": "株式会社当根マーケット" },
+          "description": "2025年01月 ～ 現在在職中",
           "content": [
             {
               "type": "card",
-              "subtitle": "正社員 · ソフトウェアエンジニア（バックエンド） · ダングンチャットチーム",
+              "subtitle": "正社員（インターンシップ転換） • ソフトウェアエンジニア、バックエンド • 当根チャットチーム",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "担当領域 : Goチャプター、ドメイン駆動設計およびgRPC経験、管理画面改善業務"
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "variant": "timeline",
-              "subtitle": "インターンシップ（延長） · ソフトウェアエンジニア インターン（バックエンド） · ダングンチャットチーム",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "担当領域 : Goチャプター、ドメイン駆動設計およびgRPC経験、管理画面改善業務"
+                  "content": "Goチャプター、ドメイン中心設計とgRPC基盤分散システム経験"
                 },
                 {
                   "type": "text",
-                  "content": "✓ プロジェクト1. 年間LLM呼び出しコスト20%以上削減、インターンとして挑戦したセマンティックキャッシング導入記録"
+                  "content": "✓ プロジェクト1. チャット自動翻訳機能：リアルタイムトラフィック処理およびLLMパイプライン分離"
                 },
                 {
                   "type": "text",
-                  "content": "✓ プロジェクト2. プロンプト性能評価エージェント「悪いプロンプトは存在しない」"
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "variant": "timeline",
-              "subtitle": "インターンシップ · ソフトウェアエンジニア インターン（バックエンド） · ダングンアルバチーム",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "担当領域 : Node.jsチャプター、イベント駆動およびGraphQL API経験、管理画面改善業務"
+                  "content": "✓ プロジェクト2. 管理型テンプレートメッセージ機能改善：データフローおよび可視性改善"
                 },
                 {
                   "type": "text",
-                  "content": "✓ プロジェクト3. 法令およびCSポリシーを読むLLM：MCP基盤の制裁自動化構築"
+                  "content": "✓ プロジェクト3. セマンティックキャッシング導入：ベクトル検索を活用して年間LLM呼び出しコスト25%削減"
                 },
                 {
                   "type": "text",
-                  "content": "✓ プロジェクト4. GCP BigQueryとGoを活用した会計仕訳帳自動作成機能の実装"
+                  "content": "✓ プロジェクト4. LangGraphを活用した、プロンプト評価および改善自動化エージェント PoC"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ プロジェクト5. SHAP基盤説明性を活用した、チャット時点別離脱確率予測モデリング PoC"
                 }
               ]
             }
@@ -130,25 +115,25 @@
         {
           "type": "card",
           "variant": "simple",
-          "title": { "type": "text", "content": "在韓米第8軍 司令部大隊" },
-          "subtitle": "2023年07月 - 2024年12月",
+          "title": { "type": "text", "content": "在韓米第8軍 司令部本部大隊" },
+          "description": "2023年07月 - 2024年12月",
           "content": [
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "兵役義務 · 大韓民国陸軍 兵長 カトゥサ 満期除隊",
+              "subtitle": "兵役義務 • 大韓民国陸軍 兵長 カトゥサ • 満期除隊",
               "content": [
                 {
                   "type": "text",
-                  "content": "担当領域 : 在韓米軍カトゥサ人事情報のデータベース設計および可視化作業"
-                },
-                {
-                  "type": "text",
-                  "content": "✓ 在韓米軍祝日情報を提供するWebアプリを開発・運営（MAU700人以上）。"
+                  "content": "在韓米軍カトゥサ人事情報のデータベース設計および可視化作業"
                 },
                 {
                   "type": "text",
                   "content": "✓ 2024 Google 機械学習ブートキャンプ 第5期修了、Naver Connect財団 コーチングスタディ第13期修了。"
+                },
+                {
+                  "type": "text",
+                  "content": "✓ 在韓米軍祝日情報を提供するWebアプリを開発・運営（MAU 1200人以上）。"
                 }
               ]
             }
@@ -164,15 +149,9 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "年間 LLM 呼び出しコスト25%以上削減、インターンが挑戦したセマンティックキャッシング導入記録"
+            "content": "管理型テンプレートメッセージシステム改善：メッセージデータパイプライン可視性強化"
           },
-          "description": "ダングンチャットチーム · 2025年05月 - 2025年06月",
-          "techStack": ["Python", "FastAPI", "ChromaDB", "LangChain", "Docker"],
-          "highlights": ["コスト20%削減", "P95 <1秒", "インターン主導"],
-          "link": {
-            "text": "詳しく見る",
-            "url": "https://medium.com/p/af3de9a74d0c"
-          },
+          "highlights": ["データパイプライン改善", "発送ログタグ付け自動化", "Supersetダッシュボード構築", "運用可視性向上"],
           "content": [
             {
               "type": "card",
@@ -181,7 +160,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· 中古取引チャットにおける文推薦機能で発生する LLM の頻繁な呼び出しにより、年間約9億ウォンのコストが予想される状況で、インターンでありながらも主導的にセマンティックキャッシング手法を提案・実装し、コスト削減策を模索。"
+                  "content": "既存の管理型メッセージ機能は一部メッセージタイプをサポートせず、チーム別発送状況を追跡できないため、全体的な運用状況を把握しにくい状態でした。これにより運用可視性が不足し、協業効率と運用安定性を確保するために改善が必要な状況でした。"
                 }
               ]
             },
@@ -192,15 +171,15 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· 実際のチャットデータを埋め込み後、PCA と HDBSCAN で意味ベースの会話パターンをクラスタリング。"
+                  "content": "より多くのメッセージタイプをサポートできるようテンプレート登録機能と内部発送ロジックを改善。"
                 },
                 {
                   "type": "text",
-                  "content": "· メインサーバーと分離したアドオン構造、組み込み型ベクタDBを活用し、トラフィックの外部転移を防止。"
+                  "content": "メッセージ発送時に`x-forwarded-for`ヘッダーを活用して自動的にタグ付けを追加するよう設計。"
                 },
                 {
                   "type": "text",
-                  "content": "· 負荷テストによりネットワーク I/O ボトルネックを確認、軽量リソースの複数レプリカ構成（TPS 100/インスタンス、P50 400ms、P95 1秒以内）で同時性に対応。"
+                  "content": "Supersetダッシュボードで国別・チーム別・メッセージタイプ別発送状況をモニタリングするよう実装。"
                 }
               ]
             },
@@ -211,7 +190,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· 年間 LLM 呼び出しコスト20%以上削減、約2.3億ウォン以上のコスト削減効果を期待。"
+                  "content": "管理型メッセージ機能の完成度を高め、これと連携してヘッダー収集、タグ保存、可視化へとつながるデータパイプラインを新しく構築し、運用可視性を確保できました。その結果、チャットチームのデータ活用性と運用効率性、そして他チームの再利用性を向上させました。"
                 }
               ]
             }
@@ -222,9 +201,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "プロンプト性能評価エージェント「世の中に悪いプロンプトはない」"
+            "content": "セマンティックキャッシング導入：ベクトル検索を活用して年間LLM呼び出しコスト25%削減"
           },
-          "description": "ダングンチャットチーム · 2025年03月 - 2025年03月",
+          "highlights": ["インターン主導提案", "内蔵ベクタDB使用", "コスト25%以上削減", "P95 <1s", "TPS 200/インスタンス"],
+          "link": {
+            "text": "ポストを見る",
+            "url": "https://medium.com/p/af3de9a74d0c"
+          },
           "content": [
             {
               "type": "card",
@@ -233,30 +216,37 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "プロンプト実行は可能だったが、プロンプト自体を評価・改善する手段がなく、繰り返しの手作業検証が発生。"
+                  "content": "中古取引チャットでの文章推薦機能で発生するLLMの頻繁な呼び出しにより年間約9億ウォンのコストが予想される状況で、インターンながら主導的にセマンティックキャッシング技法を先に提案し、直接実装してコスト削減方策を模索しました。"
                 }
               ]
             },
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "How",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "実際のチャットデータを埋め込み後、PCAとHDBSCANで意味ベースの会話パターン群集を識別。"
+                },
+                {
+                  "type": "text",
+                  "content": "メインサーバーと分離されたアドオン構造、内蔵型ベクタDBを活用してトラフィックの外部転移を防止。"
+                },
+                {
+                  "type": "text",
+                  "content": "負荷テストでネットワークI/Oボトルネックを確認、軽量リソース多重レプリカ構成（TPS 100/インスタンス、P50 400ms、P95 1秒以内）で同時性に対応。"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "What",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "· LangGraph で Planner/Actor/Reflector の3グラフを構成し、自動化された評価-改善ループを設計。"
-                },
-                {
-                  "type": "text",
-                  "content": "· Planner: 評価基準抽出および検証用ペルソナ・シナリオ生成。"
-                },
-                {
-                  "type": "text",
-                  "content": "· Actor: 生成基準に従って仮想リクエストを構成し、応答を生成後、スコア化・フィードバック。"
-                },
-                {
-                  "type": "text",
-                  "content": "· Reflector: 結果に基づき改善要否を判断し、自動リライト、ユーザーフィードバックを反映。"
+                  "content": "年間LLM呼び出しコスト20%以上削減、約2.3億ウォン以上のコスト削減効果を予想。"
                 }
               ]
             }
@@ -267,9 +257,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "法令および CS ポリシーを読む LLM: MCP 基盤制裁自動化構築"
+            "content": "LangGraphを活用した、プロンプト評価および改善自動化エージェント PoC"
           },
-          "description": "ダングンアルバチーム · 2025年03月 - 2025年03月",
+          "highlights": ["マルチターンエージェント", "ペルソナシナリオ", "自動化された評価-改善ループ", "運用可能なプロンプト管理システム"],
+          "link": {
+            "text": "ポストを見る",
+            "url": "https://medium.com/p/7630ca814b0c"
+          },
           "content": [
             {
               "type": "card",
@@ -278,7 +272,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· 労働基準法および内部ポリシーに基づく判断自動化が必要。"
+                  "content": "プロンプトの品質評価は自然言語特性上、一貫した基準で定量化することが難しいです。このため反復的な手作業比較にのみ依存して時間とコストがかかります。一貫した基準で様々な状況で客観的にスコア化し、自動的に改善できる体系が必要です。"
                 }
               ]
             },
@@ -289,11 +283,30 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· 外部 API による法令検索 MCP サーバー、内部ポリシー埋め込み/検索 MCP サーバーをそれぞれ開発。"
+                  "content": "LangGraphで3つのサブグラフを構成し、自動化された評価-改善ループを設計。"
                 },
                 {
                   "type": "text",
-                  "content": "· Docker Compose によって配布、社内 LLM インフラと連携し、不正ユーザー識別パイプラインに貢献。"
+                  "content": "PlannerGraph：評価基準をシステムプロンプトから動的に抽出し、ペルソナ・シナリオを生成してテスト範囲を定義する役割。"
+                },
+                {
+                  "type": "text",
+                  "content": "ActorGraph：ペルソナベースのリクエストをシミュレーションして応答を生成し、導出された基準に従ってスコアとフィードバックを自動的に算出する役割。"
+                },
+                {
+                  "type": "text",
+                  "content": "ReflectorGraph：評価結果から改善必要性を判断し、必要時プロンプトを再作成する役割、そして人間フィードバックを集約するループを含めて運用レベルの持続的改善を実装する役割。"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "WHAT",
+              "variant": "timeline",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "プロンプトを多数のシナリオで定量評価し、自動的に改善する反復可能なループを提供しました。モデル間相互検証で改善効果を確認し、プロンプト自体に対する品質管理インフラとして拡張する可能性を調べました。"
                 }
               ]
             }
@@ -304,9 +317,9 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "Go、GCP BigQuery を活用した仕訳帳作成自動化機能の実装"
+            "content": "SHAP基盤説明性を活用した、チャット時点別離脱確率予測モデリング PoC"
           },
-          "description": "ダングンアルバチーム · 2025年01月 - 2025年03月",
+          "highlights": ["言語+行動信号統合学習", "SHAP基盤解釈可能性", "離脱確率ベース対応戦略発掘"],
           "content": [
             {
               "type": "card",
@@ -315,22 +328,37 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "· 月間8万件の取引データ仕訳帳を手作業処理していたため、効率性と正確性の改善が必要。"
+                  "content": "チャットデータは単純なテキストではなく、時系列的言語・行動信号を含みます。対話離脱はこのような信号の連続的断絶として現れます。そのため既存の単純離脱予測モデルでは、いつ、どのような状況でユーザーが離脱するのか把握することが困難です。"
                 }
               ]
             },
             {
               "type": "card",
+              "variant": "timeline",
               "subtitle": "How",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "BERT/DistilBERTを利用してメッセージ埋め込みを抽出し、感情・丁寧度・終了意図などの言語信号を一緒に計算。"
+                },
+                {
+                  "type": "text",
+                  "content": "応答時間、メッセージ長、反応有無などメタデータを統合してシーケンスエンコーダー（TransformerまたはLightGBMシーケンス拡張型）に入力。"
+                },
+                {
+                  "type": "text",
+                  "content": "SHAPを活用して各フィーチャーが離脱確率に及ぼす寄与度を分析し、特定メッセージ時点での離脱可能性を解釈可能に設計。"
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "subtitle": "What",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "· Go で仕訳処理ロジックを設計し、BigQuery で大規模データの集計・処理を実行。"
-                },
-                {
-                  "type": "text",
-                  "content": "· cron スケジューリングにより、仕訳帳生成から報告用データ出力まで全過程を自動化。"
+                  "content": "各時点別離脱確率を予測し、解釈可能性を確保して、先制的に介入し、対応戦略を樹立できるようになりました。"
                 }
               ]
             }
@@ -546,7 +574,8 @@
             { "type": "text", "content": "Python" },
             { "type": "text", "content": "Go" },
             { "type": "text", "content": "TypeScript" },
-            { "type": "text", "content": "Kotlin" }
+            { "type": "text", "content": "Kotlin" },
+            { "type": "text", "content": "Java" }
           ]
         }
       ]
