@@ -13,7 +13,7 @@ export default function Title() {
   if (!profile) return null;
 
   return (
-    <div className="lg:col-span-2 print:col-span-2">
+    <div className="md:col-span-2 print:col-span-2">
       <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 print:text-2xl print:text-black">
         {profile.title?.url ? (
           <a

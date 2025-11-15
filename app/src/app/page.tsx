@@ -30,14 +30,14 @@ function ResumeContent() {
       <div className="max-w-4xl p-8 mx-auto print:p-4">
         {/* Header Section */}
         <Title />
-        <div className="grid grid-cols-1 gap-8 mb-8 lg:grid-cols-3 print:grid-cols-3 print:gap-6 print:mb-6">
+        <div className="grid grid-cols-1 gap-8 mb-8 md:grid-cols-3 print:grid-cols-3 print:gap-6 print:mb-6">
           <Introduction />
           <Contact />
         </div>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 print:grid-cols-3 print:gap-6">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 print:grid-cols-3 print:gap-6">
           {/* Left Column - Main Content */}
-          <div className="space-y-8 lg:col-span-2 print:col-span-2 print:space-y-6">
+          <div className="space-y-8 md:col-span-2 print:col-span-2 print:space-y-6">
             <Skills />
             <Experience />
             <Projects />
