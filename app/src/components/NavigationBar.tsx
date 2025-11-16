@@ -6,6 +6,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { FiDownload, FiPrinter, FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function NavigationBar() {
   const { theme, toggleTheme } = useTheme();
@@ -40,9 +41,19 @@ export default function NavigationBar() {
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         {/* Logo/Title & Navigation Links */}
         <div className="flex items-center gap-6">
-          <div className="font-semibold text-gray-900 dark:text-white">
-            JIUK KIM
-          </div>
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/images/jiuk_kim_sticker_w_laptop.png"
+              alt="Jiuk Kim Logo"
+              width={56}
+              height={56}
+              className="w-12 h-12 md:w-14 md:h-14"
+              priority
+            />
+            <span className="hidden md:inline font-semibold text-gray-900 dark:text-white">
+              JIUK KIM
+            </span>
+          </Link>
           <div className="hidden gap-4 sm:flex">
             <Link
               href="/"
