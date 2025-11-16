@@ -2,7 +2,7 @@
   "profile": {
     "title": { "type": "text", "content": "JIUK KIM" },
     "subtitle": "Software Engineer",
-    "description": "I aspire to be an engineer who creates tangible business impact by connecting data and AI. I focus on system design that balances both stability and performance in real-time traffic environments, and have experience improving operational efficiency by combining LLM-based services with data pipelines. Grounded in business administration domain knowledge, I am growing as an AI backend and data engineer who prioritizes data quality and reliability.",
+    "description": "I aspire to be an engineer who creates tangible business impact by connecting data and AI. I focus on system design that balances both stability and performance in real-time traffic environments, while continuously learning relevant technologies and applying them to projects. Grounded in business administration domain knowledge, I am growing as an AI backend and data engineer who prioritizes data quality and reliability.",
     "items": [
       { "type": "text", "content": "{{personal.contact.email}}" },
       { "type": "text", "content": "{{personal.contact.linkedin}}" },
@@ -22,23 +22,23 @@
           "content": [
             {
               "type": "text",
-              "content": "Experience implementing real services using LLM or vector search in real-time traffic environments."
+              "content": "Experience developing features using LLM or vector search in real-time traffic environments, leading projects."
             },
             {
               "type": "text",
-              "content": "Experience implementing agents and data-driven AI services using LangChain and LangGraph."
+              "content": "Implemented agent-based automation services and internal PoCs using LangChain and LangGraph."
             },
             {
               "type": "text",
-              "content": "Experience implementing MCP servers for external API integration or RAG systems."
+              "content": "Implemented MCP servers for external API integration and RAG systems, internal PoCs."
             },
             {
               "type": "text",
-              "content": "Experience with machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow."
+              "content": "Experience with machine learning lifecycle (data processing, training, monitoring, optimization) using MLflow and similar tools."
             },
             {
               "type": "text",
-              "content": "Experience with LLM fine-tuning using QLoRA and LLM model serving with vLLM, Triton, etc."
+              "content": "Experience with QLoRA fine-tuning and LLM model serving using vLLM, Triton, etc. in side projects."
             }
           ]
         },
@@ -48,15 +48,15 @@
           "content": [
             {
               "type": "text",
-              "content": "Experience leading development of individual and collaborative projects, with multiple competition awards."
+              "content": "Experience leading individual and collaborative projects, with multiple competition awards."
             },
             {
               "type": "text",
-              "content": "Capable of developing simple frontend applications independently with React.js and Next.js."
+              "content": "Capable of independently developing simple frontend applications with React.js and Next.js."
             },
             {
               "type": "text",
-              "content": "Experience developing backend and handling traffic environments with Go, Python, and Kotlin."
+              "content": "Experience with backend development and handling traffic environments using Go and TypeScript."
             },
             {
               "type": "text",
@@ -64,7 +64,7 @@
             },
             {
               "type": "text",
-              "content": "Experience with service deployment and monitoring in Docker, AWS, ArgoCD, and Datadog environments."
+              "content": "Experience with service deployment and monitoring in Kafka, Docker, AWS, and ArgoCD environments."
             }
           ]
         }
@@ -149,9 +149,9 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "Managed Template Messaging System Enhancement: Strengthening Message Data Pipeline Visibility"
+            "content": "Managed Message Template Feature Improvement: Data Structure and Operational Visibility Enhancement"
           },
-          "highlights": ["Data pipeline improvement", "Automated sending log tagging", "Superset dashboard construction", "Operational visibility enhancement"],
+          "highlights": ["Data structure improvement", "Operational visibility enhancement", "Automated sending log tagging", "Superset dashboard construction"],
           "content": [
             {
               "type": "card",
@@ -160,7 +160,15 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "The existing managed messaging feature did not support certain message types and could not track sending status by team, making it difficult to understand overall operational status. This resulted in insufficient operational visibility, requiring improvements to ensure collaboration efficiency and operational stability."
+                  "content": "Managed messages are a chat platform feature that allows pre-registering message content as templates for easy sending later."
+                },
+                {
+                  "type": "text",
+                  "content": "However, the existing system only supported certain message types, leaving the feature implementation incomplete, and couldn't track template message sending status, making it difficult to understand overall operational status."
+                },
+                {
+                  "type": "text",
+                  "content": "To improve the feature's completeness and ensure operational stability, improving the data structure and establishing a standardized system to track sending status was necessary."
                 }
               ]
             },
@@ -171,15 +179,15 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Improved template registration functionality and internal sending logic to support more message types."
+                  "content": "Modified message template data structure and improved pipeline to support more message types."
                 },
                 {
                   "type": "text",
-                  "content": "Designed automatic tagging during message sending using the `x-forwarded-for` header."
+                  "content": "Automatically added standardized tags by parsing the `X-FORWARDED-FOR` header during message sending."
                 },
                 {
                   "type": "text",
-                  "content": "Implemented monitoring of sending status by country, team, and message type via Superset dashboard."
+                  "content": "Implemented Superset dashboard to monitor sending status by country, service, and message type."
                 }
               ]
             },
@@ -190,7 +198,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Enhanced the completeness of the managed messaging feature and built a new data pipeline from header collection, tag storage, to visualization, securing operational visibility. As a result, improved data usability and operational efficiency for the chat team, as well as reusability for other teams."
+                  "content": "Improved the completeness of the managed message feature, and enhanced the data pipeline to flow from header collection, tag storage, to visualization, securing operational visibility."
                 }
               ]
             }
@@ -203,7 +211,7 @@
             "type": "text",
             "content": "Semantic Caching Implementation: 25% Annual LLM Cost Reduction via Vector Search"
           },
-          "highlights": ["Intern-led proposal", "Embedded vector DB usage", "25%+ cost reduction", "P95 <1s", "TPS 200/instance"],
+          "highlights": ["Intern-led proposal", "Vector search", "Embedded vector DB usage", "P95 <1s", "TPS 200/instance"],
           "link": {
             "text": "Read post",
             "url": "https://medium.com/p/af3de9a74d0c"
@@ -216,7 +224,15 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Frequent LLM calls for sentence recommendation in secondhand trading chat were projected to cost approximately ₩900M annually. Although an intern, I proactively proposed semantic caching techniques first and directly implemented them to explore cost-saving measures."
+                  "content": "We introduced a feature that uses LLM to recommend chat utterances for user experience."
+                },
+                {
+                  "type": "text",
+                  "content": "However, frequent LLM calls were projected to cost approximately ₩900M annually."
+                },
+                {
+                  "type": "text",
+                  "content": "We needed a way to reduce costs while maintaining a similar user experience."
                 }
               ]
             },
@@ -227,15 +243,19 @@
               "content": [
                 {
                   "type": "text",
+                  "content": "Although I was an intern in a different team at the time, I proactively proposed semantic caching techniques using real-time vector search."
+                },
+                {
+                  "type": "text",
                   "content": "Embedded real chat data and identified semantic conversation pattern clusters using PCA and HDBSCAN."
                 },
                 {
                   "type": "text",
-                  "content": "Used an add-on structure separated from the main server and embedded vector DB to prevent external traffic migration."
+                  "content": "Used an add-on structure separated from the main server with embedded vector DB to prevent external traffic migration."
                 },
                 {
                   "type": "text",
-                  "content": "Load testing identified network I/O bottlenecks, addressed with lightweight multi-replica configuration (TPS 100/instance, P50 400ms, P95 under 1s) for concurrency handling."
+                  "content": "Load testing identified network I/O bottlenecks, addressed with lightweight multi-replica configuration for concurrency handling."
                 }
               ]
             },
@@ -246,7 +266,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Reduced annual LLM call costs by over 20%, with projected savings of over ₩230M."
+                  "content": "Semantic caching techniques were applied to 13 frequently appearing utterance meaning clusters in chat, enabling expected cost savings of 25%, over ₩230M annually in LLM call costs."
                 }
               ]
             }
@@ -272,7 +292,15 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Evaluating prompt quality is difficult to quantify with consistent criteria due to the natural language characteristics. This makes it time-consuming and costly, relying only on repetitive manual comparisons. A system is needed to objectively score and automatically improve across various situations with consistent criteria."
+                  "content": "When designing LLM services, it's important to write prompts optimized for the intended purpose."
+                },
+                {
+                  "type": "text",
+                  "content": "However, evaluating prompt quality is difficult to quantify with consistent criteria due to natural language characteristics, resulting in time-consuming and costly trial-and-error-based gradual improvements."
+                },
+                {
+                  "type": "text",
+                  "content": "An automation agent was needed to evaluate prompt quality with appropriate criteria across various situations and suggest improvements."
                 }
               ]
             },
@@ -283,19 +311,19 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Configured three sub-graphs with LangGraph and designed an automated evaluation-improvement loop."
+                  "content": "Connected three sub-graphs with LangGraph, receiving system prompts from users and designing an automated evaluation-improvement loop."
                 },
                 {
                   "type": "text",
-                  "content": "PlannerGraph: Dynamically extracts evaluation criteria from system prompts and defines test scope by generating personas and scenarios."
+                  "content": "Planner graph dynamically extracts evaluation criteria from the input prompt and defines test scope by generating multiple personas and scenarios appropriate for the situation."
                 },
                 {
                   "type": "text",
-                  "content": "ActorGraph: Simulates persona-based requests to generate responses and automatically produces scores and feedback according to derived criteria."
+                  "content": "Actor graph simulates virtual requests in parallel based on generated personas and scenarios, generates responses, and automatically produces scores and feedback according to derived criteria."
                 },
                 {
                   "type": "text",
-                  "content": "ReflectorGraph: Determines improvement necessity from evaluation results, rewrites prompts as needed, and implements operational-level continuous improvement by incorporating human feedback loops."
+                  "content": "Reflector graph determines improvement needs from evaluation results, rewrites prompts when necessary, and implements operational-level continuous improvement by incorporating human feedback loops."
                 }
               ]
             },
@@ -306,7 +334,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Provided a repeatable loop for quantitatively evaluating and automatically improving prompts across multiple scenarios. Confirmed improvement effects through cross-validation between models and explored the possibility of expanding into quality management infrastructure for prompts themselves."
+                  "content": "Provided a repeatable loop for quantitatively evaluating prompts across multiple scenarios and automatically improving them. Confirmed improvement effects through cross-validation between models and explored the possibility of expanding into quality management infrastructure for prompts themselves."
                 }
               ]
             }
@@ -317,9 +345,9 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "SHAP-based Interpretable Churn Prediction Modeling PoC by Chat Session"
+            "content": "SHAP-based Explainable Churn Probability Prediction Modeling by Chat Session PoC"
           },
-          "highlights": ["Integrated language + behavioral signals", "SHAP-based interpretability", "Churn probability-based response strategy discovery"],
+          "highlights": ["Language + behavioral signal integrated learning", "SHAP-based interpretability", "Churn probability-based response strategy discovery"],
           "content": [
             {
               "type": "card",
@@ -328,7 +356,15 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Chat data is not just text; it contains time-series language and behavioral signals. Conversation churn manifests as continuous disruption of these signals. Existing simple churn prediction models make it difficult to understand when and under what circumstances users churn."
+                  "content": "Chat data is the area where the richest user interactions occur within the service, containing important insights to understand user experience and service issues."
+                },
+                {
+                  "type": "text",
+                  "content": "However, chat data includes not only simple text but also time-series language and behavioral patterns, making it difficult for existing simple churn prediction models to clearly understand when and by what signals users churn."
+                },
+                {
+                  "type": "text",
+                  "content": "Therefore, we needed a model that could precisely estimate churn probability by chat session and interpret the causes based on SHAP, and proceeded with a PoC to validate this."
                 }
               ]
             },
@@ -339,15 +375,19 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Extracted message embeddings using BERT/DistilBERT and calculated language signals such as sentiment, politeness, and closing intent."
+                  "content": "Generated text embeddings with BERT/DistilBERT and extracted key language signals such as sentiment, politeness, and closing intent, structuring them as features."
                 },
                 {
                   "type": "text",
-                  "content": "Integrated metadata such as response time, message length, and reaction presence, inputting them into a sequence encoder (Transformer or LightGBM sequence-extended)."
+                  "content": "Combined conversation metadata such as response time, message length, and reaction presence to build a feature engineering pipeline reflecting time-series flow."
                 },
                 {
                   "type": "text",
-                  "content": "Used SHAP to analyze each feature's contribution to churn probability, designing the system to make churn likelihood at specific message points interpretable."
+                  "content": "Initially examined Transformer-based sequence encoders, but considering model size, inference speed, and operational difficulty, ultimately selected a LightGBM-based model to enable near real-time processing."
+                },
+                {
+                  "type": "text",
+                  "content": "Used SHAP to analyze each feature's contribution, creating an interpretable structure for real-time monitoring of why the model predicted high churn probability at specific points."
                 }
               ]
             },
@@ -358,7 +398,11 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Predicted churn probability at each point and secured interpretability, enabling proactive intervention and response strategy formulation."
+                  "content": "Achieved rapid churn probability calculation at each chat progress point with a lightweight feature engineering + LightGBM-based model, enabling interpretable results in near real-time."
+                },
+                {
+                  "type": "text",
+                  "content": "Based on this interpretation, explored the possibility of early detection of risk signals and establishing response strategies that operational and service teams can immediately intervene with."
                 }
               ]
             }
@@ -396,12 +440,17 @@
             {
               "type": "text",
               "level": "secondary",
-              "content": "Completed Business Analytics track certification program."
+              "content": "Completed Business Analytics track"
             },
             {
               "type": "text",
               "level": "secondary",
-              "content": "Executive member of KU Software Startup Club NEXT (LikeLion) 10th & 11th terms."
+              "content": "Founded undergraduate Business Analytics association"
+            },
+            {
+              "type": "text",
+              "level": "secondary",
+              "content": "Software Startup Association NEXT (LikeLion)"
             }
           ]
         }
@@ -419,23 +468,20 @@
             {
               "type": "text",
               "level": "secondary",
-              "content": "· Excellence Award (Army Chief of Staff Award)"
+              "content": "Excellence Award (Army Chief of Staff Award)"
             }
           ]
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": {
-            "type": "text",
-            "content": "11th Army Startup Competition"
-          },
+          "title": { "type": "text", "content": "11th Army Startup Competition" },
           "tag": "2024",
           "content": [
             {
               "type": "text",
               "level": "secondary",
-              "content": "· Excellence Award (Daejeon Employment and Economy Promotion Agency Award)"
+              "content": "Excellence Award (Daejeon Employment and Economy Promotion Agency Award)"
             }
           ]
         },
@@ -451,55 +497,7 @@
             {
               "type": "text",
               "level": "secondary",
-              "content": "· Grand Prize (Jeju Special Self-Governing Province Governor’s Award)"
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "level": "secondary",
-          "title": {
-            "type": "text",
-            "content": "10th Army Startup Competition"
-          },
-          "tag": "2023",
-          "content": [
-            {
-              "type": "text",
-              "level": "secondary",
-              "content": "· Creativity Award (Army Personnel Command Award)"
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "level": "secondary",
-          "title": {
-            "type": "text",
-            "content": "3rd Korea University Smart Campus Datathon"
-          },
-          "tag": "2022",
-          "content": [
-            {
-              "type": "text",
-              "level": "secondary",
-              "content": "· Encouragement Award"
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "level": "secondary",
-          "title": {
-            "type": "text",
-            "content": "Samsung Electronics x Korea University Eco-Friendly Home Appliance Idea Contest"
-          },
-          "tag": "2022",
-          "content": [
-            {
-              "type": "text",
-              "level": "secondary",
-              "content": "· Excellence Award"
+              "content": "Grand Prize (Jeju Special Self-Governing Province Governor's Award)"
             }
           ]
         }
@@ -523,17 +521,17 @@
             {
               "type": "text",
               "level": "secondary",
-              "content": "· TOEIC: 915/990"
+              "content": "TOEIC: 915/990"
             },
             {
               "type": "text",
               "level": "secondary",
-              "content": "· TOEIC Speaking: 150/200"
+              "content": "TOEIC Speaking: 150/200"
             },
             {
               "type": "text",
               "level": "secondary",
-              "content": "· TOEFL: 92/120"
+              "content": "TOEFL: 92/120"
             }
           ]
         },
@@ -551,26 +549,20 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": {
-            "type": "text",
-            "content": "Information Processing Engineer (Written Exam Passed)"
-          },
-          "tag": "Mar 2024"
+          "title": { "type": "text", "content": "Information Processing Engineer (Written)" },
+          "tag": "2024.03"
         },
         {
           "type": "card",
           "level": "secondary",
           "title": { "type": "text", "content": "Big Data Analysis Engineer" },
-          "tag": "Jun 2024"
+          "tag": "2024.06"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": {
-            "type": "text",
-            "content": "Certified Management Accountant (Korea)"
-          },
-          "tag": "Nov 2021"
+          "title": { "type": "text", "content": "Certified Management Accountant (Korea)" },
+          "tag": "2021.11"
         }
       ]
     },
