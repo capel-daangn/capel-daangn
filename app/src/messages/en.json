@@ -334,7 +334,11 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Provided a repeatable loop for quantitatively evaluating prompts across multiple scenarios and automatically improving them. Confirmed improvement effects through cross-validation between models and explored the possibility of expanding into quality management infrastructure for prompts themselves."
+                  "content": "Confirmed improvement effects through cross-validation between commercial LLM services and verified the feasibility of implementing a repeatable automation loop for evaluating and improving system prompts across various scenarios."
+                },
+                {
+                  "type": "text",
+                  "content": "Also explored the possibility of expanding beyond one-time prompt usage into a prompt management infrastructure capable of continuous operation and maintenance."
                 }
               ]
             }
