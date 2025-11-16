@@ -47,7 +47,7 @@ export default function NavigationBar() {
               alt="Jiuk Kim Logo"
               width={56}
               height={56}
-              className="w-12 h-12 md:w-14 md:h-14"
+              className="h-12 w-auto md:h-14"
               priority
             />
             <span className="hidden md:inline font-semibold text-gray-900 dark:text-white">
