@@ -40,7 +40,7 @@
   <br/>
   <i>Software Engineer, Backend</i>
   <br/>
-  2025.01.06 ~ 2025.07.04 ~ Present
+  2025.01.06 ~ Present
 </p>
 <br/>
 
