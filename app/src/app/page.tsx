@@ -55,7 +55,7 @@ function ResumeContent() {
         {/* Footer */}
         <div className="pt-6 mt-12 text-sm text-center text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400 print:mt-8 print:pt-4">
           {/* Social Icons */}
-          <div className="flex justify-center gap-6 mb-4 print:hidden">
+          <div className="flex justify-center gap-6 mb-4">
             {resumeData?.profile?.items?.map((item: { type: string; content: string }, index: number) => {
               const isEmail = item.content.includes("@");
               const isLinkedIn = item.content.includes("linkedin");
@@ -68,7 +68,7 @@ function ResumeContent() {
                     href={`mailto:${item.content}`}
                     className="text-gray-600 transition-colors dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400"
                   >
-                    <MdEmail size={24} />
+                    <MdEmail size={20} />
                   </a>
                 );
               }
@@ -81,7 +81,7 @@ function ResumeContent() {
                     rel="noopener noreferrer"
                     className="text-gray-600 transition-colors dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
                   >
-                    <FaLinkedin size={24} />
+                    <FaLinkedin size={20} />
                   </a>
                 );
               }
@@ -94,14 +94,14 @@ function ResumeContent() {
                     rel="noopener noreferrer"
                     className="text-gray-600 transition-colors dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                   >
-                    <FaGithub size={24} />
+                    <FaGithub size={20} />
                   </a>
                 );
               }
               return null;
             })}
           </div>
-          <p>2025.08.17</p>
+          <p>2025.11.16</p>
         </div>
       </div>
     </div>
