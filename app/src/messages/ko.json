@@ -211,7 +211,7 @@
             "type": "text",
             "content": "시맨틱 캐싱 도입: 벡터 검색을 활용하여 연간 LLM 호출 비용 25% 절감"
           },
-          "highlights": ["인턴 주도 제안", "실시간 벡터 검색", "내장 벡터 DB 사용"],
+          "highlights": ["인턴 주도 제안", "실시간 벡터 검색", "내장 벡터 DB 사용", "P95 <1s", "TPS 200/인스턴스"],
           "link": {
             "text": "포스트 보기",
             "url": "https://medium.com/p/af3de9a74d0c"
