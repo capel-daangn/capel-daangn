@@ -151,7 +151,7 @@
             "type": "text",
             "content": "Managed Message Template Feature Improvement: Data Structure and Operational Visibility Enhancement"
           },
-          "highlights": ["Data structure improvement", "Operational visibility enhancement", "Automated sending log tagging", "Superset dashboard construction"],
+          "highlights": ["Data structure improvement", "Operational visibility enhancement", "Automated sending log tagging", "Monitoring dashboard construction"],
           "content": [
             {
               "type": "card",
@@ -160,11 +160,11 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Managed messages are a chat platform feature that allows pre-registering message content as templates for easy sending later."
+                  "content": "Managed messages are a template-based messaging feature that allows pre-registering message content as templates for easy sending later."
                 },
                 {
                   "type": "text",
-                  "content": "However, the existing system only supported certain message types, leaving the feature implementation incomplete, and couldn't track template message sending status, making it difficult to understand overall operational status."
+                  "content": "However, the existing implementation had limited functionality with poor scalability, and tracking sending status was difficult, making it hard to understand overall operational status."
                 },
                 {
                   "type": "text",
@@ -183,11 +183,11 @@
                 },
                 {
                   "type": "text",
-                  "content": "Automatically added standardized tags by parsing the `X-FORWARDED-FOR` header during message sending."
+                  "content": "Automatically added standardized tags by utilizing request metadata during message sending."
                 },
                 {
                   "type": "text",
-                  "content": "Implemented Superset dashboard to monitor sending status by country, service, and message type."
+                  "content": "Implemented dashboard to monitor sending status across various dimensions."
                 }
               ]
             },
@@ -198,7 +198,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Improved the completeness of the managed message feature, and enhanced the data pipeline to flow from header collection, tag storage, to visualization, securing operational visibility."
+                  "content": "Improved the completeness of the managed message feature, and enhanced the data collection and analysis system to flow from metadata collection, tag storage, to visualization, securing operational visibility."
                 }
               ]
             }
@@ -243,7 +243,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Although I was an intern in a different team at the time, I proactively proposed semantic caching techniques using real-time vector search."
+                  "content": "As an intern at the time, I proactively proposed semantic caching techniques using real-time vector search."
                 },
                 {
                   "type": "text",
@@ -406,7 +406,7 @@
                 },
                 {
                   "type": "text",
-                  "content": "Based on this interpretation, explored the possibility of early detection of risk signals and establishing response strategies that operational and service teams can immediately intervene with."
+                  "content": "Based on this interpretation, explored the possibility of early detection of risk signals and establishing actionable intervention hypotheses."
                 }
               ]
             }
