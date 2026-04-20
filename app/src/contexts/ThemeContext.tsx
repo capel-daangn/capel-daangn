@@ -11,34 +11,48 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+const getSystemTheme = (): Theme =>
+  window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+const applyTheme = (nextTheme: Theme) => {
+  document.documentElement.classList.toggle('dark', nextTheme === 'dark');
+};
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [systemTheme, setSystemTheme] = useState<Theme>('light');
+  const [manualTheme, setManualTheme] = useState<Theme | null>(null);
+  const [isSystemThemeReady, setIsSystemThemeReady] = useState(false);
+  const theme = manualTheme ?? systemTheme;
 
   useEffect(() => {
-    // Check for saved theme in localStorage or system preference
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme') as Theme;
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      
-      const initialTheme = savedTheme || systemTheme;
-      setTheme(initialTheme);
-      
-      // Apply theme to document
-      document.documentElement.classList.toggle('dark', initialTheme === 'dark');
-    }
+    if (typeof window === 'undefined') return;
+
+    localStorage.removeItem('theme');
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const syncSystemTheme = () => {
+      setSystemTheme(getSystemTheme());
+      setIsSystemThemeReady(true);
+    };
+
+    syncSystemTheme();
+
+    mediaQuery.addEventListener('change', syncSystemTheme);
+    return () => mediaQuery.removeEventListener('change', syncSystemTheme);
   }, []);
 
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (!isSystemThemeReady) return;
+    applyTheme(theme);
+  }, [isSystemThemeReady, theme]);
+
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('theme', newTheme);
-      if (newTheme === 'dark') {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    }
+    const currentTheme = manualTheme ?? systemTheme;
+    const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    setManualTheme(nextTheme === systemTheme ? null : nextTheme);
   };
 
   return (
