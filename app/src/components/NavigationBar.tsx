@@ -32,7 +32,8 @@ export default function NavigationBar() {
   const currentLanguage =
     languages.find((lang) => lang.code === language) || languages[0];
 
-  const isResumePage = pathname === "/";
+  const isResumePage =
+    pathname === "/" || /^\/(ko|en|jp)(?:\/|$)/.test(pathname);
 
   // 포트폴리오 페이지 준비 전까지 네비게이션에서 숨김
   const showPortfolioNav = false;
