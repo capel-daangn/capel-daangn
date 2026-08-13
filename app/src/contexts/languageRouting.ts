@@ -29,6 +29,6 @@ export function resolveInitialLanguage(
 ): Language {
   return (
     getLanguageFromPathname(pathname) ??
-    (isLanguage(storedLanguage) ? storedLanguage : "ko")
+    (isLanguage(storedLanguage) ? storedLanguage : "en")
   );
 }

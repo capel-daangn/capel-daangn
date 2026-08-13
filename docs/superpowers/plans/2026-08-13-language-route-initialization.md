@@ -4,7 +4,7 @@
 
 **Goal:** Make `/ko`, `/en`, and `/jp` render the resume in the URL-selected language while preserving the existing local-storage preference and language selector.
 
-**Architecture:** Extract the current client-side resume screen into a reusable component, expose it through both `/` and a validated `[locale]` route, and centralize language precedence in a pure helper. `LanguageProvider` will resolve `pathname` first, then the existing `language` local-storage value, then Korean as the fallback.
+**Architecture:** Extract the current client-side resume screen into a reusable component, expose it through both `/` and a validated `[locale]` route, and centralize language precedence in a pure helper. `LanguageProvider` will resolve `pathname` first, then the existing `language` local-storage value, then the current English default as the fallback.
 
 **Tech Stack:** Next.js 15 App Router, React 19, TypeScript, Node 22 built-in `node:test` with TypeScript type stripping.
 
@@ -13,7 +13,7 @@
 - Supported languages are exactly `ko`, `en`, and `jp`.
 - A supported URL language takes precedence over `localStorage["language"]`.
 - A supported URL language updates the existing `language` local-storage key.
-- Unsupported URL/storage values fall back to Korean (`ko`).
+- Unsupported URL/storage values fall back to the existing English default (`en`).
 - Do not add redirects, duplicate translation files, or server-side locale rendering.
 - Existing `/`, `/portfolio`, language selector behavior, and message-loading behavior must remain available.
 
@@ -64,10 +64,10 @@ test("a valid stored language is used without a language route", () => {
   assert.equal(resolveInitialLanguage("/portfolio", "jp"), "jp");
 });
 
-test("invalid route and storage values fall back to Korean", () => {
+test("invalid route and storage values fall back to English", () => {
   assert.equal(getLanguageFromPathname("/english"), undefined);
-  assert.equal(resolveInitialLanguage("/english", "fr"), "ko");
-  assert.equal(resolveInitialLanguage("/", null), "ko");
+  assert.equal(resolveInitialLanguage("/english", "fr"), "en");
+  assert.equal(resolveInitialLanguage("/", null), "en");
 });
 ```
 
@@ -99,7 +99,7 @@ export function getLanguageFromPathname(pathname: string): Language | undefined 
 }
 
 export function resolveInitialLanguage(pathname: string, storedLanguage: string | null): Language {
-  return getLanguageFromPathname(pathname) ?? (isLanguage(storedLanguage) ? storedLanguage : "ko");
+  return getLanguageFromPathname(pathname) ?? (isLanguage(storedLanguage) ? storedLanguage : "en");
 }
 ```
 

@@ -6,7 +6,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { FiDownload, FiPrinter, FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 
 export default function NavigationBar() {
   const { theme, toggleTheme } = useTheme();
@@ -45,15 +44,7 @@ export default function NavigationBar() {
         {/* Logo/Title & Navigation Links */}
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/images/jiuk_kim_sticker_w_laptop.png"
-              alt="Jiuk Kim Logo"
-              width={56}
-              height={56}
-              className="h-12 w-auto md:h-14"
-              priority
-            />
-            <span className="hidden md:inline font-semibold text-gray-900 dark:text-white">
+            <span className="font-semibold text-gray-900 dark:text-white">
               JIUK KIM
             </span>
           </Link>
@@ -197,7 +188,11 @@ export default function NavigationBar() {
             <button
               onClick={toggleTheme}
               className="p-2 text-gray-700 transition-colors dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-              aria-label="Toggle theme"
+              aria-label={
+                theme === "light"
+                  ? "Switch to dark theme"
+                  : "Switch to light theme"
+              }
             >
               {theme === "light" ? (
                 <svg

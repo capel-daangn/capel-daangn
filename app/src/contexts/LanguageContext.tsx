@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 import type { TranslationMessages } from "@/types/translations";
-import koMessages from "@/messages/ko.json";
+import enMessages from "@/messages/en.json";
 import personalConfig from "@/config/personal.json";
 import {
   resolveInitialLanguage,
@@ -20,10 +20,10 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("ko");
+  const [language, setLanguage] = useState<Language>("en");
   const [isLanguageInitialized, setIsLanguageInitialized] = useState(false);
   const [messages, setMessages] = useState<TranslationMessages>(
-    koMessages as unknown as TranslationMessages
+    enMessages as unknown as TranslationMessages
   );
 
   useEffect(() => {
@@ -68,9 +68,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
           `Failed to load messages for language: ${language}`,
           error
         );
-        // Fallback to Korean
-        const processedKoMessages = JSON.parse(
-          JSON.stringify(koMessages).replace(
+        // Fallback to English
+        const processedEnMessages = JSON.parse(
+          JSON.stringify(enMessages).replace(
             /\{\{personal\.([^}]+)\}\}/g,
             (match, path) => {
               const keys = path.split('.');
@@ -82,7 +82,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
             }
           )
         );
-        setMessages(processedKoMessages as unknown as TranslationMessages);
+        setMessages(processedEnMessages as unknown as TranslationMessages);
       }
     };
 

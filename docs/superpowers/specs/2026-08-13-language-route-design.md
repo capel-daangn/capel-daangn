@@ -15,8 +15,8 @@ and `localStorage` preference for other entry points.
   to `/` consistent with the language-specific link the visitor used.
 - If the pathname has no supported language segment, a valid stored language is
   used.
-- If neither the pathname nor storage provides a valid language, Korean (`ko`)
-  remains the fallback.
+- If neither the pathname nor storage provides a valid language, the existing
+  English (`en`) default remains the fallback.
 - Existing paths such as `/`, `/portfolio`, and unknown paths retain the current
   behaviour; this change does not add redirects or duplicate route trees.
 
@@ -40,7 +40,7 @@ Add focused tests for:
 1. each supported route selecting its matching language;
 2. a supported route overriding a conflicting stored language;
 3. a valid stored language being used without a language route; and
-4. invalid route/storage values falling back to Korean.
+4. invalid route/storage values falling back to the existing English default.
 
 Run the focused tests, TypeScript/build validation, and the repository's
 available lint command before considering the change complete.

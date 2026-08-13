@@ -22,8 +22,8 @@ test("a valid stored language is used without a language route", () => {
   assert.equal(resolveInitialLanguage("/portfolio", "jp"), "jp");
 });
 
-test("invalid route and storage values fall back to Korean", () => {
+test("invalid route and storage values fall back to English", () => {
   assert.equal(getLanguageFromPathname("/english"), undefined);
-  assert.equal(resolveInitialLanguage("/english", "fr"), "ko");
-  assert.equal(resolveInitialLanguage("/", null), "ko");
+  assert.equal(resolveInitialLanguage("/english", "fr"), "en");
+  assert.equal(resolveInitialLanguage("/", null), "en");
 });
