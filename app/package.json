@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "node --experimental-strip-types --test src/contexts/languageRouting.test.ts"
   },
   "dependencies": {
     "gsap": "^3.13.0",
