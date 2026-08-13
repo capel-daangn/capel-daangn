@@ -4,8 +4,10 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import type { TranslationMessages } from "@/types/translations";
 import koMessages from "@/messages/ko.json";
 import personalConfig from "@/config/personal.json";
-
-type Language = "ko" | "en" | "jp";
+import {
+  resolveInitialLanguage,
+  type Language,
+} from "./languageRouting";
 
 interface LanguageContextType {
   language: Language;
@@ -19,18 +21,23 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("ko");
+  const [isLanguageInitialized, setIsLanguageInitialized] = useState(false);
   const [messages, setMessages] = useState<TranslationMessages>(
     koMessages as unknown as TranslationMessages
   );
 
   useEffect(() => {
-    // Load saved language from localStorage
-    if (typeof window !== "undefined") {
-      const savedLanguage = localStorage.getItem("language") as Language;
-      if (savedLanguage && ["ko", "en", "jp"].includes(savedLanguage)) {
-        setLanguage(savedLanguage);
-      }
+    if (typeof window === "undefined") {
+      return;
     }
+
+    const initialLanguage = resolveInitialLanguage(
+      window.location.pathname,
+      localStorage.getItem("language")
+    );
+
+    setLanguage(initialLanguage);
+    setIsLanguageInitialized(true);
   }, []);
 
   useEffect(() => {
@@ -80,12 +87,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     };
 
     loadMessages();
+  }, [language]);
 
-    // Save language to localStorage
-    if (typeof window !== "undefined") {
+  useEffect(() => {
+    if (isLanguageInitialized) {
       localStorage.setItem("language", language);
     }
-  }, [language]);
+  }, [isLanguageInitialized, language]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, messages }}>
