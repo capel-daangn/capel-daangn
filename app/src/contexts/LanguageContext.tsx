@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import type { TranslationMessages } from "@/types/translations";
 import enMessages from "@/messages/en.json";
+import koMessages from "@/messages/ko.json";
 import personalConfig from "@/config/personal.json";
 
 type Language = "ko" | "en" | "jp";
@@ -18,9 +19,9 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>("ko");
   const [messages, setMessages] = useState<TranslationMessages>(
-    enMessages as unknown as TranslationMessages
+    koMessages as unknown as TranslationMessages
   );
 
   useEffect(() => {
